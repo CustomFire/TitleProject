@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 13" width="8" height="13">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.502;fill: #ffffff } 
+	</style>
+	<path id="facebook" class="shp0" d="M6,2.99h2v-2h-2c-2.35,0.08 -2.96,1.61 -3,3v-1v2h-2v2h2v6h2v-6h2l1,-2h-3v-1c0,-0.47 0.56,-1 1,-1z" />
+</svg>

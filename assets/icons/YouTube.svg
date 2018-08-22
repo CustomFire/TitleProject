@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" width="15" height="15">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.502;fill: #ffffff } 
+	</style>
+	<path id="YouTube" class="shp0" d="M15,12.99c0,0 -0.01,2 -2,2c-3.19,0 -6.81,0 -10,0c-1.94,0 -2,-2 -2,-2v-10c0,0 0.08,-2 2,-2c3.19,0 6.8,0 10,0c1.98,0 2,2 2,2zM6,4.99l0,6l5,-3z" />
+</svg>

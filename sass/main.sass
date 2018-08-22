@@ -3,7 +3,438 @@
     font-family: 'Varela Round', sans-serif
     font-size: 14px
 
+body
+    background-image: url(../assets/main_background.png)
+    background-size: cover
+    background-position: center
+
+a
+    cursor: pointer
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Header=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+.header-navigation
+    height: 50px
+    padding-top: 18px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .header-logo
+        display: flex
+        align-items: center
+        .header-logo-name
+            color: #005bcf
+            font-size: 18px
+            line-height: 50px
+            font-family: "Varela Round"
+            span
+                font-size: 18px
+                line-height: 50px
+                color: rgb(43,47,58)
+                font-family: "Varela Round"
+    .header-pages
+        height: 50px
+        .pages
+            font-size: 14px
+            line-height: 50px
+            font-family: "Open Sans"
+            font-weight: bold
+            display: flex
+            justify-content: space-between
+            width: 375px
+
+    .header-autorization
+        .autorization
+            button
+                width: 140px
+                height: 52px
+                margin-left: 30px
+                border-radius: 3px
+                background-color: rgba(58,187,163,0)
+                border: 2px solid #39bba3
+                font-size: 16px
+                letter-spacing: 0px
+                color: rgb(58,187,163)
+                font-family: "Open Sans"
+                font-weight: bold
+                text-align: center
 
 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Header=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Header=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Hero=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+.hero
+    padding-top: 8rem
+    text-align: center
+    .easiest-way-title
+        h1
+            font-size: 120px
+            line-height: 120px
+            color: rgb(43,47,58)
+            span
+                font-size: inherit
+    .get-started
+        .get-started-for-free
+            font-size: 14px
+            line-height: 50px
+            color: rgb(43,47,58)
+            font-family: "Open Sans"
+        .get-started-button
+            font-size: 16px
+            button
+                width: 180px
+                font-size: 16px
+                height: 52px
+                border: 1px solid #005bcf
+                border-radius: 3px
+                background-color: #005bcf
+                color: #ffffff
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Hero=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Stats=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+.stats
+    padding: 12rem 0rem
+    .did-you-know
+        text-align: center
+        font-size: 30px
+        line-height: 70px
+    .percent-block
+        display: flex
+        .percent-number
+            span
+                font-size: 60px
+                line-height: 120px
+                color: rgb(58,187,163)
+                font-weight: bold
+        .percent-description
+            span
+                font-size: 16px
+                line-height: 24px
+                font-family: "Open Sans"
+    .stats-button
+        text-align: center
+        font-size: 16px
+        button
+            font-size: 16px
+            letter-spacing: 0px
+            line-height: 50px
+            color: rgb(255,255,255)
+            font-family: "Open Sans"
+            width: 180px
+            height: 52px
+            border-radius: 3px
+            border: 1px solid #39bba3
+            background-color: #39bba3
+
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Stats=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Feature=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+.features
+    .container
+        padding: 5rem 0rem
+        background-color: #fff
+        .core-features
+            span
+                font-size: 10px
+                letter-spacing: 4px
+                color: rgb(58,187,163)
+                font-family: "Open Sans"
+        .features-title
+            h2
+                margin-top: 0px
+                font-size: 60px
+                line-height: 70px
+                color: rgb(43,47,58)
+                font-family: "Varela Round"
+        .features-description
+            padding-top: 2rem
+            padding-bottom: 6rem
+            color: #aaabb0
+            span
+                font-size: 18px
+                line-height: 30px
+                color: #aaabb0
+                font-family: "Open Sans"
+        .features-cards
+            display: flex
+            .features-card
+                min-width: 27%
+                margin-right: 3rem
+                padding: 2rem
+                border-radius: 3px
+                box-shadow: 0px 15px 50px rgba(0,0,0,0.1)
+                background-image: linear-gradient(45deg, #eff3f6 0%, #ffffff 100%)
+                border: 1px solid #ffffff
+                .features-card-icon
+                    display: flex
+                    align-items: center
+                    height: 63px
+                    img
+                .features-card-description
+                    margin-top: 2rem
+                    span
+                        font-size: 14px
+                        line-height: 18px
+                        color: rgb(43,47,58)
+                        font-family: "Open Sans"
+                        font-weight: bold
+        .see-all-features
+            a
+                font-size: 14px
+                letter-spacing: 0px
+                line-height: 50px
+                color: rgb(43,47,58)
+                font-family: "Open Sans"
+                font-weight: bold
+                &:after
+                    content: ""
+                    background-image: url("../assets/icons/arrow_right.svg")
+                    display: inline-block
+                    width: 30px
+                    height: 10px
+                    margin-left: 8px
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Feature=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Blog=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+.blog
+    padding-top: 10rem
+    .blog-articles
+        span
+            font-size: 10px
+            letter-spacing: 4px
+            color: rgb(58,187,163)
+            font-family: "Open Sans"
+            text-transform: uppercase
+    .blog-title
+        h2
+            margin-top: 0px
+            font-size: 60px
+            line-height: 70px
+            color: rgb(43,47,58)
+            font-family: "Varela Round"
+    .blog-posts
+        margin-top: 5rem
+        display: flex
+        justify-content: space-between
+        .post
+            width: 31%
+            .post-title-img
+                overflow: hidden
+                position: relative
+                display: flex
+                justify-content: space-between
+                align-items: center
+                height: 18rem
+                border-radius: 3px
+                box-shadow: 0px 15px 50px rgba(0,0,0,0.1)
+                img
+                    width: 100%
+                    height: auto
+                    position: relative
+                &:after
+                    content: ""
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    background-color: #39bba300
+            .post-content
+                padding: 1rem
+                .post-label
+                    border-radius: 3px
+                    background-color: #39bba3
+                    display: inline-block
+                    width: 44px
+                    text-align: center
+                    span
+                        font-size: 9px
+                        color: rgb(255,255,255)
+                        font-family: "Open Sans"
+                        font-weight: bold
+                .post-date
+                    display: inline-block
+                    span
+                        font-size: 12px
+                        letter-spacing: 0px
+                        color: rgb(43,47,58)
+                        font-family: "Open Sans"
+                        font-weight: 300
+                .post-title
+                    h4
+                        font-size: 22px
+                        line-height: 30px
+                        color: rgb(43,47,58)
+                        font-family: "Open Sans"
+                        font-weight: bold
+                .post-description
+                    font-size: 15px
+                    line-height: 24px
+                    color: #888d94
+                    font-family: "Open Sans"
+                .post-article
+                    font-size: 14px
+                    letter-spacing: 0px
+                    line-height: 50px
+                    color: rgb(43,47,58)
+                    font-family: "Open Sans"
+                    font-weight: bold
+                    a
+                        color: rgb(43,47,58)
+            &:hover
+                .post-title-img
+                    &:after
+                        background-color: #39bba390
+                .post-article
+                    a
+                        text-decoration: none
+                        color: #3abba3
+    .read-all-posts
+        a
+            font-size: 14px
+            letter-spacing: 0px
+            line-height: 50px
+            color: rgb(43,47,58)
+            font-family: "Open Sans"
+            font-weight: bold
+            margin-left: 1rem
+            &:hover
+                text-decoration: none
+                color: #39bba3
+            &:after
+                content: ""
+                background-image: url("../assets/icons/arrow_right.svg")
+                display: inline-block
+                width: 30px
+                height: 10px
+                margin-left: 8px            
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Blog=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-CTA=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+
+.cta
+    padding: 10rem 0rem
+    .container
+        padding: 5rem 0rem
+        background-image: linear-gradient(45deg, #005bcf 0%, rgba(13,110,234,0.8509803921568627) 100%)
+        color: #ffffff
+        .cta-title
+            h3
+                font-size: 60px
+                line-height: 70px
+                font-family: "Varela Round"
+        .cta-description
+            span
+                font-size: 18px
+                line-height: 30px
+                font-family: "Open Sans"
+        .cta-form
+            .cta-form-flex
+                display: flex
+                justify-content: space-between
+                .form-group
+                    width: 30rem
+                    label
+                        display: block
+                        font-size: 11px
+                        font-family: "Open Sans"
+                    input
+                        height: 40px
+                        border-radius: 3px
+                        background-color: #0253bd
+                        border: 1px solid #0147a3
+                        color: #ffffff
+                button
+                    height: 4rem
+                    margin-top: 2rem
+                    width: 30rem
+                    font-size: 16px
+                    letter-spacing: 0px
+                    font-family: "Open Sans"
+                    font-weight: bold
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-CTA=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  
+
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-FOOTER=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  
+
+.footer
+    background-color: #2d313c
+    padding: 14rem 10rem 14rem 10rem
+    .footer-container
+        display: flex
+        justify-content: space-between
+        .footer-logo
+            width: 15%
+        .footer-pages
+            display: flex
+            justify-content: space-between
+            width: 50%
+            ul
+                padding: 0px
+                font-size: 14px
+                line-height: 36px
+                color: rgb(255,255,255)
+                font-family: "Open Sans"
+                font-weight: bold
+                color: #ffffff
+                list-style: none
+                li
+                    line-height: 24px
+                    a
+                        font-size: 12px
+                        color: #96989d
+        .footer-socials
+            width: 15%
+            ul
+                display: flex
+                justify-content: space-between
+                width: 100%
+                padding: 0px
+                list-style: none
+                margin-bottom: 0px
+                li
+                    display: inline-block
+    .footer-copyright
+        display: flex
+        justify-content: space-between
+
+        letter-spacing: 0px
+        line-height: 36px
+        color: rgb(255,255,255)
+        font-family: "Open Sans"
+        .copyright-company
+            span
+                font-size: 12px
+        .copyright-links
+            display: flex
+            justify-content: space-between
+            width: 20%
+            a
+                font-size: 12px
+                color: rgb(255,255,255)
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-FOOTER=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  
+
+
+@media screen and (max-width: 1280px)
+    .features
+        .container
+            .features-cards
+                .features-card
+                    min-width: 26%
+
+@media screen and (max-width: 1024px)
+    .hero
+        .easiest-way-title
+            h1
+                font-size: 100px
+                line-height: 110px
+    .stats
+        .percent-block
+            .percent-description
+                span
+                    font-size: 12px
+                    line-height: 12px
+    .features
+        .container
+            .features-cards
+                .features-card
+                    min-width: 25%
