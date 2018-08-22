@@ -409,7 +409,7 @@ a {
 }
 
 .cta .container .cta-form .cta-form-flex .form-group {
-  width: 30rem;
+  width: 32%;
 }
 
 .cta .container .cta-form .cta-form-flex .form-group label {
@@ -429,7 +429,7 @@ a {
 .cta .container .cta-form .cta-form-flex button {
   height: 4rem;
   margin-top: 2rem;
-  width: 30rem;
+  width: 32%;
   font-size: 16px;
   letter-spacing: 0px;
   font-family: "Open Sans";
