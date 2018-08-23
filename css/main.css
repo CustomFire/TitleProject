@@ -16,7 +16,9 @@ a {
 
 .header-navigation {
   height: 50px;
-  padding-top: 18px;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,6 +45,9 @@ a {
 
 .header-navigation .header-pages {
   height: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
 }
 
 .header-navigation .header-pages .pages {
@@ -52,7 +57,7 @@ a {
   font-weight: bold;
   display: flex;
   justify-content: space-between;
-  width: 375px;
+  width: 50%;
 }
 
 .header-navigation .header-autorization .autorization button {
@@ -83,6 +88,7 @@ a {
 
 .hero .easiest-way-title h1 span {
   font-size: inherit;
+  color: #005bcf;
 }
 
 .hero .get-started .get-started-for-free {
@@ -112,25 +118,15 @@ a {
 
 .stats .did-you-know {
   text-align: center;
+}
+
+.stats .did-you-know h3 {
   font-size: 30px;
   line-height: 70px;
 }
 
-.stats .percent-block {
+.stats .percent-blocks {
   display: flex;
-}
-
-.stats .percent-block .percent-number span {
-  font-size: 60px;
-  line-height: 120px;
-  color: #3abba3;
-  font-weight: bold;
-}
-
-.stats .percent-block .percent-description span {
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Open Sans";
 }
 
 .stats .stats-button {
@@ -144,6 +140,7 @@ a {
   line-height: 50px;
   color: white;
   font-family: "Open Sans";
+  font-weight: bold;
   width: 180px;
   height: 52px;
   border-radius: 3px;
@@ -403,6 +400,10 @@ a {
   font-family: "Open Sans";
 }
 
+.cta .container .cta-form {
+  margin-top: 4rem;
+}
+
 .cta .container .cta-form .cta-form-flex {
   display: flex;
   justify-content: space-between;
@@ -524,15 +525,254 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
+  .header-navigation {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .hero .easiest-way-title h1 {
     font-size: 100px;
     line-height: 110px;
   }
-  .stats .percent-block .percent-description span {
-    font-size: 12px;
-    line-height: 12px;
+  .features .container .features-cards .features-card {
+    min-width: 1rem;
+    width: 23%;
+  }
+  .features .container .features-cards .features-card .features-card-description span {
+    font-size: 16px;
+  }
+  .blog .container .blog-title {
+    margin-top: 3rem;
+  }
+  .blog .container .blog-posts .post .post-content .post-title h4 {
+    font-size: 27px;
+  }
+  .cta .container .cta-form .cta-form-flex .form-group label {
+    font-size: 15px;
+  }
+  .cta .container .cta-form .cta-form-flex button {
+    margin-top: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header .header-navigation {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .header .header-navigation .header-autorization .autorization button {
+    margin-left: 0px;
+  }
+  .hero {
+    overflow: hidden;
+  }
+  .hero .easiest-way-title h1 {
+    font-size: 77px;
+    line-height: 100px;
+  }
+  .features {
+    overflow: hidden;
+  }
+  .features .container .features-cards {
+    margin-bottom: 4rem;
   }
   .features .container .features-cards .features-card {
-    min-width: 25%;
+    min-width: 1rem;
+    width: 23%;
+  }
+  .features .container .features-cards .features-card:last-child {
+    margin-right: 0px;
+  }
+  .blog {
+    overflow: hidden;
+  }
+  .blog .blog-title h2 {
+    font-size: 52px;
+  }
+  .blog .blog-posts .post .post-title-img {
+    height: 15rem;
+  }
+  .blog .blog-posts .post .post-content .post-title h4 {
+    font-size: 25px;
+  }
+  .cta {
+    overflow: hidden;
+    padding: 6rem 0rem;
+  }
+  .cta .container .cta-title h3 {
+    font-size: 50px;
+  }
+  .footer .footer-copyright .copyright-links {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .header .header-navigation {
+    display: none;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .header .header-navigation .header-autorization .autorization button {
+    margin-left: 0px;
+  }
+  .hero {
+    overflow: hidden;
+  }
+  .hero .easiest-way-title h1 {
+    font-size: 38px;
+    line-height: 1;
+  }
+  .features {
+    overflow: hidden;
+  }
+  .features .container .core-features span {
+    font-size: 15px;
+  }
+  .features .container .features-title h2 {
+    font-size: 43px;
+    line-height: 1;
+  }
+  .features .container .features-cards {
+    margin-bottom: 4rem;
+    flex-direction: column;
+  }
+  .features .container .features-cards .features-card {
+    height: 110px;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .features .container .features-cards .features-card:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .features .container .features-cards .features-card .features-card-icon {
+    display: inline-block;
+  }
+  .features .container .features-cards .features-card .features-card-description {
+    margin: 0 0 0 2rem;
+    display: inline-block;
+  }
+  .blog {
+    padding-top: 6rem;
+  }
+  .blog .container .blog-title h2 {
+    font-size: 27px;
+    line-height: 1;
+  }
+  .blog .container .blog-posts {
+    flex-direction: column;
+  }
+  .blog .container .blog-posts .post {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .blog .container .blog-posts .post:last-child {
+    margin: 0;
+  }
+  .blog .container .blog-posts .post .post-title-img {
+    height: auto;
+  }
+  .blog .container .blog-posts .post .post-content .post-title h4 {
+    font-size: 22px;
+  }
+  .blog .container .blog-posts .post .post-content .post-description {
+    font-size: 16px;
+  }
+  .cta {
+    overflow: hidden;
+    padding: 6rem 0rem;
+  }
+  .cta .container .cta-card .cta-title h3 {
+    font-size: 50px;
+    line-height: 1.1;
+  }
+  .cta .container .cta-card .cta-form .cta-form-flex {
+    flex-direction: column;
+  }
+  .cta .container .cta-card .cta-form .cta-form-flex .form-group {
+    width: 100%;
+  }
+  .cta .container .cta-card .cta-form .cta-form-flex .form-group input {
+    font-size: 19px;
+  }
+  .cta .container .cta-card .cta-form .cta-form-flex button {
+    width: 100%;
+  }
+  .footer {
+    padding: 14rem 2rem 12rem 2rem;
+  }
+  .footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .footer-container .footer-logo {
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+  .footer .footer-container .footer-pages {
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+  .footer .footer-container .footer-pages ul {
+    font-size: 20px;
+  }
+  .footer .footer-container .footer-pages ul li a {
+    font-size: 16px;
+    line-height: 2;
+  }
+  .footer .footer-container .footer-socials {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+  }
+  .footer .footer-container .footer-socials ul {
+    width: 75%;
+  }
+  .footer .footer-copyright {
+    flex-direction: column-reverse;
+  }
+  .footer .footer-copyright .copyright-links {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+  }
+  .footer .footer-copyright .copyright-links a {
+    font-size: 16px;
+  }
+  .footer .footer-copyright .copyright-company {
+    text-align: center;
+  }
+  .footer .footer-copyright .copyright-company span {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero .easiest-way-title h1 {
+    font-size: 36px;
+  }
+  .stats {
+    padding: 10rem 0rem;
+  }
+  .features .container .features-title {
+    padding-top: 2rem;
+  }
+  .features .container .features-title h2 {
+    font-size: 35px;
+  }
+  .features .container .features-description {
+    padding-bottom: 4rem;
+  }
+  .blog .container .blog-posts .post .post-content .post-article a {
+    font-size: 15px;
+  }
+  .blog .container .blog-posts .post .post-content .post-title h4 {
+    font-size: 20px;
+  }
+  .cta .container .cta-card .cta-title h3 {
+    font-size: 35px;
   }
 }

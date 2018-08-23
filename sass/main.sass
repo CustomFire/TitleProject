@@ -13,8 +13,15 @@ a
 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Header=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 .header-navigation
+
+
+
+.header-navigation
     height: 50px
-    padding-top: 18px
+    padding-top: 4rem
+    padding:
+        left: 4rem
+        right: 4rem
     display: flex
     justify-content: space-between
     align-items: center
@@ -33,6 +40,9 @@ a
                 font-family: "Varela Round"
     .header-pages
         height: 50px
+        display: flex
+        justify-content: space-around
+        width: 60%
         .pages
             font-size: 14px
             line-height: 50px
@@ -40,7 +50,7 @@ a
             font-weight: bold
             display: flex
             justify-content: space-between
-            width: 375px
+            width: 50%
 
     .header-autorization
         .autorization
@@ -72,6 +82,7 @@ a
             color: rgb(43,47,58)
             span
                 font-size: inherit
+                color: #005bcf
     .get-started
         .get-started-for-free
             font-size: 14px
@@ -96,21 +107,11 @@ a
     padding: 12rem 0rem
     .did-you-know
         text-align: center
-        font-size: 30px
-        line-height: 70px
-    .percent-block
+        h3
+            font-size: 30px
+            line-height: 70px
+    .percent-blocks
         display: flex
-        .percent-number
-            span
-                font-size: 60px
-                line-height: 120px
-                color: rgb(58,187,163)
-                font-weight: bold
-        .percent-description
-            span
-                font-size: 16px
-                line-height: 24px
-                font-family: "Open Sans"
     .stats-button
         text-align: center
         font-size: 16px
@@ -120,6 +121,7 @@ a
             line-height: 50px
             color: rgb(255,255,255)
             font-family: "Open Sans"
+            font-weight: bold
             width: 180px
             height: 52px
             border-radius: 3px
@@ -329,6 +331,7 @@ a
                 line-height: 30px
                 font-family: "Open Sans"
         .cta-form
+            margin-top: 4rem
             .cta-form-flex
                 display: flex
                 justify-content: space-between
@@ -422,19 +425,272 @@ a
                     min-width: 26%
 
 @media screen and (max-width: 1024px)
+    .header-navigation
+        padding:
+            left: 0px
+            right: 0px
     .hero
         .easiest-way-title
             h1
                 font-size: 100px
                 line-height: 110px
-    .stats
-        .percent-block
-            .percent-description
-                span
-                    font-size: 12px
-                    line-height: 12px
     .features
         .container
             .features-cards
                 .features-card
-                    min-width: 25%
+                    min-width: 1rem
+                    width: 23%
+                    .features-card-description
+                        span
+                            font-size: 16px
+    .blog
+        .container
+            .blog-title
+                margin-top: 3rem
+            .blog-posts
+                .post
+                    .post-content
+                        .post-title
+                            h4
+                                font-size: 27px
+    .cta
+        .container
+            .cta-form
+                .cta-form-flex
+                    .form-group
+                        label
+                            font-size: 15px
+                    button
+                        margin-top: 2.6rem
+
+@media screen and (max-width: 768px)
+    
+    .header
+        .header-navigation
+            padding:
+                left: 0px
+                right: 0px
+            .header-autorization
+                .autorization
+                    button
+                        margin-left: 0px
+                        
+
+    .hero
+        overflow: hidden
+        .easiest-way-title
+            h1
+                font-size: 77px
+                line-height: 100px
+
+    .features
+        overflow: hidden
+        .container
+            .features-cards
+                margin-bottom: 4rem
+                .features-card
+                    min-width: 1rem
+                    width: 23%
+                    &:last-child
+                        margin-right: 0px
+
+    .blog
+        overflow: hidden
+        .blog-title
+            h2
+                font-size: 52px
+        .blog-posts
+            .post
+                .post-title-img
+                    height: 15rem
+                .post-content
+                    .post-title
+                        h4
+                            font-size: 25px
+    
+    .cta
+        overflow: hidden
+        padding: 6rem 0rem
+        .container
+            .cta-title
+                h3
+                    font-size: 50px
+
+    .footer
+        .footer-copyright
+            .copyright-links
+                width: 30%
+
+@media screen and (max-width: 414px)
+
+    .header
+        .header-navigation
+            display: none
+            padding:
+                left: 0px
+                right: 0px
+            .header-autorization
+                .autorization
+                    button
+                        margin-left: 0px
+
+    .hero
+        overflow: hidden
+        .easiest-way-title
+            h1
+                font-size: 38px
+                line-height: 1
+
+    .stats
+        .did-you-know
+            h3
+
+
+    .features
+        overflow: hidden
+        .container
+            .core-features
+                span
+                    font-size: 15px
+            .features-title
+                h2
+                    font-size: 43px
+                    line-height: 1
+            .features-cards
+                margin-bottom: 4rem
+                flex-direction: column
+                .features-card
+                    height: 110px
+                    margin-bottom: 3rem
+                    display: flex
+                    align-items: center
+                    width: 100%
+                    &:last-child
+                        margin-right: 0
+                        margin-bottom: 0
+                    .features-card-icon
+                        display: inline-block
+                    .features-card-description
+                        margin: 0 0 0 2rem
+                        display: inline-block
+
+    .blog
+        padding-top: 6rem
+        .container
+            .blog-title
+                h2
+                    font-size: 27px
+                    line-height: 1
+            .blog-posts
+                flex-direction: column
+                .post
+                    margin-bottom: 2rem
+                    width: 100%
+                    &:last-child
+                        margin: 0
+                    .post-title-img
+                        height: auto
+                    .post-content
+                        .post-title
+                            h4
+                                font-size: 22px
+                        .post-description
+                            font-size: 16px
+    
+    .cta
+        overflow: hidden
+        padding: 6rem 0rem
+        .container
+            .cta-card
+                .cta-title
+                    h3
+                        font-size: 50px
+                        line-height: 1.1
+                .cta-form
+                    .cta-form-flex
+                        flex-direction: column
+                        .form-group
+                            width: 100%
+                            input
+                                font-size: 19px
+                        button
+                            width: 100%
+
+    .footer .footer-container .footer-pages ul li a
+
+    .footer
+        padding: 14rem 2rem 12rem 2rem
+        .footer-container
+            flex-direction: column
+            text-align: center
+            .footer-logo
+                width: 100%
+                margin-bottom: 6rem
+            .footer-pages
+                width: 100%
+                margin-bottom: 6rem
+                ul
+                    font-size: 20px
+                    li
+                        a
+                            font-size: 16px
+                            line-height: 2
+
+            .footer-socials
+                width: 100%
+                display: flex
+                justify-content: space-around
+                padding-bottom: 4rem
+                ul
+                    width: 75%
+                    li
+
+                
+
+        .footer-copyright
+            flex-direction: column-reverse
+            .copyright-links
+                width: 100%
+                justify-content: space-around
+                margin-bottom: 4rem
+                a
+                    font-size: 16px
+            .copyright-company
+                text-align: center
+                span
+                    font-size: 13px
+
+@media screen and (max-width: 375px)
+    .hero
+        .easiest-way-title
+            h1
+                font-size: 36px
+
+    .stats
+        padding: 10rem 0rem
+
+    .features
+        .container
+            .features-title
+                padding-top: 2rem
+                h2
+                    font-size: 35px
+            .features-description
+                padding-bottom: 4rem
+    .blog
+        .container
+            .blog-posts
+                .post
+                    .post-content
+                        .post-article
+                            a
+                                font-size: 15px
+                        .post-title
+                            h4
+                                font-size: 20px
+    .cta
+        .container
+            .cta-card
+                .cta-title
+                    h3
+                        font-size: 35px
