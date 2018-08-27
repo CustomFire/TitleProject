@@ -16,10 +16,10 @@
         font-family: 'Plaak';
     }
     </style>
-    <title>Document</title>
+    <title>WeWantYou</title>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="swap-anchor">
         <div class="container-fluid">
             <div class="header-navigation">
                 <div class="header-logo">
@@ -34,32 +34,8 @@
                     <div class="pages">
                         <a href="">Features</a>
                         <a href="">Pricing</a>
-                        <div class="dropdown show">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Resources
-                            </a>
-                          
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <ul>
-                                    <li class="dropdowm-item">
-                                        <a href="#" class="drop-link">
-                                            SHO
-                                        </a>
-                                    </li>
-                                    <li class="dropdowm-item">
-                                        <a href="#" class="drop-link">
-                                            SHO1
-                                        </a>
-                                    </li>
-                                    <li class="dropdowm-item">
-                                        <a href="#" class="drop-link">
-                                            SHO2
-                                        </a>
-                                    </li>
-                              </ul>
-                            </div>
-                        </div>
-                        <a href="">Blog</a> 
+                        <a href="">Blog</a>
+                        <a href="">Contact</a>
                     </div>
                 </div>
                 <div class="header-autorization">
@@ -68,6 +44,42 @@
                         <button id="sign-up">Sign Up</button>
                     </div>
                 </div>
+            </div>
+            <div class="mobile-header">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <div class="header-logo-img">
+                            <img src="../assets/icons/header-logo.svg" alt="">
+                        </div>
+                        <div class="header-logo-name">
+                            <span>wewant</span>you
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class=""><a href="">Features</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="">Log In</a>
+                        </li>
+                        <li>
+                            <button id="sign-up">Sign Up</button>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
             </div>
         </div>
     </div>
@@ -444,6 +456,11 @@
                         </a>
                     </li>
                 </ul>
+                <div class="swap-up">
+                    <a href="#swap-anchor">
+                        <img src="../assets/icons/arrow.svg" alt="">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="footer-copyright">

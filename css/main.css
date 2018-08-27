@@ -5,9 +5,7 @@
 }
 
 body {
-  background-image: url(../assets/main_background.png);
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(45deg, #e5ebef 0%, #ffffff 100%);
 }
 
 a {
@@ -64,10 +62,6 @@ a {
   color: #2b2f3a;
 }
 
-.header .header-navigation .header-pages .pages .dropdown-menu ul {
-  list-style-type: none;
-}
-
 .header .header-navigation .header-pages .pages > a {
   color: #2b2f3a;
   position: relative;
@@ -102,6 +96,10 @@ a {
   font-family: "Open Sans";
   font-weight: bold;
   text-align: center;
+}
+
+.header .mobile-header {
+  display: none;
 }
 
 .hero {
@@ -194,7 +192,7 @@ a {
 
 .stats .percent-blocks .percent-block .percent-text .percent-symbol span {
   font-size: 48px;
-  line-height: 0.8;
+  line-height: 0.2;
 }
 
 .stats .percent-blocks .percent-block .percent-text .percent-description {
@@ -350,7 +348,7 @@ a {
 }
 
 .blog .blog-container .blog-title {
-  width: 65%;
+  width: 72%;
 }
 
 .blog .blog-container .blog-title h2 {
@@ -378,7 +376,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 25rem;
+  height: 20rem;
   border-radius: 3px;
   box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
 }
@@ -492,7 +490,7 @@ a {
 
 .cta .cta-container {
   width: 90%;
-  padding: 10rem 0;
+  padding: 7rem 0;
   margin: 0 auto;
   background-image: linear-gradient(45deg, #005bcf 0%, rgba(13, 110, 234, 0.85098) 100%);
   color: #ffffff;
@@ -508,6 +506,10 @@ a {
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans";
+}
+
+.cta .cta-container .cta-form {
+  margin-top: 4rem;
 }
 
 .cta .cta-container .cta-form .cta-form-flex {
@@ -589,6 +591,9 @@ a {
 }
 
 .footer .footer-container .footer-socials {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   width: 15%;
 }
 
@@ -603,6 +608,21 @@ a {
 
 .footer .footer-container .footer-socials ul li {
   display: inline-block;
+}
+
+.footer .footer-container .footer-socials .swap-up {
+  margin-left: auto;
+}
+
+.footer .footer-container .footer-socials .swap-up a {
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
 }
 
 .footer .footer-copyright {
@@ -664,11 +684,15 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .header .header-navigation .header-pages {
-    display: none;
+  .header .header-navigation {
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
-  .header .header-navigation .header-autorization {
-    display: none;
+  .header .header-navigation .header-pages {
+    width: 50%;
+  }
+  .header .header-navigation .header-pages .pages {
+    width: 80%;
   }
   .hero .easiest-way-title h1 {
     font-size: 77px;
@@ -749,6 +773,60 @@ a {
 }
 
 @media screen and (max-width: 415px) {
+  .header .header-navigation {
+    display: none;
+  }
+  .header .mobile-header {
+    display: block;
+  }
+  .header .mobile-header .navbar-header button span {
+    color: #000000;
+    background-color: #000000;
+  }
+  .header .mobile-header .navbar-header .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  .header .mobile-header .navbar-header .navbar-brand .header-logo-name {
+    color: #005bcf;
+    font-size: 18px;
+    line-height: 50px;
+    font-family: "Varela Round";
+  }
+  .header .mobile-header .navbar-header .navbar-brand .header-logo-name span {
+    font-size: 18px;
+    line-height: 50px;
+    color: #2b2f3a;
+    font-family: "Varela Round";
+  }
+  .header .mobile-header .navbar-header .icon-bar {
+    height: 4px;
+    width: 35px;
+  }
+  .header .mobile-header .navbar-collapse {
+    text-align: center;
+  }
+  .header .mobile-header .navbar-collapse .navbar-nav a {
+    font-size: 18px;
+    line-height: 50px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #2b2f3a;
+  }
+  .header .mobile-header .navbar-collapse .navbar-right button {
+    width: 140px;
+    height: 52px;
+    margin-top: 2rem;
+    border-radius: 3px;
+    background-color: rgba(58, 187, 163, 0);
+    border: 2px solid #39bba3;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #3abba3;
+    font-family: "Open Sans";
+    font-weight: bold;
+    text-align: center;
+  }
   .hero .easiest-way-title h1 {
     font-size: 40px;
   }
@@ -811,6 +889,16 @@ a {
   }
   .footer .footer-container .footer-socials {
     width: 75%;
+  }
+  .footer .footer-container .footer-socials ul li img {
+    height: 25px;
+  }
+  .footer .footer-container .footer-socials .swap-up {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .footer .footer-container .footer-socials .swap-up a {
+    width: auto;
   }
   .footer .footer-copyright {
     flex-direction: column-reverse;

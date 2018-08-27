@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round')
+*
+    font-family: 'Varela Round', sans-serif
+    font-size: 14px
+body
+    background-image: linear-gradient(45deg, #e5ebef 0%, #ffffff 100%)
+
+    
+.blog
+    padding-top: 12rem
+    .blog-container
+        margin: 0 4rem
+        .blog-title
+            h2
+                font-size: 60px
+                line-height: 60px
+                color: rgb(43,47,58)
+                font-family: "Varela Round"
+            span
+                font-size: 60px
+                line-height: 60px
+                color: #005bcf
+                font-family: "Varela Round"
+        .blog-pre-posts
+            margin-top: 4rem
+            margin-bottom: 6rem
+            width: 25%
+            span
+                font-size: 18px
+                line-height: 30px
+                color: rgb(43,47,58)
+                font-family: "Open Sans"
+        .blog-posts
+            .post
+                .post-container
+                    padding: 0 1rem
+                    .post-title-img
+                        overflow: hidden
+                        position: relative
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        height: 20rem
+                        border-radius: 3px
+                        box-shadow: 0px 15px 50px rgba(0,0,0,0.1)
+                        img
+                            width: 100%
+                            height: auto
+                            position: relative
+                        &:after
+                            content: ""
+                            position: absolute
+                            width: 100%
+                            height: 100%
+                            background-color: #39bba300
+                    .post-content
+                        padding: 2rem
+                        .post-label
+                            border-radius: 3px
+                            background-color: #39bba3
+                            display: inline-block
+                            width: 44px
+                            text-align: center
+                            span
+                                font-size: 9px
+                                color: rgb(255,255,255)
+                                font-family: "Open Sans"
+                                font-weight: bold
+                        .post-date
+                            display: inline-block
+                            span
+                                font-size: 12px
+                                letter-spacing: 0px
+                                color: rgb(43,47,58)
+                                font-family: "Open Sans"
+                                font-weight: 300
+                        .post-title
+                            h4
+                                font-size: 22px
+                                line-height: 30px
+                                color: rgb(43,47,58)
+                                font-family: "Open Sans"
+                                font-weight: bold
+                        .post-description
+                            span
+                                font-size: 15px
+                                line-height: 24px
+                                color: #888d94
+                                font-family: "Open Sans"
+                        .post-article
+                            a
+                                color: rgb(43,47,58)
+                                font-size: 14px
+                                letter-spacing: 0px
+                                line-height: 50px
+                                color: rgb(43,47,58)
+                                font-family: "Open Sans"
+                                font-weight: bold
+                    &:hover
+                        .post-title-img
+                            &:after
+                                background-color: #39bba390
+                        .post-article
+                            a
+                                text-decoration: none
+                                color: #3abba3

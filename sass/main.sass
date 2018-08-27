@@ -4,9 +4,7 @@
     font-size: 14px
 
 body
-    background-image: url(../assets/main_background.png)
-    background-size: cover
-    background-position: center
+    background-image: linear-gradient(45deg, #e5ebef 0%, #ffffff 100%)
 
 a
     cursor: pointer
@@ -48,9 +46,6 @@ a
                 justify-content: space-between
                 width: 50%
                 color: rgb(43,47,58)
-                .dropdown-menu
-                    ul
-                        list-style-type: none
                 >a
                     color: rgb(43,47,58)
                     position: relative
@@ -58,13 +53,13 @@ a
                         color: #005bcf
                         text-decoration: none
                         &:after
-                            content: "";
-                            position: absolute;
-                            bottom: 20%;
-                            left: 0;
-                            border: 1px solid;
-                            width: 100%;
-                            height: 3px;
+                            content: ""
+                            position: absolute
+                            bottom: 20%
+                            left: 0
+                            border: 1px solid
+                            width: 100%
+                            height: 3px
                             background-color: #005bcf
 
 
@@ -85,6 +80,9 @@ a
                     font-weight: bold
                     text-align: center
 
+
+    .mobile-header
+        display: none
 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Header=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Hero=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -102,13 +100,13 @@ a
                 color: #005bcf
                 position: relative
                 &:after
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    border: 1px solid;
-                    width: 100%;
-                    height: 10px;
+                    content: ""
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    border: 1px solid
+                    width: 100%
+                    height: 10px
                     background-color: #005bcf
     .get-started
         margin-top: 9rem
@@ -160,7 +158,7 @@ a
                 .percent-symbol
                     span
                         font-size: 48px
-                        line-height: 0.8
+                        line-height: 0.2
                 .percent-description
                     padding-left: 1rem
                     span
@@ -280,7 +278,7 @@ a
                 font-family: "Open Sans"
                 text-transform: uppercase
         .blog-title
-            width: 65%
+            width: 72%
             h2
                 margin-top: 0px
                 font-size: 60px
@@ -300,7 +298,7 @@ a
                     display: flex
                     justify-content: space-between
                     align-items: center
-                    height: 25rem
+                    height: 20rem
                     border-radius: 3px
                     box-shadow: 0px 15px 50px rgba(0,0,0,0.1)
                     img
@@ -391,7 +389,7 @@ a
     margin-bottom: 15rem
     .cta-container
         width: 90%
-        padding: 10rem 0
+        padding: 7rem 0
         margin: 0 auto
         background-image: linear-gradient(45deg, #005bcf 0%, rgba(13,110,234,0.8509803921568627) 100%)
         color: #ffffff
@@ -406,6 +404,7 @@ a
                 line-height: 30px
                 font-family: "Open Sans"
         .cta-form
+            margin-top: 4rem
             .cta-form-flex
                 display: flex
                 justify-content: space-between
@@ -465,6 +464,9 @@ a
                         font-size: 14px
                         color: #96989d
         .footer-socials
+            display: flex
+            justify-content: space-between
+            flex-direction: column
             width: 15%
             ul
                 display: flex
@@ -475,6 +477,17 @@ a
                 margin-bottom: 0px
                 li
                     display: inline-block
+            .swap-up
+                margin-left: auto
+                a
+                    height: 50px
+                    width: 50px
+                    background-color: #ffffff
+                    display: flex
+                    justify-content: space-around
+                    align-content: center
+                    border: 1px solid #ffffff
+                    border-radius: 3px
     .footer-copyright
         padding-top: 2rem
         display: flex
@@ -541,10 +554,12 @@ a
 @media screen and (max-width: 768px)
     .header
         .header-navigation
+            padding-left: 0rem
+            padding-right: 0rem
             .header-pages
-                display: none
-            .header-autorization
-                display: none
+                width: 50%
+                .pages
+                    width: 80%
     .hero
         .easiest-way-title
             h1
@@ -588,7 +603,7 @@ a
                 h2
                     font-size: 48px
             .blog-posts
-                margin-top: 5rem;
+                margin-top: 5rem
                 margin-bottom: 2rem
                 .post
                     .post-title-img
@@ -615,6 +630,55 @@ a
                 width: 28%
 
 @media screen and (max-width: 415px)
+    .header
+        .header-navigation
+            display: none
+        .mobile-header
+            display: block
+            .navbar-header
+                button
+                    span
+                        color: #000000
+                        background-color: #000000
+                .navbar-brand
+                    display: flex
+                    align-items: center
+                    .header-logo-name
+                        color: #005bcf
+                        font-size: 18px
+                        line-height: 50px
+                        font-family: "Varela Round"
+                        span
+                            font-size: 18px
+                            line-height: 50px
+                            color: rgb(43,47,58)
+                            font-family: "Varela Round"
+                .icon-bar
+                    height: 4px
+                    width: 35px
+            .navbar-collapse
+                text-align: center
+                .navbar-nav
+                    a
+                        font-size: 18px
+                        line-height: 50px
+                        font-family: "Open Sans"
+                        font-weight: bold
+                        color: rgb(43,47,58)
+                .navbar-right
+                    button
+                        width: 140px
+                        height: 52px
+                        margin-top: 2rem
+                        border-radius: 3px
+                        background-color: rgba(58,187,163,0)
+                        border: 2px solid #39bba3
+                        font-size: 16px
+                        letter-spacing: 0px
+                        color: rgb(58,187,163)
+                        font-family: "Open Sans"
+                        font-weight: bold
+                        text-align: center
     .hero
         .easiest-way-title
             h1
@@ -678,6 +742,16 @@ a
                 width: 100%
             .footer-socials
                 width: 75%
+            .footer-socials
+                ul
+                    li
+                        img
+                            height: 25px
+                .swap-up
+                    margin-top: 3rem
+                    width: 100%
+                    a
+                        width: auto
         .footer-copyright
             flex-direction: column-reverse
             align-items: center
