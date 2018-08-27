@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62" width="62" height="62">
+	<defs>
+		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0   0 0 0 0 0.357   0 0 0 0 0.812   0 0 0 1 0" /> </filter>
+		<image width="62" height="62" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAMAAABEH1h2AAAAaVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnbPKNAAAAI3RSTlP/AMTFw/ILDc9B0IKwf7IV8XcT7nnwUf6xTvxCs/1P7xTNgbgpPGoAAADASURBVHic7dbbDoIwDAbgFjbnRERR8czB939Ix4UBhjPruCGhTXaz9Eu6P70YALmwV3RtcyQV86Xyn1vku22TuTVJ+Ntnwye+fcnR+fMIMY7CuUAUwuZxNDyuO8fwQgyP646jGw3P0XF0/zlHF8w5umDO0QXzGUUnYUUavtevDF6DJvFN168NTmBL4mnXv4MUsj0cKDw/fvtPcM4BiwtctfL3t3vbrx5PeJVociyq8QfUp6oSW4510kiqlc27NvQDXCkSFtLxVXoAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="icon" style="filter: url(#flt1)" href="#img1" x="0" y="0" />
+</svg>
