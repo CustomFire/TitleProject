@@ -6,8 +6,8 @@ body
     background-image: linear-gradient(45deg, #e5ebef 0%, #ffffff 100%)
 
 .features
-    padding-top: 15rem
-    padding-bottom: 10rem
+    padding-top: 10rem
+    padding-bottom: 7rem
     .features-container
         width: 90%
         margin: 0 auto
@@ -32,16 +32,16 @@ body
                 color: rgb(43,47,58)
                 font-family: "Open Sans"
         .features-cards
+            .features-row
             .features-row, .last-row
                 margin-bottom: 2rem
                 display: flex
-                justify-content: space-between
                 .features-card
                     min-width: 23%
                     max-width: 23%
                     .features-title
                         padding: 2rem
-                        height: 18rem
+                        height: 16rem
                         border-radius: 3px
                         box-shadow: 0px 15px 50px rgba(0,0,0,0.1)
                         background-image: linear-gradient(45deg, #eff3f6 0%, #ffffff 100%)
@@ -54,7 +54,7 @@ body
                             align-items: center
                             height: 63px
                         .features-card-description
-                            width: 55%
+                            width: 65%
                             span
                                 font-size: 14px
                                 line-height: 18px
@@ -62,13 +62,19 @@ body
                                 font-family: "Open Sans"
                                 font-weight: bold
                     .features-content
-                        padding: 2rem
+                        padding: 1rem
                         span
                             font-size: 14px
                             line-height: 24px
                             color: rgb(43,47,58)
                             font-family: "Open Sans"
-
+            .features-row
+                justify-content: space-between
+            .last-row
+                justify-content: center
+                .features-card
+                    &:first-child
+                        margin-right: 3rem
         .see-pricing
             text-align: center
             span
@@ -83,6 +89,7 @@ body
                 color: rgb(43,47,58)
                 font-family: "Varela Round"
             a
+                cursor: pointer
                 font-size: 14px
                 letter-spacing: 0px
                 line-height: 50px
@@ -96,3 +103,122 @@ body
                     width: 30px
                     height: 10px
                     margin-left: 8px
+@media screen and (max-width: 1330px)
+    .features
+        .features-container
+            .features-cards
+                .features-row
+                    .features-card
+                        .features-title
+                            .features-card-description
+                                width: 65%
+@media screen and (max-width: 1024px)
+    .features
+        padding-top: 10rem
+        padding-bottom: 5rem
+        .features-container
+            .features-pre-cards
+                width: 60%
+            .features-cards
+                .features-row, .last-row
+                    .features-card
+                        .features-title
+                            .features-card-description
+                                width: 90%
+                        .features-content
+                            padding: 1rem
+                            span
+                                line-height: 1
+@media screen and (max-width: 768px)
+    .features
+        .features-container
+            .features-cards
+                .features-row
+                    display: block
+                    .features-card
+                        display: inline-block
+                        max-width: 46%
+
+                        &:nth-child(1), &:nth-child(3)
+                            margin-right: 7.4%
+                .last-row
+                    display: block
+                    .features-card
+                        display: inline-block
+                        max-width: 46%
+
+                        &:nth-child(1)
+                            margin-right: 7.4%
+@media screen and (max-width: 414px)
+    .features
+        .features-container
+            width: 100%
+            .features-title
+                h2
+                    font-size: 54px
+                span
+                    font-size: 54px
+            .features-pre-cards
+                width: 100%
+            .features-cards
+                .features-row, .last-row
+                    display: block
+                    margin-bottom: 1rem
+                    .features-card
+                        display: inline-block
+                        max-width: 100%
+                        &:nth-child(1), &:nth-child(3)
+                            margin-right: 0%
+                        .features-title
+                            .features-card-description
+                                span
+                                    font-size: 18px
+                        .features-content
+                            span
+                                font-size: 16px
+                .last-row
+                    display: block
+                    margin-bottom: 1rem
+                    .features-card
+                        display: inline-block
+                        max-width: 100%
+
+                        &:nth-child(1)
+                            margin-right: 0%
+                            margin-bottom: 1rem
+                        .features-title
+                            .features-card-description
+                                width: 100%
+            .see-pricing
+                padding-top: 1rem
+                h3
+                    font-size: 38px
+                span
+                    line-height: 1
+@media screen and (max-width: 375px)
+    .features
+        .features-container
+            .features-title
+                h2
+                    font-size: 54px
+                span
+                    font-size: 54px
+            .features-pre-cards
+                width: 100%
+            .features-cards
+                .features-row, .last-row
+                    display: block
+                    margin-bottom: 1rem
+                    .features-card
+                        display: inline-block
+                        max-width: 100%
+                        &:nth-child(1), &:nth-child(3)
+                            margin-right: 0%
+                        .features-title
+                            .features-card-description
+                                span
+                                    font-size: 18px
+                        .features-content
+                            span
+                                font-size: 16px
+

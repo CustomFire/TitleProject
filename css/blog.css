@@ -137,3 +137,71 @@ body {
   text-decoration: none;
   color: #3abba3;
 }
+
+@media screen and (max-width: 1024px) {
+  .blog {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+  .blog .blog-container .blog-pre-posts {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog .blog-container .blog-pre-posts {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .blog {
+    padding-top: 2rem;
+  }
+  .blog .blog-container {
+    margin: 0;
+  }
+  .blog .blog-container .blog-title h2 {
+    font-size: 47px;
+    line-height: 1;
+  }
+  .blog .blog-container .blog-title span {
+    font-size: 47px;
+    line-height: 1;
+  }
+  .blog .blog-container .blog-pre-posts {
+    width: 100%;
+  }
+  .blog .blog-container .blog-posts .post .post-container {
+    padding: 0;
+  }
+  .blog .blog-container .blog-posts .post .post-container .post-content .post-title h4 {
+    font-size: 20px;
+  }
+  .blog .blog-container .blog-posts .post .post-container .post-content .post-description {
+    font-size: 16px;
+  }
+  .blog .blog-container .blog-posts .post .post-container .post-content .post-article a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .blog .blog-container .blog-title h2 {
+    font-size: 45px;
+  }
+  .blog .blog-container .blog-title span {
+    font-size: 45px;
+  }
+  .blog .blog-container .blog-pre-posts span {
+    font-size: 17px;
+  }
+  .blog .blog-container .blog-posts .post .post-container .post-title-img {
+    height: 17rem;
+  }
+  .blog .blog-container .blog-posts .post .post-container .post-content {
+    padding: 1rem;
+  }
+}
