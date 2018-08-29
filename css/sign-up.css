@@ -1,30 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round");
-.main {
+.sign-up-modal-container {
+  z-index: 1;
+  display: none;
+  position: fixed;
   min-height: 100vh;
   width: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(45deg, #e5ebef 0%, #ffffff 100%);
 }
 
-.wwy-logo .sign-up-close {
+.sign-up-modal-container .wwy-logo .sign-up-close {
   padding-top: 2rem;
   text-align: right;
 }
 
-.wwy-logo .wwy-img {
+.sign-up-modal-container .wwy-logo .wwy-img {
   text-align: center;
 }
 
-.sign-up .sign-up-container {
+.sign-up-modal-container .sign-up .sign-up-container {
   margin: 0 auto;
   width: 75%;
 }
 
-.sign-up .sign-up-container .sign-up-title {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-title {
   margin-bottom: 3rem;
 }
 
-.sign-up .sign-up-container .sign-up-title h1 {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-title h1 {
   font-size: 5rem;
   line-height: 1;
   color: #2b2f3a;
@@ -32,7 +35,7 @@
   text-align: center;
 }
 
-.sign-up .sign-up-container .sign-up-form label {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form label {
   font-size: 13px;
   line-height: 3rem;
   color: #2b2f3a;
@@ -40,7 +43,7 @@
   margin-bottom: 0;
 }
 
-.sign-up .sign-up-container .sign-up-form input {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form input {
   height: 5rem;
   border-radius: 3px;
   background-color: #f3f5f7;
@@ -52,49 +55,63 @@
   font-weight: bold;
 }
 
-.sign-up .sign-up-container .sign-up-form input:focus {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form input:focus {
   color: #2b2f3a;
   background-color: #ffffff;
   border: 2px solid #005bcf;
 }
 
-.sign-up .sign-up-container .sign-up-form .first-flex-wrap, .sign-up .sign-up-container .sign-up-form .second-flex-wrap {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap {
   display: flex;
   justify-content: space-between;
 }
 
-.sign-up .sign-up-container .sign-up-form .first-flex-wrap > div, .sign-up .sign-up-container .sign-up-form .second-flex-wrap > div {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap > div, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap > div {
   width: 48%;
 }
 
-.sign-up .sign-up-container .sign-up-form .form-group {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .form-group {
   display: flex;
   flex-direction: column;
 }
 
-.sign-up .sign-up-container .sign-up-form .form-checkbox .form-group {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .form-checkbox .form-group {
   display: table;
 }
 
-.sign-up .sign-up-container .sign-up-form .form-checkbox .form-group label {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .form-checkbox .form-group label {
   display: table-cell;
   vertical-align: middle;
-  padding-left: 1rem;
 }
 
-.sign-up .sign-up-container .sign-up-form .form-checkbox .form-group label a {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .form-checkbox .form-group label a {
   color: #39bba3;
 }
 
-.sign-up .sign-up-container .sign-up-form .form-checkbox .form-group input {
-  width: 4rem;
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .form-checkbox .form-group label:before {
+  content: "";
+  display: inline-block;
   height: 4rem;
+  width: 4rem;
   border-radius: 3px;
   background-color: #ffffff;
   border: 1px solid rgba(43, 47, 58, 0.15);
+  vertical-align: middle;
+  margin-right: 1rem;
+  transition: 0.2s;
+  background-position: center;
 }
 
-.sign-up .sign-up-container .sign-up-form .sign-up-button button {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .form-checkbox .form-group input[type="checkbox"] {
+  display: none;
+}
+
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .form-checkbox .form-group input[type="checkbox"]:checked + label::before {
+  background-image: url("../assets/icons/check.svg");
+  background-repeat: no-repeat;
+}
+
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .sign-up-button button {
   height: 5rem;
   border: 1px solid #39bba3;
   border-radius: 3px;
@@ -108,11 +125,11 @@
   width: 100%;
 }
 
-.already-login {
+.sign-up-modal-container .already-login {
   text-align: center;
 }
 
-.already-login .already-login-question span {
+.sign-up-modal-container .already-login .already-login-question span {
   font-size: 24px;
   line-height: 60px;
   color: #8f9298;
@@ -120,7 +137,7 @@
   text-align: center;
 }
 
-.already-login .already-login-button {
+.sign-up-modal-container .already-login .already-login-button {
   width: 40%;
   height: 5rem;
   border-radius: 3px;
@@ -131,7 +148,7 @@
   margin: 0 auto;
 }
 
-.already-login .already-login-button a {
+.sign-up-modal-container .already-login .already-login-button a {
   font-size: 16px;
   letter-spacing: 0px;
   line-height: 50px;
@@ -140,31 +157,44 @@
   font-weight: bold;
 }
 
-.already-login .already-login-button a:hover {
+.sign-up-modal-container .already-login .already-login-button a:hover {
   text-decoration: none;
 }
 
 @media screen and (max-width: 650px) {
-  .sign-up .sign-up-container .sign-up-form .first-flex-wrap, .sign-up .sign-up-container .sign-up-form .second-flex-wrap {
-    flex-direction: column;
+  .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .form-checkbox .form-group label:before {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
   }
-  .sign-up .sign-up-container .sign-up-form .first-flex-wrap > div, .sign-up .sign-up-container .sign-up-form .second-flex-wrap > div {
+  .sign-up-modal-container {
+    padding-bottom: 5rem;
+    position: relative;
+    overflow-y: hidden;
+  }
+  .sign-up-modal-container .sign-up .sign-up-container {
     width: 100%;
   }
-  .sign-up .sign-up-container .sign-up-form .form-checkbox .form-group input {
+  .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap {
+    flex-direction: column;
+  }
+  .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap > div, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap > div {
+    width: 100%;
+  }
+  .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .form-checkbox .form-group input {
     height: 2rem;
     width: 2rem;
   }
 }
 
 @media screen and (max-width: 414px) {
-  .already-login .already-login-button {
+  .sign-up-modal-container .already-login .already-login-button {
     width: 75%;
   }
 }
 
 @media screen and (max-width: 337px) {
-  .already-login .already-login-question span {
+  .sign-up-modal-container .already-login .already-login-question span {
     font-size: 2rem;
     line-height: 4rem;
   }

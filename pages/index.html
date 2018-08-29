@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sign-up.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
     @font-face{
@@ -19,6 +20,86 @@
     <title>WeWantYou</title>
 </head>
 <body>
+    <div class="sign-up-modal-container" id="myModal">
+        <div class="wwy-logo">
+            <div class="container">
+                <div class="sign-up-close">
+                    <a href="">
+                        <img src="../assets/icons/close.svg" alt="">
+                    </a>
+                </div>
+                <div class="wwy-img">
+                    <img src="../assets/icons/sign-up-logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sign-up">
+            <div class="container">
+                <div class="sign-up-container">
+                    <div class="sign-up-title">
+                        <h1>
+                            Sign Up
+                        </h1>
+                    </div>
+                    <div class="sign-up-form">
+                        <form action="">
+                            <div class="first-flex-wrap">
+                                <div class="form-company">
+                                    <div class="form-group">
+                                        <label for="comp-name">Company-name*</label>
+                                        <input type="text" id="comp-name">
+                                    </div>
+                                </div>
+                                <div class="form-email">
+                                    <div class="form-group">
+                                        <label for="email">Email*</label>
+                                        <input type="email" id="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-flex-wrap">
+                                <div class="form-create-pass">
+                                    <div class="form-group">
+                                        <label for="create-pass">Create Pssword*</label>
+                                        <input type="password" id="create-pass">
+                                    </div>
+                                </div>
+                                <div class="form-confirm-pass">
+                                    <div class="form-group">
+                                        <label for="confirm-pass">Confirm Password*</label>
+                                        <input type="password" id="confirm-pass">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-checkbox">
+                                <div class="form-group">
+                                    <input type="checkbox" id="custom-checkbox" unchecked>
+                                    <label for="custom-checkbox">
+                                        I have read and agree to WeWantYou <a href="#">Terms of Use</a>.
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="sign-up-button">
+                            <button type="submit">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="already-login">
+            <div class="container">
+                <div class="already-login-question">
+                    <span>
+                        Already have an account? Login
+                    </span>
+                </div>
+                <div class="already-login-button">
+                    <a href="">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="header" id="swap-anchor">
         <div class="container-fluid">
             <div class="header-navigation">
@@ -76,7 +157,7 @@
                             <a href="">Log In</a>
                         </li>
                         <li>
-                            <button id="sign-up">Sign Up</button>
+                            <button id="sign-up-mobile">Sign Up</button>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -202,7 +283,7 @@
                             <div class="features-cards">
                                 <div class="features-card">
                                     <div class="features-card-icon">
-                                        <img src="../assets/icons/features-card-1.png" alt="">
+                                        <img src="../assets/icons/features-card-1.svg" alt="">
                                     </div>
                                     <div class="features-card-description">
                                         <span>
@@ -474,7 +555,27 @@
         </div>
     </div>
 
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("sign-up");
+        var btnMobile = document.getElementById("sign-up-mobile");
+        var closer = document.getElementsByClassName("sing-up-close")[0];  
 
+
+        btn.onclick = function(){
+            modal.style.display = "block";
+        }
+
+        btnMobile.onclick = function(){
+            modal.style.display = "block";
+            document.getElementsByClassName("main")[0].style.display = "none";
+            document.getElementsByClassName("header")[0].style.display = "none";
+        }
+    
+        closer.onclick = function (){
+            modal.style.display = "none";
+        }
+    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
