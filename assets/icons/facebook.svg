@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 13" width="8" height="13">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="10" height="16">
 	<style>
 		tspan { white-space:pre }
-		.shp0 { opacity: 0.502;fill: #ffffff } 
+		.shp0 { fill: #ffffff } 
 	</style>
-	<path id="facebook" class="shp0" d="M6,2.99h2v-2h-2c-2.35,0.08 -2.96,1.61 -3,3v-1v2h-2v2h2v6h2v-6h2l1,-2h-3v-1c0,-0.47 0.56,-1 1,-1z" />
+	<path id="facebook" class="shp0" d="M7.75,3.72h2.25v-2.73h-2.25c-3.52,0.11 -4.44,2.2 -4.5,4.09v-1.37v2.73h-2.25v2.73h2.25v6.82h3v-6.82h2.25l1.5,-2.73h-3.75v-1.36c0,-0.64 0.83,-1.37 1.5,-1.37z" />
 </svg>

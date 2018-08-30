@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round");
+* {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 14px;
+}
+
+.single-blog {
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+  width: 68%;
+  margin: 0 auto;
+}
+
+.single-blog .blog-title {
+  padding: 1rem 0;
+}
+
+.single-blog .blog-title h2 {
+  font-size: 28px;
+  line-height: 30px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.single-blog .blog-share-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single-blog .blog-share-date .date .share-date-label {
+  border-radius: 3px;
+  background-color: #39bba3;
+  display: inline-block;
+  width: 44px;
+  text-align: center;
+}
+
+.single-blog .blog-share-date .date .share-date-label span {
+  font-size: 9px;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.single-blog .blog-share-date .date .share-date {
+  display: inline-block;
+}
+
+.single-blog .blog-share-date .date .share-date span {
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+.single-blog .blog-share-date .share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 23%;
+}
+
+.single-blog .blog-share-date .share .share-article span {
+  font-size: 11px;
+  line-height: 72px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.single-blog .blog-share-date .share .facebook {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #3b5997;
+}
+
+.single-blog .blog-share-date .share .twitter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #00abed;
+}
+
+.single-blog .blog-title-img {
+  margin: 3rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  height: 42rem;
+}
+
+.single-blog .blog-title-img img {
+  width: 100%;
+  height: auto;
+}
+
+.single-blog .blog-description {
+  padding-top: 1rem;
+}
+
+.single-blog .blog-description .blog-main-description {
+  padding-bottom: 3rem;
+}
+
+.single-blog .blog-description .blog-main-description span {
+  font-size: 18px;
+  line-height: 30px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.single-blog .blog-description .blog-text {
+  padding-bottom: 3rem;
+}
+
+.single-blog .blog-description .blog-text span {
+  font-size: 18px;
+  line-height: 30px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+}
+
+.single-blog .blog-description .blog-question {
+  padding-bottom: 1rem;
+}
+
+.single-blog .blog-description .blog-question span {
+  font-size: 18px;
+  line-height: 36px;
+  color: #005bcf;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .single-blog {
+    width: 83%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .single-blog {
+    width: 90%;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  .single-blog .blog-share-date .share {
+    width: 32%;
+  }
+  .single-blog .blog-title-img {
+    margin: 1rem 0rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .single-blog {
+    width: 100%;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+  }
+  .single-blog .blog-title h2 {
+    font-size: 27px;
+  }
+  .single-blog .blog-share-date .share {
+    width: 47%;
+  }
+  .single-blog .blog-title-img {
+    height: 25rem;
+  }
+  .single-blog .blog-description .blog-main-description {
+    padding-bottom: 2rem;
+  }
+  .single-blog .blog-description .blog-main-description span {
+    line-height: 1.4;
+  }
+  .single-blog .blog-description .blog-text span {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .single-blog .blog-title h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .single-blog .blog-title-img {
+    height: 18rem;
+  }
+  .single-blog .blog-share-date .share .facebook, .single-blog .blog-share-date .share .twitter {
+    width: 2rem;
+    height: 2rem;
+  }
+  .single-blog .blog-description .blog-main-description span {
+    font-size: 16px;
+  }
+  .single-blog .blog-description .blog-text {
+    padding-bottom: 2rem;
+  }
+  .single-blog .blog-description .blog-text span {
+    font-size: 14px;
+  }
+}

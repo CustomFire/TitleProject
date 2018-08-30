@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round')
+*
+    font-family: 'Varela Round', sans-serif
+    font-size: 14px
+    
+.single-blog
+    padding-top: 6rem
+    padding-bottom: 12rem
+    width: 68%
+    margin: 0 auto
+    .blog-title
+        padding: 1rem 0
+        h2
+            font-size: 28px
+            line-height: 30px
+            color: rgb(43,47,58)
+            font-family: "Open Sans"
+            font-weight: bold
+    .blog-share-date
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .date
+            .share-date-label
+                border-radius: 3px
+                background-color: #39bba3
+                display: inline-block
+                width: 44px
+                text-align: center
+                span
+                    font-size: 9px
+                    color: rgb(255,255,255)
+                    font-family: "Open Sans"
+                    font-weight: bold
+            .share-date
+                display: inline-block
+                span
+                    font-size: 12px
+                    letter-spacing: 0px
+                    color: rgb(43,47,58)
+                    font-family: "Open Sans"
+                    font-weight: 300
+        .share
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 23%
+            .share-article
+                span
+                    font-size: 11px
+                    line-height: 72px
+                    color: rgb(43,47,58)
+                    font-family: "Open Sans"
+                    font-weight: bold
+            .facebook
+                display: flex
+                justify-content: space-around
+                align-items: center
+                width: 40px
+                height: 40px
+                border-radius: 3px
+                background-color: #3b5997
+                a
+                    img
+            .twitter
+                display: flex
+                justify-content: space-around
+                align-items: center
+                width: 40px
+                height: 40px
+                border-radius: 3px
+                background-color: #00abed
+                a
+                    img
+    .blog-title-img
+        margin: 3rem 0rem 
+        display: flex
+        align-items: center
+        justify-content: space-around
+        overflow: hidden
+        height: 42rem
+        img
+            width: 100%
+            height: auto
+    .blog-description
+        padding-top: 1rem
+        .blog-main-description
+            padding-bottom: 3rem
+            span
+                font-size: 18px
+                line-height: 30px
+                color: rgb(43,47,58)
+                font-family: "Open Sans"
+                font-weight: bold
+        .blog-text
+            padding-bottom: 3rem
+            span
+                font-size: 18px
+                line-height: 30px
+                color: rgb(43,47,58)
+                font-family: "Open Sans"
+        .blog-question
+            padding-bottom: 1rem
+            span
+                font-size: 18px
+                line-height: 36px
+                color: rgb(0,91,207)
+                font-family: "Open Sans"
+                font-weight: bold
+@media screen and (max-width: 1024px)
+    .single-blog
+        width: 83%
+
+@media screen and (max-width: 768px)
+    .single-blog
+        width: 90%
+        padding-top: 2rem
+        padding-bottom: 4rem
+        .blog-share-date
+            .share
+                width: 32%
+        .blog-title-img
+            margin: 1rem 0rem
+
+@media screen and (max-width: 414px)
+    .single-blog
+        width: 100%
+        padding-top: 0rem
+        padding-bottom: 2rem
+        .blog-title
+            h2
+                font-size: 27px
+        .blog-share-date
+            .share
+                width: 47%
+        .blog-title-img
+            height: 25rem
+        .blog-description
+            .blog-main-description
+                padding-bottom: 2rem
+                span
+                    line-height: 1.4
+            .blog-text
+                span
+                    font-size: 16px
+                    line-height: 1.5
+
+@media screen and (max-width: 375px)
+    .single-blog
+        .blog-title
+            h2
+                font-size: 24px
+    
+@media screen and (max-width: 320px)
+    .single-blog
+        .blog-title-img
+            height: 18rem
+        .blog-share-date
+            .share
+                .facebook, .twitter
+                    width: 2rem
+                    height: 2rem
+        .blog-description
+            .blog-main-description
+                span
+                    font-size: 16px
+            .blog-text
+                padding-bottom: 2rem
+                span
+                    font-size: 14px
+        
