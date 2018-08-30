@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round')
+*
+    font-family: 'Varela Round', sans-serif
+    font-size: 14px
+
+body
+    background-image: linear-gradient(45deg, #e5ebef 0%, #ffffff 100%)
+
+a
+    cursor: pointer
+
+
+.footer
+    background-color: #2d313c
+    padding: 15rem 0
+    .footer-container
+        display: flex
+        width: 90%
+        margin: 0 auto
+        justify-content: space-between
+        .footer-logo
+            width: 15%
+        .footer-pages
+            display: flex
+            justify-content: space-between
+            width: 50%
+            ul
+                padding: 0px
+                font-size: 16px
+                line-height: 36px
+                color: rgb(255,255,255)
+                font-family: "Open Sans"
+                font-weight: bold
+                color: #ffffff
+                list-style: none
+                li
+                    line-height: 30px
+                    a
+                        font-size: 14px
+                        color: #96989d
+        .footer-socials
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            width: 15%
+            ul
+                display: flex
+                justify-content: space-between
+                width: 100%
+                padding: 0px
+                list-style: none
+                margin-bottom: 0px
+                li
+                    display: inline-block
+            .swap-up
+                margin-left: auto
+                a
+                    height: 50px
+                    width: 50px
+                    background-color: #ffffff
+                    display: flex
+                    justify-content: space-around
+                    align-content: center
+                    border: 1px solid #ffffff
+                    border-radius: 3px
+    .footer-copyright
+        padding-top: 2rem
+        display: flex
+        justify-content: space-between
+        width: 90%
+        margin: 0 auto
+        letter-spacing: 0px
+        line-height: 36px
+        font-family: "Open Sans"
+        .copyright-company
+            span
+                font-size: 12px
+                color: #96989d
+        .copyright-links
+            display: flex
+            justify-content: space-between
+            width: 20%
+            a
+                font-size: 12px
+                color: #96989d
+
+@media screen and (max-width: 768px)
+        .footer
+        padding: 10rem 0
+        .footer-copyright
+            .copyright-links
+                width: 28%
+
+@media screen and (max-width: 415px)
+    .footer
+        .footer-container
+            flex-direction: column
+            align-items: center
+            .footer-logo
+                width: auto
+            .footer-pages
+                padding: 5rem 0
+                width: 100%
+            .footer-socials
+                width: 75%
+            .footer-socials
+                ul
+                    li
+                        img
+                            height: 25px
+                .swap-up
+                    margin-top: 3rem
+                    width: 100%
+                    a
+                        width: auto
+        .footer-copyright
+            flex-direction: column-reverse
+            align-items: center
+            .copyright-links
+                padding: 3rem
+                width: 75%

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round')
+*
+    font-family: 'Varela Round', sans-serif
+    font-size: 14px
+
+body
+    background-image: linear-gradient(45deg, #e5ebef 0%, #ffffff 100%)
+
+a
+    cursor: pointer
+
+.header
+    padding: 2rem 0
+    .header-navigation
+        height: 50px
+        padding:
+            left: 4rem
+            right: 4rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .header-logo
+            display: flex
+            align-items: center
+            .header-logo-name
+                color: #005bcf
+                font-size: 18px
+                line-height: 50px
+                font-family: "Varela Round"
+                span
+                    font-size: 18px
+                    line-height: 50px
+                    color: rgb(43,47,58)
+                    font-family: "Varela Round"
+        .header-pages
+            height: 50px
+            display: flex
+            justify-content: space-around
+            width: 60%
+            .pages
+                font-size: 14px
+                line-height: 50px
+                font-family: "Open Sans"
+                font-weight: bold
+                display: flex
+                justify-content: space-between
+                width: 50%
+                color: rgb(43,47,58)
+                >a
+                    color: rgb(43,47,58)
+                    position: relative
+                    &:hover
+                        color: #005bcf
+                        text-decoration: none
+                        &:after
+                            content: ""
+                            position: absolute
+                            bottom: 20%
+                            left: 0
+                            border: 1px solid
+                            width: 100%
+                            height: 3px
+                            background-color: #005bcf
+
+
+
+        .header-autorization
+            .autorization
+                button
+                    width: 140px
+                    height: 52px
+                    margin-left: 30px
+                    border-radius: 3px
+                    background-color: rgba(58,187,163,0)
+                    border: 2px solid #39bba3
+                    font-size: 16px
+                    letter-spacing: 0px
+                    color: rgb(58,187,163)
+                    font-family: "Open Sans"
+                    font-weight: bold
+                    text-align: center
+
+
+    .mobile-header
+        display: none
+
+@media screen and (max-width: 1024px)
+    .header
+        .header-navigation
+            .header-autorization
+                .autorization
+                    button
+                        margin-left: 1rem
+    
+@media screen and (max-width: 768px)
+    .header
+        .header-navigation
+            padding-left: 0rem
+            padding-right: 0rem
+            .header-pages
+                width: 50%
+                .pages
+                    width: 80%
+
+@media screen and (max-width: 415px)
+    .header
+        .header-navigation
+            display: none
+        .mobile-header
+            display: block
+            .navbar-header
+                button
+                    span
+                        color: #000000
+                        background-color: #000000
+                .navbar-brand
+                    display: flex
+                    align-items: center
+                    .header-logo-name
+                        color: #005bcf
+                        font-size: 18px
+                        line-height: 50px
+                        font-family: "Varela Round"
+                        span
+                            font-size: 18px
+                            line-height: 50px
+                            color: rgb(43,47,58)
+                            font-family: "Varela Round"
+                .icon-bar
+                    height: 4px
+                    width: 35px
+            .navbar-collapse
+                text-align: center
+                .navbar-nav
+                    a
+                        font-size: 18px
+                        line-height: 50px
+                        font-family: "Open Sans"
+                        font-weight: bold
+                        color: rgb(43,47,58)
+                .navbar-right
+                    button
+                        width: 140px
+                        height: 52px
+                        margin-top: 2rem
+                        border-radius: 3px
+                        background-color: rgba(58,187,163,0)
+                        border: 2px solid #39bba3
+                        font-size: 16px
+                        letter-spacing: 0px
+                        color: rgb(58,187,163)
+                        font-family: "Open Sans"
+                        font-weight: bold
+                        text-align: center
+                
+@media screen and (max-width: 376px)
+    .hero
+        margin-top: 6rem
+        .easiest-way-title
+            h1
+                font-size: 36px
+                span
+                    &:after
+                        height: 2px
+        .get-started
+            margin-top: 4rem
+
+@media screen and (max-width: 320px)
+    .hero
+        .easiest-way-title
+            h1
+                font-size: 31px

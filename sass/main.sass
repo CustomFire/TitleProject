@@ -8,83 +8,6 @@ body
 
 a
     cursor: pointer
-//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Header=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-.header
-    padding: 2rem 0
-    .header-navigation
-        height: 50px
-        padding:
-            left: 4rem
-            right: 4rem
-        display: flex
-        justify-content: space-between
-        align-items: center
-        .header-logo
-            display: flex
-            align-items: center
-            .header-logo-name
-                color: #005bcf
-                font-size: 18px
-                line-height: 50px
-                font-family: "Varela Round"
-                span
-                    font-size: 18px
-                    line-height: 50px
-                    color: rgb(43,47,58)
-                    font-family: "Varela Round"
-        .header-pages
-            height: 50px
-            display: flex
-            justify-content: space-around
-            width: 60%
-            .pages
-                font-size: 14px
-                line-height: 50px
-                font-family: "Open Sans"
-                font-weight: bold
-                display: flex
-                justify-content: space-between
-                width: 50%
-                color: rgb(43,47,58)
-                >a
-                    color: rgb(43,47,58)
-                    position: relative
-                    &:hover
-                        color: #005bcf
-                        text-decoration: none
-                        &:after
-                            content: ""
-                            position: absolute
-                            bottom: 20%
-                            left: 0
-                            border: 1px solid
-                            width: 100%
-                            height: 3px
-                            background-color: #005bcf
-
-
-
-        .header-autorization
-            .autorization
-                button
-                    width: 140px
-                    height: 52px
-                    margin-left: 30px
-                    border-radius: 3px
-                    background-color: rgba(58,187,163,0)
-                    border: 2px solid #39bba3
-                    font-size: 16px
-                    letter-spacing: 0px
-                    color: rgb(58,187,163)
-                    font-family: "Open Sans"
-                    font-weight: bold
-                    text-align: center
-
-
-    .mobile-header
-        display: none
-//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Header=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-
 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Hero=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 .hero
@@ -431,94 +354,9 @@ a
                     letter-spacing: 0px
                     font-family: "Open Sans"
                     font-weight: bold
-//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-CTA=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  
-
-//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-FOOTER=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  
-
-.footer
-    background-color: #2d313c
-    padding: 15rem 0
-    .footer-container
-        display: flex
-        width: 90%
-        margin: 0 auto
-        justify-content: space-between
-        .footer-logo
-            width: 15%
-        .footer-pages
-            display: flex
-            justify-content: space-between
-            width: 50%
-            ul
-                padding: 0px
-                font-size: 16px
-                line-height: 36px
-                color: rgb(255,255,255)
-                font-family: "Open Sans"
-                font-weight: bold
-                color: #ffffff
-                list-style: none
-                li
-                    line-height: 30px
-                    a
-                        font-size: 14px
-                        color: #96989d
-        .footer-socials
-            display: flex
-            justify-content: space-between
-            flex-direction: column
-            width: 15%
-            ul
-                display: flex
-                justify-content: space-between
-                width: 100%
-                padding: 0px
-                list-style: none
-                margin-bottom: 0px
-                li
-                    display: inline-block
-            .swap-up
-                margin-left: auto
-                a
-                    height: 50px
-                    width: 50px
-                    background-color: #ffffff
-                    display: flex
-                    justify-content: space-around
-                    align-content: center
-                    border: 1px solid #ffffff
-                    border-radius: 3px
-    .footer-copyright
-        padding-top: 2rem
-        display: flex
-        justify-content: space-between
-        width: 90%
-        margin: 0 auto
-        letter-spacing: 0px
-        line-height: 36px
-        font-family: "Open Sans"
-        .copyright-company
-            span
-                font-size: 12px
-                color: #96989d
-        .copyright-links
-            display: flex
-            justify-content: space-between
-            width: 20%
-            a
-                font-size: 12px
-                color: #96989d
-//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-FOOTER=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  
-
-
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-CTA=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-    
 
 @media screen and (max-width: 1024px)
-    .header
-        .header-navigation
-            .header-autorization
-                .autorization
-                    button
-                        margin-left: 1rem
     .hero
         .easiest-way-title
             h1
@@ -552,14 +390,6 @@ a
         margin-bottom: 10rem
 
 @media screen and (max-width: 768px)
-    .header
-        .header-navigation
-            padding-left: 0rem
-            padding-right: 0rem
-            .header-pages
-                width: 50%
-                .pages
-                    width: 80%
     .hero
         .easiest-way-title
             h1
@@ -623,62 +453,8 @@ a
                                 height: 5rem
                         button
                             height: 5rem
-    .footer
-        padding: 10rem 0
-        .footer-copyright
-            .copyright-links
-                width: 28%
 
 @media screen and (max-width: 415px)
-    .header
-        .header-navigation
-            display: none
-        .mobile-header
-            display: block
-            .navbar-header
-                button
-                    span
-                        color: #000000
-                        background-color: #000000
-                .navbar-brand
-                    display: flex
-                    align-items: center
-                    .header-logo-name
-                        color: #005bcf
-                        font-size: 18px
-                        line-height: 50px
-                        font-family: "Varela Round"
-                        span
-                            font-size: 18px
-                            line-height: 50px
-                            color: rgb(43,47,58)
-                            font-family: "Varela Round"
-                .icon-bar
-                    height: 4px
-                    width: 35px
-            .navbar-collapse
-                text-align: center
-                .navbar-nav
-                    a
-                        font-size: 18px
-                        line-height: 50px
-                        font-family: "Open Sans"
-                        font-weight: bold
-                        color: rgb(43,47,58)
-                .navbar-right
-                    button
-                        width: 140px
-                        height: 52px
-                        margin-top: 2rem
-                        border-radius: 3px
-                        background-color: rgba(58,187,163,0)
-                        border: 2px solid #39bba3
-                        font-size: 16px
-                        letter-spacing: 0px
-                        color: rgb(58,187,163)
-                        font-family: "Open Sans"
-                        font-weight: bold
-                        text-align: center
     .hero
         .easiest-way-title
             h1
@@ -731,45 +507,8 @@ a
                         width: 100%
                     button
                         width: 100%
-    .footer
-        .footer-container
-            flex-direction: column
-            align-items: center
-            .footer-logo
-                width: auto
-            .footer-pages
-                padding: 5rem 0
-                width: 100%
-            .footer-socials
-                width: 75%
-            .footer-socials
-                ul
-                    li
-                        img
-                            height: 25px
-                .swap-up
-                    margin-top: 3rem
-                    width: 100%
-                    a
-                        width: auto
-        .footer-copyright
-            flex-direction: column-reverse
-            align-items: center
-            .copyright-links
-                padding: 3rem
-                width: 75%
 
 @media screen and (max-width: 376px)
-    .hero
-        margin-top: 6rem
-        .easiest-way-title
-            h1
-                font-size: 36px
-                span
-                    &:after
-                        height: 2px
-        .get-started
-            margin-top: 4rem
     .features
         .features-container
             .features-title
@@ -793,10 +532,6 @@ a
                     font-size: 27px
                     line-height: 1.2
 @media screen and (max-width: 320px)
-    .hero
-        .easiest-way-title
-            h1
-                font-size: 31px
     .stats
         .percent-blocks
             .percent-block
