@@ -9,8 +9,8 @@ body {
 }
 
 .features {
-  padding-top: 15rem;
-  padding-bottom: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 7rem;
 }
 
 .features .features-container {
@@ -48,7 +48,6 @@ body {
 .features .features-container .features-cards .features-row, .features .features-container .features-cards .last-row {
   margin-bottom: 2rem;
   display: flex;
-  justify-content: space-between;
 }
 
 .features .features-container .features-cards .features-row .features-card, .features .features-container .features-cards .last-row .features-card {
@@ -58,7 +57,7 @@ body {
 
 .features .features-container .features-cards .features-row .features-card .features-title, .features .features-container .features-cards .last-row .features-card .features-title {
   padding: 2rem;
-  height: 18rem;
+  height: 16rem;
   border-radius: 3px;
   box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(45deg, #eff3f6 0%, #ffffff 100%);
@@ -75,7 +74,7 @@ body {
 }
 
 .features .features-container .features-cards .features-row .features-card .features-title .features-card-description, .features .features-container .features-cards .last-row .features-card .features-title .features-card-description {
-  width: 55%;
+  width: 65%;
 }
 
 .features .features-container .features-cards .features-row .features-card .features-title .features-card-description span, .features .features-container .features-cards .last-row .features-card .features-title .features-card-description span {
@@ -87,7 +86,7 @@ body {
 }
 
 .features .features-container .features-cards .features-row .features-card .features-content, .features .features-container .features-cards .last-row .features-card .features-content {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .features .features-container .features-cards .features-row .features-card .features-content span, .features .features-container .features-cards .last-row .features-card .features-content span {
@@ -95,6 +94,18 @@ body {
   line-height: 24px;
   color: #2b2f3a;
   font-family: "Open Sans";
+}
+
+.features .features-container .features-cards .features-row {
+  justify-content: space-between;
+}
+
+.features .features-container .features-cards .last-row {
+  justify-content: center;
+}
+
+.features .features-container .features-cards .last-row .features-card:first-child {
+  margin-right: 3rem;
 }
 
 .features .features-container .see-pricing {
@@ -117,6 +128,7 @@ body {
 }
 
 .features .features-container .see-pricing a {
+  cursor: pointer;
   font-size: 14px;
   letter-spacing: 0px;
   line-height: 50px;
@@ -132,4 +144,137 @@ body {
   width: 30px;
   height: 10px;
   margin-left: 8px;
+}
+
+@media screen and (max-width: 1330px) {
+  .features .features-container .features-cards .features-row .features-card .features-title .features-card-description {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .features {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .features .features-container .features-pre-cards {
+    width: 60%;
+  }
+  .features .features-container .features-cards .features-row .features-card .features-title .features-card-description, .features .features-container .features-cards .last-row .features-card .features-title .features-card-description {
+    width: 90%;
+  }
+  .features .features-container .features-cards .features-row .features-card .features-content, .features .features-container .features-cards .last-row .features-card .features-content {
+    padding: 1rem;
+  }
+  .features .features-container .features-cards .features-row .features-card .features-content span, .features .features-container .features-cards .last-row .features-card .features-content span {
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features .features-container .features-cards .features-row {
+    display: block;
+  }
+  .features .features-container .features-cards .features-row .features-card {
+    display: inline-block;
+    max-width: 46%;
+  }
+  .features .features-container .features-cards .features-row .features-card:nth-child(1), .features .features-container .features-cards .features-row .features-card:nth-child(3) {
+    margin-right: 7.4%;
+  }
+  .features .features-container .features-cards .last-row {
+    display: block;
+  }
+  .features .features-container .features-cards .last-row .features-card {
+    display: inline-block;
+    max-width: 46%;
+  }
+  .features .features-container .features-cards .last-row .features-card:nth-child(1) {
+    margin-right: 7.4%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .features .features-container {
+    width: 100%;
+  }
+  .features .features-container .features-title h2 {
+    font-size: 54px;
+  }
+  .features .features-container .features-title span {
+    font-size: 54px;
+  }
+  .features .features-container .features-pre-cards {
+    width: 100%;
+  }
+  .features .features-container .features-cards .features-row, .features .features-container .features-cards .last-row {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .features .features-container .features-cards .features-row .features-card, .features .features-container .features-cards .last-row .features-card {
+    display: inline-block;
+    max-width: 100%;
+  }
+  .features .features-container .features-cards .features-row .features-card:nth-child(1), .features .features-container .features-cards .features-row .features-card:nth-child(3), .features .features-container .features-cards .last-row .features-card:nth-child(1), .features .features-container .features-cards .last-row .features-card:nth-child(3) {
+    margin-right: 0%;
+  }
+  .features .features-container .features-cards .features-row .features-card .features-title .features-card-description span, .features .features-container .features-cards .last-row .features-card .features-title .features-card-description span {
+    font-size: 18px;
+  }
+  .features .features-container .features-cards .features-row .features-card .features-content span, .features .features-container .features-cards .last-row .features-card .features-content span {
+    font-size: 16px;
+  }
+  .features .features-container .features-cards .last-row {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .features .features-container .features-cards .last-row .features-card {
+    display: inline-block;
+    max-width: 100%;
+  }
+  .features .features-container .features-cards .last-row .features-card:nth-child(1) {
+    margin-right: 0%;
+    margin-bottom: 1rem;
+  }
+  .features .features-container .features-cards .last-row .features-card .features-title .features-card-description {
+    width: 100%;
+  }
+  .features .features-container .see-pricing {
+    padding-top: 1rem;
+  }
+  .features .features-container .see-pricing h3 {
+    font-size: 38px;
+  }
+  .features .features-container .see-pricing span {
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .features .features-container .features-title h2 {
+    font-size: 54px;
+  }
+  .features .features-container .features-title span {
+    font-size: 54px;
+  }
+  .features .features-container .features-pre-cards {
+    width: 100%;
+  }
+  .features .features-container .features-cards .features-row, .features .features-container .features-cards .last-row {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .features .features-container .features-cards .features-row .features-card, .features .features-container .features-cards .last-row .features-card {
+    display: inline-block;
+    max-width: 100%;
+  }
+  .features .features-container .features-cards .features-row .features-card:nth-child(1), .features .features-container .features-cards .features-row .features-card:nth-child(3), .features .features-container .features-cards .last-row .features-card:nth-child(1), .features .features-container .features-cards .last-row .features-card:nth-child(3) {
+    margin-right: 0%;
+  }
+  .features .features-container .features-cards .features-row .features-card .features-title .features-card-description span, .features .features-container .features-cards .last-row .features-card .features-title .features-card-description span {
+    font-size: 18px;
+  }
+  .features .features-container .features-cards .features-row .features-card .features-content span, .features .features-container .features-cards .last-row .features-card .features-content span {
+    font-size: 16px;
+  }
 }
