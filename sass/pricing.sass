@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round')
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+*
+    font-family: 'Varela Round', sans-serif
+    font-size: 14px
+
+
+.circle_no
+    width: 10px
+    height: 10px
+    border-radius: 5px
+    background-color: rgba(58,187,163,0)
+    border: 1px solid #39bba3
+
+.circle_yes
+    width: 10px
+    height: 10px
+    border-radius: 5px
+    background-color: #39bba3
+    border: 1px solid #39bba3
+
+
+.pricing
+    .pricing-wrapper
+        .pricing-title
+            h2
+                font-size: 60px
+                line-height: 1
+                color: rgb(43,47,58)
+            span
+                font-size: 60px
+                color: #005bcf
+                line-height: 1
+                line-height: 60px
+        .contact-us-card
+            display: flex
+            justify-content: space-between
+            background-color: #ffffff
+            .card-description
+                display: flex
+                .card-icon
+                    img
+                .card-text
+                    span
+                        font-size: 16px
+                        line-height: 24px
+                        color: rgb(43,47,58)
+                        font-family: "Open Sans"
+            .card-button
+                button
+                    font-size: 16px
+                    letter-spacing: 0px
+                    line-height: 50px
+                    color: rgb(255,255,255)
+                    font-family: "Open Sans"
+                    font-weight: bold
+                    width: 180px
+                    height: 52px
+                    border-radius: 3px
+                    border: 1px solid #39bba3 
+                    background-color: #39bba3
+        .basic-plan
+            text-align: center
+            .basic-plan-title
+                h3
+            .basic-plan-description
+                span
+            .basic-plan-button
+                button
+        .biling-interval
+            text-align: center
+            select
+        .plan-cards
+            width: 90%
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+            .plan-card
+                border-radius: 3px
+                background-color: #ffffff
+                &:nth-child(1)
+                    border-left: 5px solid #2b2f39
+                &:nth-child(2)
+                    border-left: 5px solid #39bba3
+                &:nth-child(3)
+                    border-left: 5px solid #005bcf
+
+        .plans-table
+            width: 90%
+            margin: 0 auto
+            .plans-table-wrapper
+                table
+                    thead
+                        tr
+                            th
+                                border-bottom: 0px
+                                font-size: 24px
+                                line-height: 30px
+                                font-family: "Varela Round"
+                                font-weight: 100
+                                &:nth-child(2)
+                                    color: rgb(43,47,58)
+                                &:nth-child(3)
+                                    color: rgb(58,187,163)
+                                &:nth-child(4)
+                                    color: rgb(0,91,207)
+                    tbody
+                        background-color: #fff
+                        tr
+                            height: 60px
+                            &:nth-child(1), &:nth-child(2)
+                                td
+                                    vertical-align: middle
+                                    font-size: 16px
+                                    line-height: 18px
+                                    color: rgb(43,47,58)
+                                    font-family: "Open Sans"
+                                    font-weight: 800
+                            td
+                                vertical-align: middle
+                                font-size: 16px
+                                line-height: 18px
+                                color: rgb(43,47,58)
+                                font-family: "Open Sans"
+                                &:nth-child(1)
+                                    font-size: 16px
+                                    line-height: 18px
+                                    color: rgb(43,47,58)
+                                    font-family: "Open Sans"
+                                    font-weight: bold
+
+        .check
+            text-align: center
+            .check-text
+                span
+                    font-size: 18px
+                    letter-spacing: 0px
+                    line-height: 50px
+                    color: rgb(136, 141, 148)
+                    font-family: "Open Sans"
+                    text-align: center
+            .check-title
+                margin: 0 auto
+                h3
+                    margin: 0
+                    font-size: 48px
+                    line-height: 48px
+                    color: rgb(43,47,58)
+                    font-family: "Varela Round"
+                    text-align: center
+            .see-all-features
+                a
+                    font-size: 14px
+                    letter-spacing: 0px
+                    line-height: 50px
+                    color: #2b2f3a
+                    font-family: "Open Sans"
+                    font-weight: bold
+                    &:after
+                        content: ""
+                        background-image: url("../assets/icons/arrow_right.svg")
+                        display: inline-block
+                        width: 30px
+                        height: 10px
+                        margin-left: 8px

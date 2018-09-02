@@ -1,101 +1,684 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/sign-up.css">
     <link rel="stylesheet" href="../css/pricing.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
-        @font-face {
-            font-family: 'Plaak';
-            src: url("../assets/fonts/Plaak Extracondensed 42 Bold.otf")
-        }
+    @font-face{
+        font-family: 'Plaak';
+        src: url("../assets/fonts/Plaak Extracondensed 42 Bold.otf")
+    }
 
-        .stats .percent-blocks .percent-block .percent-number span {
-            font-family: 'Plaak';
-        }
+    .stats .percent-blocks .percent-block .percent-number span{
+        font-family: 'Plaak';
+    }
     </style>
     <title>WeWantYou</title>
 </head>
 <body>
-    <div class="pricing">
-        <div class="container-fluid">
-            <div class="pricing-container">
-                <div class="pricing-title">
-                    <h1>
-                        Find the best
-                    </h1>
+    <div class="sign-up-modal-container" id="myModal">
+        <div class="wwy-logo">
+            <div class="container">
+                <div class="sign-up-close">
+                    <a href="">
+                        <img src="../assets/icons/close.svg" alt="">
+                    </a>
+                </div>
+                <div class="wwy-img">
+                    <img src="../assets/icons/sign-up-logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sign-up">
+            <div class="container">
+                <div class="sign-up-container">
+                    <div class="sign-up-title">
+                        <h1>
+                            Sign Up
+                        </h1>
+                    </div>
+                    <div class="sign-up-form">
+                        <form action="">
+                            <div class="first-flex-wrap">
+                                <div class="form-company">
+                                    <div class="form-group">
+                                        <label for="comp-name">Company-name*</label>
+                                        <input type="text" id="comp-name">
+                                    </div>
+                                </div>
+                                <div class="form-email">
+                                    <div class="form-group">
+                                        <label for="email">Email*</label>
+                                        <input type="email" id="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-flex-wrap">
+                                <div class="form-create-pass">
+                                    <div class="form-group">
+                                        <label for="create-pass">Create Pssword*</label>
+                                        <input type="password" id="create-pass">
+                                    </div>
+                                </div>
+                                <div class="form-confirm-pass">
+                                    <div class="form-group">
+                                        <label for="confirm-pass">Confirm Password*</label>
+                                        <input type="password" id="confirm-pass">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-checkbox">
+                                <div class="form-group">
+                                    <input type="checkbox" id="custom-checkbox" unchecked>
+                                    <label for="custom-checkbox">
+                                        I have read and agree to WeWantYou <a href="#">Terms of Use</a>.
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="sign-up-button">
+                            <button type="submit">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="already-login">
+            <div class="container">
+                <div class="already-login-question">
                     <span>
-                        plan for you
+                        Already have an account? Login
                     </span>
                 </div>
-                <div class="contact-us-card">
-                    <div class="contact-description">
-                        <div class="contact-iconn">
-
-                        </div>
-                        <div class="contact-text">
-                            <span>
-                                If you have any question about our pricing plans or you're not 
-                                sure what plan is best for you, please contact us sowe can
-                                make sure youre choosing wisely.
-                            </span>
-                        </div>
+                <div class="already-login-button">
+                    <a href="">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header" id="swap-anchor">
+        <div class="container-fluid">
+            <div class="header-navigation">
+                <div class="header-logo">
+                    <div class="header-logo-img">
+                        <img src="../assets/icons/header-logo.svg" alt="">
                     </div>
-                    <div class="contact-button">
-                        <button type="butto">
-                            Contact Us
-                        </button>
+                    <div class="header-logo-name">
+                        <span>wewant</span>you
                     </div>
                 </div>
-                <div class="pricing-plans">
-                    <div class="starter">
-                        <div class="plan-title">
-                            <span>Starter</span>
+                <div class="header-pages">
+                    <div class="pages">
+                        <a href="">Features</a>
+                        <a href="">Pricing</a>
+                        <a href="">Blog</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+                <div class="header-autorization">
+                    <div class="autorization">
+                        <a href="">Log In</a>
+                        <button id="sign-up">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-header">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <div class="header-logo-img">
+                            <img src="../assets/icons/header-logo.svg" alt="">
                         </div>
-                        <div class="plan-billed">
-                            <div class="mounthly-billed">
-                                <div class="cost">
-                                    <span>29</span>
-                                </div>
-                                <div class="label">
-                                    <span>
-                                        billed monthly
-                                    </span>
-                                </div>
+                        <div class="header-logo-name">
+                            <span>wewant</span>you
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class=""><a href="">Features</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="">Log In</a>
+                        </li>
+                        <li>
+                            <button id="sign-up-mobile">Sign Up</button>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="pricing">
+            <div class="container-fluid">
+                <div class="pricing-wrapper">
+                    <div class="pricing-title">
+                        <h2>
+                            Find the best
+                        </h2>
+                        <span>
+                            plan for you
+                        </span>
+                    </div>
+                    <div class="contact-us-card">
+                        <div class="card-description">
+                            <div class="card-icon">
+                                <img src="../assets/icons/icon.svg" alt="">
                             </div>
-                            <div class="or">
+                            <div class="card-text">
+                                <span>
+                                   If you have any questions about our pricing plans or you're
+                                   sure what plan is best for you, please contact us so we can
+                                   make sure you're choosing wisely.
+                                   </span> 
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-button">
+                            <button disabled="button">Contact Us</button>
+                        </div>
+                    </div>
+                    <div class="basic-plan">
+                        <div class="basic-plan-title">
+                            <h3>
+                                Basic Plan
+                            </h3>
+                        </div>
+                        <div class="basic-plan-description">
+                            <span>This plan allow us to try out the</span>
+                            <span>wewant</span>
+                            <span>you</span>
+                            <span>for free</span>
+                            <span>, during 15 days and send 1 offer letter.</span>
+                        </div>
+                        <div class="basic-plan-button">
+                            <button type="button">Free Trial</button>
+                        </div>
+                    </div>
+                    <div class="biling-interval">
+                        <select name="interval" id="biling">
+                            <option value="monthly">Monthly</option>
+                            <option value="annually">Annually</option>
+                        </select>
+                    </div>
+                    <div class="plan-cards">
+                        <div class="plan-card">
+                            <div class="card-title">
+                                <h3>Starter</h3>
+                            </div>
+                            <div class="card-cost">
+                                <div class="manthly-cost">
+                                    <div class="cost-value">
+                                        <span>
+                                            39
+                                        </span>
+                                    </div>
+                                    <div class="cost-name">
+                                        <span>
+                                            billed monthly
+                                        </span>
+                                    </div>
+                                </div>
                                 <span>or just</span>
-                            </div>
-                            11111111111111111111111111111111111111111111111111111111111111
-                            <div class="annually-billed">
-                                <div class="cost">
-                                    <span>29</span>
+                                <div class="annually-cost">
+                                    <div class="cost-value">
+                                        <span>
+                                            35
+                                        </span>
+                                    </div>
+                                    <div class="cost-name">
+                                        <span>
+                                            billed annually
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="label">
+                            </div>
+                            <div class="card-features">
+                                <div class="features-title">
                                     <span>
-                                        billed monthly
+                                        Features
                                     </span>
                                 </div>
-                            </div>
-                            <hr>
-                            <div class="billed-features">
                                 <ul>
-                                    <li>Trsvkink</li>
-                                    <li>Access to all starter templates</li>
-                                    <li>API connection for popur HR software</li>
+                                    5 Offer Letters Per Month
+                                    <li>2 team members</li>
+                                    <li>Tracking</li>
+                                    <li>Access to all basic templates</li>
+                                    <li>CVS upload for candidate information</li>
+                                    <li>Email, chat and phone support</li>
                                 </ul>
                             </div>
-                            <div class="choose-billed">
+                            <div class="choose-card">
                                 <button type="button">Choose Plan</button>
                             </div>
+                        </div>
+                        <div class="plan-card">
+                            <div class="card-title">
+                                <h3>Starter</h3>
+                            </div>
+                            <div class="card-cost">
+                                <div class="manthly-cost">
+                                    <div class="cost-value">
+                                        <span>
+                                            39
+                                        </span>
+                                    </div>
+                                    <div class="cost-name">
+                                        <span>
+                                            billed monthly
+                                        </span>
+                                    </div>
+                                </div>
+                                <span>or just</span>
+                                <div class="annually-cost">
+                                    <div class="cost-value">
+                                        <span>
+                                            35
+                                        </span>
+                                    </div>
+                                    <div class="cost-name">
+                                        <span>
+                                            billed annually
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-features">
+                                <div class="features-title">
+                                    <span>
+                                        Features
+                                    </span>
+                                </div>
+                                <ul>
+                                    5 Offer Letters Per Month
+                                    <li>2 team members</li>
+                                    <li>Tracking</li>
+                                    <li>Access to all basic templates</li>
+                                    <li>CVS upload for candidate information</li>
+                                    <li>Email, chat and phone support</li>
+                                </ul>
+                            </div>
+                            <div class="choose-card">
+                                <button type="button">Choose Plan</button>
+                            </div>
+                        </div>
+                        <div class="plan-card">
+                            <div class="card-title">
+                                <h3>Starter</h3>
+                            </div>
+                            <div class="card-cost">
+                                <div class="manthly-cost">
+                                    <div class="cost-value">
+                                        <span>
+                                            39
+                                        </span>
+                                    </div>
+                                    <div class="cost-name">
+                                        <span>
+                                            billed monthly
+                                        </span>
+                                    </div>
+                                </div>
+                                <span>or just</span>
+                                <div class="annually-cost">
+                                    <div class="cost-value">
+                                        <span>
+                                            35
+                                        </span>
+                                    </div>
+                                    <div class="cost-name">
+                                        <span>
+                                            billed annually
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-features">
+                                <div class="features-title">
+                                    <span>
+                                        Features
+                                    </span>
+                                </div>
+                                <ul>
+                                    5 Offer Letters Per Month
+                                    <li>2 team members</li>
+                                    <li>Tracking</li>
+                                    <li>Access to all basic templates</li>
+                                    <li>CVS upload for candidate information</li>
+                                    <li>Email, chat and phone support</li>
+                                </ul>
+                            </div>
+                            <div class="choose-card">
+                                <button type="button">Choose Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plans-table">
+                        <div class="plans-table-wrapper">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Starter</th>
+                                        <th>Growing Business</th>
+                                        <th>Organization</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Monthly Fee</td>
+                                        <td>$39</td>
+                                        <td>$79</td>
+                                        <td>$159</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Annually Fee</td>
+                                        <td>$429</td>
+                                        <td>$869</td>
+                                        <td>$1,749</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Offer Letters per month</td>
+                                        <td>5</td>
+                                        <td>50</td>
+                                        <td>750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tracking</td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tracking and enhanced security</td>
+                                        <td>
+                                            <div class="circle_no"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Access to starter templates</td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Access to premium templates</td>
+                                        <td>
+                                            <div class="circle_no"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Access to custom template engine</td>
+                                        <td>
+                                            <div class="circle_no"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_no"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Candidate experience surve</td>
+                                        <td>
+                                            <div class="circle_no"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Design a personalized welcome experience</td>
+                                        <td>
+                                            <div class="circle_no"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_no"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Removes branding</td>
+                                        <td>
+                                            <div class="circle_no"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Weekly reporting</td>
+                                        <td>
+                                            <div class="circle_no"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>API connection to popular HR software</td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Single sign on (SSO) integration</td>
+                                        <td>
+                                            <div class="circle_no"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email, chat and phone support</td>
+                                        <td>
+                                            <div class="circle_no"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_no"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle_yes"></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="check">
+                        <div class="check-text">
+                            <span>Not convinced just yet?</span>
+                        </div>
+                        <div class="check-title">
+                            <h3>Check Our Features</h3>
+                        </div>
+                        <div class="see-all-features">
+                            <a href="#">See All Features</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assets/icons/footer-logo.svg" alt="">
+            </div>
+            <div class="footer-pages">
+                <div class="product-pages">
+                    <ul>Product
+                        <li>
+                            <a href="">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="">Features</a>
+                        </li>
+                        <li>
+                            <a href="">Templates</a>
+                        </li>
+                        <li>
+                            <a href="">Integrations</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="company-pages">
+                    <ul>Company
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resources-pages">
+                    <ul>Resources
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="../assets/icons/linkedin.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../assets/icons/facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../assets/icons/Twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../assets/icons/Instagram.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../assets/icons/YouTube.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="swap-up">
+                    <a href="#swap-anchor">
+                        <img src="../assets/icons/arrow.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="copyright-company">
+                <span>Copyright &copy; 2018 - WeWantYou, LLC. All rights reserved.</span>
+            </div>
+            <div class="copyright-links">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("sign-up");
+        var btnMobile = document.getElementById("sign-up-mobile");
+        var closer = document.getElementsByClassName("sing-up-close")[0];  
+
+
+        btn.onclick = function(){
+            modal.style.display = "block";
+        }
+
+        btnMobile.onclick = function(){
+            modal.style.display = "block";
+            document.getElementsByClassName("main")[0].style.display = "none";
+            document.getElementsByClassName("header")[0].style.display = "none";
+        }
+    
+        closer.onclick = function (){
+            modal.style.display = "none";
+        }
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
