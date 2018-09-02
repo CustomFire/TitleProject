@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round')
-@import url('https://fonts.googleapis.com/css?family=Roboto')
 *
     font-family: 'Varela Round', sans-serif
     font-size: 14px
 
+
+
+@font-face
+    font-family: "Loh"
+    src: url('')
 
 .circle_no
     width: 10px
@@ -71,19 +75,143 @@
             text-align: center
             select
         .plan-cards
-            width: 90%
-            margin: 0 auto
-            display: flex
-            justify-content: space-between
-            .plan-card
-                border-radius: 3px
-                background-color: #ffffff
-                &:nth-child(1)
-                    border-left: 5px solid #2b2f39
-                &:nth-child(2)
-                    border-left: 5px solid #39bba3
-                &:nth-child(3)
-                    border-left: 5px solid #005bcf
+            background-color: #ffffff
+            margin: 0 -15px 0 -15px
+            .plan-cards-wrapper
+                width: 90%
+                margin: 0 auto
+                padding: 0 15px 0 15px
+                display: flex
+                justify-content: space-between
+                .plan-card
+                    display: flex
+                    flex-direction: column
+                    width: 31%
+                    border-radius: 3px
+                    background-color: #ffffff
+                    box-shadow: 0px 15px 50px rgba(0,0,0,0.1)
+                    &:nth-child(1)
+                        border-left: 5px solid #2b2f39
+                    &:nth-child(2)
+                        border-left: 5px solid #39bba3
+                        .card-title
+                            h3
+                                color: #39bba3
+                        .card-features
+                            ul
+                                color: #39bba3
+                                li
+                                    color: rgb(43,47,58)
+
+                    &:nth-child(3)
+                        border-left: 5px solid #005bcf
+                        .card-title
+                            h3
+                                color: #005bcf
+                        .card-features
+                            ul
+                                line-height: 18px
+                                color: #005bcf
+                                li
+                                    line-height: 18px
+                                    color: rgb(43,47,58)
+                    .card-title
+                        h3
+                            margin: 0
+                            font-size: 36px
+                            line-height: 1
+                            color: rgb(43,47,58)
+                            font-family: "Varela Round"
+                            text-align: center
+                    .card-cost
+                        text-align: center
+                        .manthly-cost
+                            display: flex
+                            justify-content: center
+                            .cost-symbol
+                                span
+                                    font-size: 18px
+                                    line-height: 30px
+                                    color: rgb(43,47,58)
+                                    font-family: "Open Sans"
+                            .cost-value
+                                span
+                                    font-size: 30px
+                                    line-height: 1
+                                    color: rgb(43,47,58);
+                                    font-family: "Open Sans"
+                                    font-weight: 800
+                                        
+                            .cost-name
+                                span
+                                    font-size: 14px
+                                    line-height: 30px
+                                    color: rgb(43,47,58)
+                                    font-family: "Open Sans"
+                        span
+                            font-size: 14px
+                            line-height: 24px
+                            color: rgb(149, 151, 156)
+                            font-family: "Open Sans"
+                            text-align: center
+                        .annually-cost
+                            display: flex
+                            justify-content: center
+                            .cost-symbol
+                                span
+                                    font-size: 18px
+                                    line-height: 30px
+                                    color: rgb(43,47,58)
+                                    font-family: "Open Sans"
+                            .cost-value
+                                span
+                                    font-size: 48px
+                                    line-height: 30px
+                                    color: rgb(43,47,58)
+                                    font-family: "Open Sans"
+                                    font-weight: 800
+                            .cost-name
+                                span
+                                    font-size: 14px
+                                    line-height: 30px
+                                    color: rgb(43,47,58)
+                                    font-family: "Open Sans"
+                    .card-features
+                        border-top: 1px dashed rgb(202, 203, 206)
+                        .features-title
+                            span
+                                font-size: 10px
+                                letter-spacing: 4px
+                                line-height: 30px
+                                color: rgb(43,47,58)
+                                font-family: "Open Sans"
+                        ul
+                            padding: 0
+                            font-size: 14px
+                            line-height: 30px
+                            color: rgb(43,47,58)
+                            font-family: "Open Sans"
+                            font-weight: bold
+                            li
+                                line-height: 30px
+                                list-style: none
+                                font-weight: normal
+                    .choose-card
+                        margin-top: auto
+                        button
+                            font-size: 16px
+                            letter-spacing: 0px
+                            line-height: 50px
+                            color: rgb(255,255,255)
+                            font-family: "Open Sans"
+                            font-weight: bold
+                            text-align: center
+                            width: 100%
+                            height: 52px
+                            border-radius: 3px
+                            background-color: #2b2f39
+                            border: 1px solid #2b2f39
+
 
         .plans-table
             width: 90%
