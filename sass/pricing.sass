@@ -27,22 +27,33 @@
 .pricing
     .pricing-wrapper
         .pricing-title
+            width: 90%
+            margin: 0 auto
+            margin-top: 15rem
+            margin-bottom: 5rem
             h2
+                margin: 0
                 font-size: 60px
-                line-height: 1
+                line-height: 60px
                 color: rgb(43,47,58)
             span
                 font-size: 60px
                 color: #005bcf
-                line-height: 1
+                line-height: 60px 
                 line-height: 60px
         .contact-us-card
+            width: 90%
+            margin: 0 auto
             display: flex
             justify-content: space-between
             background-color: #ffffff
+            padding: 3rem
             .card-description
+                width: 46%
                 display: flex
                 .card-icon
+                    margin-top: 3px
+                    margin-right: 3rem
                     img
                 .card-text
                     span
@@ -51,6 +62,7 @@
                         color: rgb(43,47,58)
                         font-family: "Open Sans"
             .card-button
+                margin: auto 0
                 button
                     font-size: 16px
                     letter-spacing: 0px
@@ -67,22 +79,80 @@
             text-align: center
             .basic-plan-title
                 h3
+                    font-size: 36px
+                    line-height: 30px
+                    color: rgb(43,47,58)
+                    font-family: "Varela Round"
+                span
+                    width: 44px
+                    border-radius: 3px
+                    background-color: #39bba3
+                    font-size: 11px
+                    color: rgb(255,255,255)
+                    font-family: "Open Sans"
+                    font-weight: bold
+                    text-align: center
             .basic-plan-description
                 span
+                    font-size: 14px
+                    line-height: 30px
+                    color: rgb(43,47,58)
+                    font-family: "Open Sans"
+                    &:nth-child(2)
+                        font-weight: bold
+                    &:nth-child(3)
+                        font-weight: bold
+                        color: #005bcf
+                    &:nth-child(4)
+                        font-weight: bold
             .basic-plan-button
                 button
-        .biling-interval
-            text-align: center
-            select
+                    font-size: 16px
+                    letter-spacing: 0px
+                    line-height: 50px
+                    color: rgb(255,255,255)
+                    font-family: "Open Sans"
+                    font-weight: bold
+                    width: 273px
+                    height: 52px
+                    border: 1px solid #2b2f39
+                    border-radius: 3px
+                    background-color: #2b2f39
+        .billing-interval
+            display: flex
+            justify-content: space-around
+            .billing-interval-wrapper
+                display: block
+                label
+                    display: block
+                    font-size: 13px
+                    line-height: 30px
+                    color: rgb(43,47,58)
+                    font-family: "Open Sans"
+                    font-weight: 400
+                    margin: 0
+                select
+                    padding: 2rem
+                    width: 420px
+                    border-radius: 3px
+                    background-color: #ffffff
+                    border: 1px solid rgba(43,47,58,0.15)
+                    font-size: 16px
+                    line-height: 30px
+                    color: rgb(43,47,58)
+                    font-family: "Open Sans"
+                    font-weight: bold
         .plan-cards
             background-color: #ffffff
-            margin: 0 -15px 0 -15px
+            margin: 10rem -15px 8rem -15px
             .plan-cards-wrapper
                 width: 90%
                 margin: 0 auto
                 padding: 0 15px 0 15px
                 display: flex
                 justify-content: space-between
+                position: relative
+                transform: translateY(-6rem)
                 .plan-card
                     display: flex
                     flex-direction: column
@@ -90,6 +160,7 @@
                     border-radius: 3px
                     background-color: #ffffff
                     box-shadow: 0px 15px 50px rgba(0,0,0,0.1)
+                    padding: 4rem 0rem
                     &:nth-child(1)
                         border-left: 5px solid #2b2f39
                     &:nth-child(2)
@@ -110,94 +181,103 @@
                                 color: #005bcf
                         .card-features
                             ul
-                                line-height: 18px
                                 color: #005bcf
                                 li
-                                    line-height: 18px
                                     color: rgb(43,47,58)
                     .card-title
                         h3
                             margin: 0
                             font-size: 36px
-                            line-height: 1
                             color: rgb(43,47,58)
                             font-family: "Varela Round"
                             text-align: center
                     .card-cost
-                        text-align: center
+                        padding: 4rem 0
+                        &>span
+                            font-size: 14px
+                            line-height: 14px
+                            color: rgb(149, 151, 156)
+                            font-family: "Open Sans"
+                            text-align: center
                         .manthly-cost
                             display: flex
-                            justify-content: center
                             .cost-symbol
                                 span
+                                    color: rgb(149, 151, 156)
                                     font-size: 18px
-                                    line-height: 30px
-                                    color: rgb(43,47,58)
+                                    line-height: 18px
                                     font-family: "Open Sans"
                             .cost-value
                                 span
                                     font-size: 30px
-                                    line-height: 1
-                                    color: rgb(43,47,58);
+                                    line-height: 30px
+                                    color: rgb(43,47,58)
                                     font-family: "Open Sans"
                                     font-weight: 800
-                                        
                             .cost-name
                                 span
                                     font-size: 14px
-                                    line-height: 30px
+                                    line-height: 14px
                                     color: rgb(43,47,58)
                                     font-family: "Open Sans"
-                        span
-                            font-size: 14px
-                            line-height: 24px
-                            color: rgb(149, 151, 156)
-                            font-family: "Open Sans"
-                            text-align: center
                         .annually-cost
                             display: flex
-                            justify-content: center
                             .cost-symbol
                                 span
+                                    color: rgb(149, 151, 156)
                                     font-size: 18px
-                                    line-height: 30px
-                                    color: rgb(43,47,58)
+                                    line-height: 18px
                                     font-family: "Open Sans"
                             .cost-value
                                 span
                                     font-size: 48px
-                                    line-height: 30px
+                                    line-height: 48px
                                     color: rgb(43,47,58)
                                     font-family: "Open Sans"
                                     font-weight: 800
+//123456789876543234567897654324567890-0987654321//123456789876543234567897654324567890-0987654321//123456789876543234567897654324567890-0987654321//123456789876543234567897654324567890-0987654321//123456789876543234567897654324567890-0987654321//123456789876543234567897654324567890-0987654321//123456789876543234567897654324567890-0987654321//123456789876543234567897654324567890-0987654321//123456789876543234567897654324567890-0987654321//123456789876543234567897654324567890-0987654321//123456789876543234567897654324567890-0987654321//123456789876543234567897654324567890-0987654321//123456789876543234567897654324567890-0987654321
+                                    &:nth-child(2)
+                                        font-size: 24px
+                                        color: rgb(43,47,58)
+                                        font-family: "Open Sans"
+                                        font-weight: 800
                             .cost-name
                                 span
                                     font-size: 14px
-                                    line-height: 30px
+                                    line-height: 14px
                                     color: rgb(43,47,58)
                                     font-family: "Open Sans"
+                                    &:after
+                                        content: "Includes 1 Month Free"
+                                        display: block
+                                        font-size: 13px
+                                        line-height: 13px
+                                        color: rgb(58,187,163)
+                                        font-family: "Open Sans"
+
                     .card-features
                         border-top: 1px dashed rgb(202, 203, 206)
+                        padding: 3rem 3rem 3rem 3rem
                         .features-title
+                            padding-bottom: 1rem
                             span
                                 font-size: 10px
                                 letter-spacing: 4px
-                                line-height: 30px
                                 color: rgb(43,47,58)
                                 font-family: "Open Sans"
                         ul
                             padding: 0
                             font-size: 14px
-                            line-height: 30px
                             color: rgb(43,47,58)
                             font-family: "Open Sans"
                             font-weight: bold
                             li
-                                line-height: 30px
                                 list-style: none
                                 font-weight: normal
+                                line-height: 30px
                     .choose-card
                         margin-top: auto
+                        padding: 0 3rem
                         button
                             font-size: 16px
                             letter-spacing: 0px
@@ -223,15 +303,21 @@
                             th
                                 border-bottom: 0px
                                 font-size: 24px
-                                line-height: 30px
+                                line-height: 4
                                 font-family: "Varela Round"
                                 font-weight: 100
+                                padding: 0
+                                &:nth-child(1)
+                                    width: 40%
                                 &:nth-child(2)
                                     color: rgb(43,47,58)
+                                    width: 15%
                                 &:nth-child(3)
                                     color: rgb(58,187,163)
+                                    width: 25%
                                 &:nth-child(4)
                                     color: rgb(0,91,207)
+                                    width: 20%
                     tbody
                         background-color: #fff
                         tr
@@ -259,20 +345,20 @@
 
         .check
             text-align: center
+            padding: 10rem 0rem
             .check-text
                 span
                     font-size: 18px
                     letter-spacing: 0px
-                    line-height: 50px
                     color: rgb(136, 141, 148)
                     font-family: "Open Sans"
                     text-align: center
             .check-title
-                margin: 0 auto
+                width: 20%
+                margin: 4rem auto
                 h3
                     margin: 0
                     font-size: 48px
-                    line-height: 48px
                     color: rgb(43,47,58)
                     font-family: "Varela Round"
                     text-align: center
@@ -280,7 +366,6 @@
                 a
                     font-size: 14px
                     letter-spacing: 0px
-                    line-height: 50px
                     color: #2b2f3a
                     font-family: "Open Sans"
                     font-weight: bold

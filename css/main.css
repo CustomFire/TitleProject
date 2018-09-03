@@ -471,18 +471,31 @@ a {
   .features .features-container {
     padding: 5rem 0;
   }
+  .features .features-container .features-cards {
+    margin: 4rem 0rem;
+  }
   .features .features-container .features-cards .features-card {
     min-width: 26%;
   }
+  .blog {
+    padding-top: 10rem;
+  }
   .blog .blog-container .blog-title {
     width: 100%;
+  }
+  .blog .blog-container .blog-posts {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
   }
   .blog .blog-container .blog-posts .post .post-title-img {
     height: 18rem;
   }
   .cta {
-    padding-top: 10rem;
-    margin-bottom: 10rem;
+    padding-top: 6rem;
+    margin-bottom: 7rem;
+  }
+  .cta .cta-container {
+    padding: 3rem 0rem;
   }
 }
 
@@ -569,6 +582,9 @@ a {
   .stats .percent-blocks .percent-block {
     width: 100%;
   }
+  .features .features-container {
+    width: 100%;
+  }
   .features .features-container .features-title h2 {
     font-size: 32px;
     line-height: 1.3;
@@ -587,26 +603,39 @@ a {
   }
   .blog .blog-container .blog-posts {
     flex-direction: column;
+    margin-bottom: 0rem;
   }
   .blog .blog-container .blog-posts .post {
+    margin-bottom: 2rem;
     width: 100%;
   }
   .blog .blog-container .blog-posts .post .post-title-img {
     height: 18rem;
   }
-  .cta .cta-container .cta-title h3 {
+  .blog .blog-container .blog-posts .post .post-content {
+    padding: 1rem 0;
+  }
+  .cta .cta-container {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+  .cta .cta-container .cta-card {
+    padding: 0 1.5rem;
+  }
+  .cta .cta-container .cta-card .cta-title h3 {
     font-size: 32px;
     line-height: 1.3;
   }
-  .cta .cta-container .cta-form .cta-form-flex {
+  .cta .cta-container .cta-card .cta-form .cta-form-flex {
     flex-direction: column;
     align-items: left;
   }
-  .cta .cta-container .cta-form .cta-form-flex .form-group {
+  .cta .cta-container .cta-card .cta-form .cta-form-flex .form-group {
     margin-bottom: 2rem;
     width: 100%;
   }
-  .cta .cta-container .cta-form .cta-form-flex button {
+  .cta .cta-container .cta-card .cta-form .cta-form-flex button {
     width: 100%;
   }
 }
@@ -626,6 +655,9 @@ a {
   }
   .features .features-container .features-cards .features-card .features-card-icon {
     margin-right: 1rem;
+  }
+  .blog .blog-container {
+    width: 100%;
   }
   .blog .blog-container .blog-title h2 {
     font-size: 27px;

@@ -53,6 +53,7 @@ body {
 .features .features-container .features-cards .features-row .features-card, .features .features-container .features-cards .last-row .features-card {
   min-width: 23%;
   max-width: 23%;
+  margin-bottom: 1rem;
 }
 
 .features .features-container .features-cards .features-row .features-card .features-title, .features .features-container .features-cards .last-row .features-card .features-title {
@@ -172,12 +173,17 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .features {
+    padding-top: 7rem;
+  }
   .features .features-container .features-cards .features-row {
     display: block;
+    margin: 0;
   }
   .features .features-container .features-cards .features-row .features-card {
     display: inline-block;
     max-width: 46%;
+    margin-bottom: 2rem;
   }
   .features .features-container .features-cards .features-row .features-card:nth-child(1), .features .features-container .features-cards .features-row .features-card:nth-child(3) {
     margin-right: 7.4%;
@@ -195,6 +201,9 @@ body {
 }
 
 @media screen and (max-width: 414px) {
+  .features {
+    padding-top: 5rem;
+  }
   .features .features-container {
     width: 100%;
   }
@@ -209,14 +218,14 @@ body {
   }
   .features .features-container .features-cards .features-row, .features .features-container .features-cards .last-row {
     display: block;
-    margin-bottom: 1rem;
   }
   .features .features-container .features-cards .features-row .features-card, .features .features-container .features-cards .last-row .features-card {
     display: inline-block;
     max-width: 100%;
+    margin-bottom: 2rem;
   }
   .features .features-container .features-cards .features-row .features-card:nth-child(1), .features .features-container .features-cards .features-row .features-card:nth-child(3), .features .features-container .features-cards .last-row .features-card:nth-child(1), .features .features-container .features-cards .last-row .features-card:nth-child(3) {
-    margin-right: 0%;
+    margin-bottom: 2rem;
   }
   .features .features-container .features-cards .features-row .features-card .features-title .features-card-description span, .features .features-container .features-cards .last-row .features-card .features-title .features-card-description span {
     font-size: 18px;
@@ -231,10 +240,11 @@ body {
   .features .features-container .features-cards .last-row .features-card {
     display: inline-block;
     max-width: 100%;
+    margin-bottom: 2rem;
   }
   .features .features-container .features-cards .last-row .features-card:nth-child(1) {
     margin-right: 0%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .features .features-container .features-cards .last-row .features-card .features-title .features-card-description {
     width: 100%;
@@ -276,5 +286,14 @@ body {
   }
   .features .features-container .features-cards .features-row .features-card .features-content span, .features .features-container .features-cards .last-row .features-card .features-content span {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .features .features-container .features-title h2 {
+    font-size: 45px;
+  }
+  .features .features-container .features-title span {
+    font-size: 45px;
   }
 }

@@ -177,6 +177,9 @@ body {
   .blog .blog-container .blog-posts .post .post-container {
     padding: 0;
   }
+  .blog .blog-container .blog-posts .post .post-container .post-content {
+    padding: 2rem 0 3rem;
+  }
   .blog .blog-container .blog-posts .post .post-container .post-content .post-title h4 {
     font-size: 20px;
   }
@@ -202,6 +205,6 @@ body {
     height: 17rem;
   }
   .blog .blog-container .blog-posts .post .post-container .post-content {
-    padding: 1rem;
+    padding: 1rem 0 2rem;
   }
 }

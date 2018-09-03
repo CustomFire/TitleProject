@@ -39,6 +39,7 @@ body
                 .features-card
                     min-width: 23%
                     max-width: 23%
+                    margin-bottom: 1rem
                     .features-title
                         padding: 2rem
                         height: 16rem
@@ -131,13 +132,16 @@ body
                                 line-height: 1
 @media screen and (max-width: 768px)
     .features
+        padding-top: 7rem
         .features-container
             .features-cards
                 .features-row
                     display: block
+                    margin: 0
                     .features-card
                         display: inline-block
                         max-width: 46%
+                        margin-bottom: 2rem
 
                         &:nth-child(1), &:nth-child(3)
                             margin-right: 7.4%
@@ -151,6 +155,7 @@ body
                             margin-right: 7.4%
 @media screen and (max-width: 414px)
     .features
+        padding-top: 5rem
         .features-container
             width: 100%
             .features-title
@@ -163,12 +168,12 @@ body
             .features-cards
                 .features-row, .last-row
                     display: block
-                    margin-bottom: 1rem
                     .features-card
                         display: inline-block
                         max-width: 100%
+                        margin-bottom: 2rem
                         &:nth-child(1), &:nth-child(3)
-                            margin-right: 0%
+                            margin-bottom: 2rem
                         .features-title
                             .features-card-description
                                 span
@@ -182,10 +187,10 @@ body
                     .features-card
                         display: inline-block
                         max-width: 100%
-
+                        margin-bottom: 2rem
                         &:nth-child(1)
                             margin-right: 0%
-                            margin-bottom: 1rem
+                            margin-bottom: 2rem
                         .features-title
                             .features-card-description
                                 width: 100%
@@ -222,3 +227,11 @@ body
                             span
                                 font-size: 16px
 
+@media screen and (max-width: 320px)
+    .features
+        .features-container
+            .features-title
+                h2
+                    font-size: 45px
+                span
+                    font-size: 45px

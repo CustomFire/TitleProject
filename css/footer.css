@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round");
 * {
   font-family: 'Varela Round', sans-serif;
-  font-size: 14px;
 }
 
 body {
@@ -116,9 +115,20 @@ a {
   color: #96989d;
 }
 
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 10rem;
+  }
+  .footer .footer-copyright .copyright-links {
+    width: 30%;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  padding: 10rem 0;
-  .footer-copyright .copyright-links {
+  .footer {
+    padding: 5rem 0;
+  }
+  .footer .footer-copyright .copyright-links {
     width: 28%;
   }
 }
@@ -134,6 +144,17 @@ a {
   .footer .footer-container .footer-pages {
     padding: 5rem 0;
     width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .footer .footer-container .footer-pages .product-pages ul, .footer .footer-container .footer-pages .company-pages ul, .footer .footer-container .footer-pages .resources-pages ul {
+    font-size: 22px;
+  }
+  .footer .footer-container .footer-pages .product-pages ul li, .footer .footer-container .footer-pages .company-pages ul li, .footer .footer-container .footer-pages .resources-pages ul li {
+    line-height: unset;
+  }
+  .footer .footer-container .footer-pages .product-pages ul li a, .footer .footer-container .footer-pages .company-pages ul li a, .footer .footer-container .footer-pages .resources-pages ul li a {
+    font-size: 18px;
   }
   .footer .footer-container .footer-socials {
     width: 75%;
@@ -152,8 +173,39 @@ a {
     flex-direction: column-reverse;
     align-items: center;
   }
+  .footer .footer-copyright .copyright-company span {
+    font-size: 13px;
+  }
   .footer .footer-copyright .copyright-links {
     padding: 3rem;
     width: 75%;
+  }
+  .footer .footer-copyright .copyright-links a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer .footer-copyright .copyright-company span {
+    font-size: 12px;
+  }
+  .footer .footer-copyright .copyright-links {
+    padding: 1rem 0rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer .footer-copyright .copyright-links a {
+    font-size: 16px;
+  }
+  .footer .footer-copyright .copyright-company span {
+    font-size: 15px;
+  }
+  .footer .footer-container .footer-pages .resources-pages ul {
+    font-size: 18px;
+  }
+  .footer .footer-container .footer-pages .resources-pages ul li a {
+    font-size: 16px;
   }
 }

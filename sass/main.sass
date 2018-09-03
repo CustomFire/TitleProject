@@ -375,19 +375,26 @@ a
         .features-container
             padding: 5rem 0
             .features-cards
+                margin: 4rem 0rem
                 .features-card
                     min-width: 26%
     .blog
+        padding-top: 10rem
         .blog-container
             .blog-title
                 width: 100%
             .blog-posts
+                margin:
+                    top: 6rem
+                    bottom: 2rem
                 .post
                     .post-title-img
                         height: 18rem
     .cta
-        padding-top: 10rem
-        margin-bottom: 10rem
+        padding-top: 6rem
+        margin-bottom: 7rem
+        .cta-container
+            padding: 3rem 0rem
 
 @media screen and (max-width: 768px)
     .hero
@@ -468,6 +475,7 @@ a
                 width: 100%
     .features
         .features-container
+            width: 100%
             .features-title
                 h2
                     font-size: 32px
@@ -488,25 +496,35 @@ a
                     line-height: 1.3
             .blog-posts
                 flex-direction: column
+                margin-bottom: 0rem
                 .post
+                    margin-bottom: 2rem
                     width: 100%
                     .post-title-img
                         height: 18rem
+                    .post-content
+                        padding: 1rem 0
     .cta
         .cta-container
-            .cta-title
-                h3
-                    font-size: 32px
-                    line-height: 1.3 
-            .cta-form
-                .cta-form-flex
-                    flex-direction: column
-                    align-items: left
-                    .form-group
-                        margin-bottom: 2rem
-                        width: 100%
-                    button
-                        width: 100%
+            width: 100%
+            padding:
+                top: 1rem
+                bottom: 4rem
+            .cta-card
+                padding: 0 1.5rem
+                .cta-title
+                    h3
+                        font-size: 32px
+                        line-height: 1.3 
+                .cta-form
+                    .cta-form-flex
+                        flex-direction: column
+                        align-items: left
+                        .form-group
+                            margin-bottom: 2rem
+                            width: 100%
+                        button
+                            width: 100%
 
 @media screen and (max-width: 376px)
     .features
@@ -527,6 +545,7 @@ a
                         margin-right: 1rem
     .blog
         .blog-container
+            width: 100%
             .blog-title
                 h2
                     font-size: 27px

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round')
 *
     font-family: 'Varela Round', sans-serif
-    font-size: 14px
 
 body
     background-image: linear-gradient(45deg, #e5ebef 0%, #ffffff 100%)
@@ -83,10 +82,17 @@ a
             a
                 font-size: 12px
                 color: #96989d
+    
+@media screen and (max-width: 1024px)
+    .footer
+        padding: 10rem
+        .footer-copyright
+            .copyright-links
+                width: 30%
 
 @media screen and (max-width: 768px)
-        .footer
-        padding: 10rem 0
+    .footer
+        padding: 5rem 0
         .footer-copyright
             .copyright-links
                 width: 28%
@@ -101,9 +107,17 @@ a
             .footer-pages
                 padding: 5rem 0
                 width: 100%
+                display: block
+                text-align: center
+                .product-pages, .company-pages, .resources-pages
+                    ul
+                        font-size: 22px
+                        li
+                            line-height: unset
+                            a
+                                font-size: 18px
             .footer-socials
                 width: 75%
-            .footer-socials
                 ul
                     li
                         img
@@ -116,6 +130,40 @@ a
         .footer-copyright
             flex-direction: column-reverse
             align-items: center
+            .copyright-company
+                span
+                    font-size: 13px
             .copyright-links
                 padding: 3rem
                 width: 75%
+                a
+                    font-size: 16px
+
+@media screen and (max-width: 375px)
+    .footer
+        .footer-copyright
+            .copyright-company
+                span
+                    font-size: 12px
+            .copyright-links
+                padding: 1rem 0rem
+                width: 100%
+
+@media screen and (max-width: 320px)
+    .footer
+        .footer-copyright
+            .copyright-links
+                a
+                    font-size: 16px
+            .copyright-company
+                span
+                    font-size: 15px
+    .footer
+        .footer-container
+            .footer-pages
+                .resources-pages
+                    ul
+                        font-size: 18px
+                        li
+                            a
+                                font-size: 16px

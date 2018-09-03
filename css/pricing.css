@@ -25,27 +25,44 @@
   border: 1px solid #39bba3;
 }
 
+.pricing .pricing-wrapper .pricing-title {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+}
+
 .pricing .pricing-wrapper .pricing-title h2 {
+  margin: 0;
   font-size: 60px;
-  line-height: 1;
+  line-height: 60px;
   color: #2b2f3a;
 }
 
 .pricing .pricing-wrapper .pricing-title span {
   font-size: 60px;
   color: #005bcf;
-  line-height: 1;
+  line-height: 60px;
   line-height: 60px;
 }
 
 .pricing .pricing-wrapper .contact-us-card {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
+  padding: 3rem;
 }
 
 .pricing .pricing-wrapper .contact-us-card .card-description {
+  width: 46%;
   display: flex;
+}
+
+.pricing .pricing-wrapper .contact-us-card .card-description .card-icon {
+  margin-top: 3px;
+  margin-right: 3rem;
 }
 
 .pricing .pricing-wrapper .contact-us-card .card-description .card-text span {
@@ -53,6 +70,10 @@
   line-height: 24px;
   color: #2b2f3a;
   font-family: "Open Sans";
+}
+
+.pricing .pricing-wrapper .contact-us-card .card-button {
+  margin: auto 0;
 }
 
 .pricing .pricing-wrapper .contact-us-card .card-button button {
@@ -73,13 +94,93 @@
   text-align: center;
 }
 
-.pricing .pricing-wrapper .biling-interval {
+.pricing .pricing-wrapper .basic-plan .basic-plan-title h3 {
+  font-size: 36px;
+  line-height: 30px;
+  color: #2b2f3a;
+  font-family: "Varela Round";
+}
+
+.pricing .pricing-wrapper .basic-plan .basic-plan-title span {
+  width: 44px;
+  border-radius: 3px;
+  background-color: #39bba3;
+  font-size: 11px;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: bold;
   text-align: center;
+}
+
+.pricing .pricing-wrapper .basic-plan .basic-plan-description span {
+  font-size: 14px;
+  line-height: 30px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+}
+
+.pricing .pricing-wrapper .basic-plan .basic-plan-description span:nth-child(2) {
+  font-weight: bold;
+}
+
+.pricing .pricing-wrapper .basic-plan .basic-plan-description span:nth-child(3) {
+  font-weight: bold;
+  color: #005bcf;
+}
+
+.pricing .pricing-wrapper .basic-plan .basic-plan-description span:nth-child(4) {
+  font-weight: bold;
+}
+
+.pricing .pricing-wrapper .basic-plan .basic-plan-button button {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 50px;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: bold;
+  width: 273px;
+  height: 52px;
+  border: 1px solid #2b2f39;
+  border-radius: 3px;
+  background-color: #2b2f39;
+}
+
+.pricing .pricing-wrapper .billing-interval {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pricing .pricing-wrapper .billing-interval .billing-interval-wrapper {
+  display: block;
+}
+
+.pricing .pricing-wrapper .billing-interval .billing-interval-wrapper label {
+  display: block;
+  font-size: 13px;
+  line-height: 30px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+}
+
+.pricing .pricing-wrapper .billing-interval .billing-interval-wrapper select {
+  padding: 2rem;
+  width: 420px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid rgba(43, 47, 58, 0.15);
+  font-size: 16px;
+  line-height: 30px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: bold;
 }
 
 .pricing .pricing-wrapper .plan-cards {
   background-color: #ffffff;
-  margin: 0 -15px 0 -15px;
+  margin: 10rem -15px 8rem -15px;
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper {
@@ -88,6 +189,8 @@
   padding: 0 15px 0 15px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  transform: translateY(-6rem);
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card {
@@ -97,6 +200,7 @@
   border-radius: 3px;
   background-color: #ffffff;
   box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
+  padding: 4rem 0rem;
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card:nth-child(1) {
@@ -128,43 +232,47 @@
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card:nth-child(3) .card-features ul {
-  line-height: 18px;
   color: #005bcf;
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card:nth-child(3) .card-features ul li {
-  line-height: 18px;
   color: #2b2f3a;
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-title h3 {
   margin: 0;
   font-size: 36px;
-  line-height: 1;
   color: #2b2f3a;
   font-family: "Varela Round";
   text-align: center;
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost {
+  padding: 4rem 0;
+}
+
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost > span {
+  font-size: 14px;
+  line-height: 14px;
+  color: #95979c;
+  font-family: "Open Sans";
   text-align: center;
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .manthly-cost {
   display: flex;
-  justify-content: center;
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .manthly-cost .cost-symbol span {
+  color: #95979c;
   font-size: 18px;
-  line-height: 30px;
-  color: #2b2f3a;
+  line-height: 18px;
   font-family: "Open Sans";
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .manthly-cost .cost-value span {
   font-size: 30px;
-  line-height: 1;
+  line-height: 30px;
   color: #2b2f3a;
   font-family: "Open Sans";
   font-weight: 800;
@@ -172,190 +280,26 @@
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .manthly-cost .cost-name span {
   font-size: 14px;
-  line-height: 30px;
+  line-height: 14px;
   color: #2b2f3a;
   font-family: "Open Sans";
-}
-
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost span {
-  font-size: 14px;
-  line-height: 24px;
-  color: #95979c;
-  font-family: "Open Sans";
-  text-align: center;
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost {
   display: flex;
-  justify-content: center;
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-symbol span {
+  color: #95979c;
   font-size: 18px;
-  line-height: 30px;
-  color: #2b2f3a;
+  line-height: 18px;
   font-family: "Open Sans";
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-value span {
   font-size: 48px;
-  line-height: 30px;
-  color: #2b2f3a;
-  font-family: "Open Sans";
-  font-weight: 800;
-}
-
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-name span {
-  font-size: 14px;
-  line-height: 30px;
-  color: #2b2f3a;
-  font-family: "Open Sans";
-}
-
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-features {
-  border-top: 1px dashed #cacbce;
-}
-
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-features .features-title span {
-  font-size: 10px;
-  letter-spacing: 4px;
-  line-height: 30px;
-  color: #2b2f3a;
-  font-family: "Open Sans";
-}
-
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-features ul {
-  padding: 0;
-  font-size: 14px;
-  line-height: 30px;
-  color: #2b2f3a;
-  font-family: "Open Sans";
-  font-weight: bold;
-}
-
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-features ul li {
-  line-height: 30px;
-  list-style: none;
-  font-weight: normal;
-}
-
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .choose-card {
-  margin-top: auto;
-}
-
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .choose-card button {
-  font-size: 16px;
-  letter-spacing: 0px;
-  line-height: 50px;
-  color: white;
-  font-family: "Open Sans";
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-  height: 52px;
-  border-radius: 3px;
-  background-color: #2b2f39;
-  border: 1px solid #2b2f39;
-}
-
-.pricing .pricing-wrapper .plans-table {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.pricing .pricing-wrapper .plans-table .plans-table-wrapper table thead tr th {
-  border-bottom: 0px;
-  font-size: 24px;
-  line-height: 30px;
-  font-family: "Varela Round";
-  font-weight: 100;
-}
-
-.pricing .pricing-wrapper .plans-table .plans-table-wrapper table thead tr th:nth-child(2) {
-  color: #2b2f3a;
-}
-
-.pricing .pricing-wrapper .plans-table .plans-table-wrapper table thead tr th:nth-child(3) {
-  color: #3abba3;
-}
-
-.pricing .pricing-wrapper .plans-table .plans-table-wrapper table thead tr th:nth-child(4) {
-  color: #005bcf;
-}
-
-.pricing .pricing-wrapper .plans-table .plans-table-wrapper table tbody {
-  background-color: #fff;
-}
-
-.pricing .pricing-wrapper .plans-table .plans-table-wrapper table tbody tr {
-  height: 60px;
-}
-
-.pricing .pricing-wrapper .plans-table .plans-table-wrapper table tbody tr:nth-child(1) td, .pricing .pricing-wrapper .plans-table .plans-table-wrapper table tbody tr:nth-child(2) td {
-  vertical-align: middle;
-  font-size: 16px;
-  line-height: 18px;
-  color: #2b2f3a;
-  font-family: "Open Sans";
-  font-weight: 800;
-}
-
-.pricing .pricing-wrapper .plans-table .plans-table-wrapper table tbody tr td {
-  vertical-align: middle;
-  font-size: 16px;
-  line-height: 18px;
-  color: #2b2f3a;
-  font-family: "Open Sans";
-}
-
-.pricing .pricing-wrapper .plans-table .plans-table-wrapper table tbody tr td:nth-child(1) {
-  font-size: 16px;
-  line-height: 18px;
-  color: #2b2f3a;
-  font-family: "Open Sans";
-  font-weight: bold;
-}
-
-.pricing .pricing-wrapper .check {
-  text-align: center;
-}
-
-.pricing .pricing-wrapper .check .check-text span {
-  font-size: 18px;
-  letter-spacing: 0px;
-  line-height: 50px;
-  color: #888d94;
-  font-family: "Open Sans";
-  text-align: center;
-}
-
-.pricing .pricing-wrapper .check .check-title {
-  margin: 0 auto;
-}
-
-.pricing .pricing-wrapper .check .check-title h3 {
-  margin: 0;
-  font-size: 48px;
   line-height: 48px;
   color: #2b2f3a;
-  font-family: "Varela Round";
-  text-align: center;
-}
-
-.pricing .pricing-wrapper .check .see-all-features a {
-  font-size: 14px;
-  letter-spacing: 0px;
-  line-height: 50px;
-  color: #2b2f3a;
   font-family: "Open Sans";
-  font-weight: bold;
-}
-
-.pricing .pricing-wrapper .check .see-all-features a:after {
-  content: "";
-  background-image: url("../assets/icons/arrow_right.svg");
-  display: inline-block;
-  width: 30px;
-  height: 10px;
-  margin-left: 8px;
+  font-weight: 800;
 }
