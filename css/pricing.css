@@ -252,14 +252,16 @@
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost > span {
+  display: inline-block;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 14px;
   color: #95979c;
   font-family: "Open Sans";
-  text-align: center;
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .manthly-cost {
+  justify-content: center;
   display: flex;
 }
 
@@ -286,6 +288,7 @@
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost {
+  justify-content: center;
   display: flex;
 }
 
@@ -302,4 +305,187 @@
   color: #2b2f3a;
   font-family: "Open Sans";
   font-weight: 800;
+}
+
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .mo span {
+  font-size: 24px;
+  line-height: 24pxs;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: 800;
+}
+
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-name span {
+  font-size: 14px;
+  line-height: 14px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+}
+
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-name span:after {
+  content: "Includes 1 Month Free";
+  display: block;
+  font-size: 13px;
+  line-height: 13px;
+  color: #3abba3;
+  font-family: "Open Sans";
+}
+
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-features {
+  border-top: 1px dashed #cacbce;
+  padding: 3rem 3rem 3rem 3rem;
+}
+
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-features .features-title {
+  padding-bottom: 1rem;
+}
+
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-features .features-title span {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+}
+
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-features ul {
+  padding: 0;
+  font-size: 14px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-features ul li {
+  list-style: none;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .choose-card {
+  margin-top: auto;
+  padding: 0 3rem;
+}
+
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .choose-card button {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 50px;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 52px;
+  border-radius: 3px;
+  background-color: #2b2f39;
+  border: 1px solid #2b2f39;
+}
+
+.pricing .pricing-wrapper .plans-table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pricing .pricing-wrapper .plans-table .plans-table-wrapper table thead tr th {
+  border-bottom: 0px;
+  font-size: 24px;
+  line-height: 4;
+  font-family: "Varela Round";
+  font-weight: 100;
+  padding: 0;
+}
+
+.pricing .pricing-wrapper .plans-table .plans-table-wrapper table thead tr th:nth-child(1) {
+  width: 40%;
+}
+
+.pricing .pricing-wrapper .plans-table .plans-table-wrapper table thead tr th:nth-child(2) {
+  color: #2b2f3a;
+  width: 15%;
+}
+
+.pricing .pricing-wrapper .plans-table .plans-table-wrapper table thead tr th:nth-child(3) {
+  color: #3abba3;
+  width: 25%;
+}
+
+.pricing .pricing-wrapper .plans-table .plans-table-wrapper table thead tr th:nth-child(4) {
+  color: #005bcf;
+  width: 20%;
+}
+
+.pricing .pricing-wrapper .plans-table .plans-table-wrapper table tbody {
+  background-color: #fff;
+}
+
+.pricing .pricing-wrapper .plans-table .plans-table-wrapper table tbody tr {
+  height: 60px;
+}
+
+.pricing .pricing-wrapper .plans-table .plans-table-wrapper table tbody tr:nth-child(1) td, .pricing .pricing-wrapper .plans-table .plans-table-wrapper table tbody tr:nth-child(2) td {
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 18px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: 800;
+}
+
+.pricing .pricing-wrapper .plans-table .plans-table-wrapper table tbody tr td {
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 18px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+}
+
+.pricing .pricing-wrapper .plans-table .plans-table-wrapper table tbody tr td:nth-child(1) {
+  font-size: 16px;
+  line-height: 18px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.pricing .pricing-wrapper .check {
+  text-align: center;
+  padding: 10rem 0rem;
+}
+
+.pricing .pricing-wrapper .check .check-text span {
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #888d94;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.pricing .pricing-wrapper .check .check-title {
+  width: 20%;
+  margin: 4rem auto;
+}
+
+.pricing .pricing-wrapper .check .check-title h3 {
+  margin: 0;
+  font-size: 48px;
+  color: #2b2f3a;
+  font-family: "Varela Round";
+  text-align: center;
+}
+
+.pricing .pricing-wrapper .check .see-all-features a {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.pricing .pricing-wrapper .check .see-all-features a:after {
+  content: "";
+  background-image: url("../assets/icons/arrow_right.svg");
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  margin-left: 8px;
 }
