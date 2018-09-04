@@ -49,7 +49,7 @@
             background-color: #ffffff
             padding: 3rem
             .card-description
-                width: 46%
+                width: 32%
                 display: flex
                 .card-icon
                     margin-top: 3px
@@ -76,23 +76,33 @@
                     border: 1px solid #39bba3 
                     background-color: #39bba3
         .basic-plan
+            padding: 8rem 0
             text-align: center
             .basic-plan-title
-                h3
-                    font-size: 36px
-                    line-height: 30px
-                    color: rgb(43,47,58)
-                    font-family: "Varela Round"
-                span
-                    width: 44px
-                    border-radius: 3px
-                    background-color: #39bba3
-                    font-size: 11px
-                    color: rgb(255,255,255)
-                    font-family: "Open Sans"
-                    font-weight: bold
-                    text-align: center
+                text-align: center
+                .title-text
+                    display: inline-block
+                    span
+                        margin: 0
+                        font-size: 36px
+                        line-height: 1
+                        color: rgb(43,47,58)
+                        font-family: "Varela Round"
+                .title-lable
+                    display: inline-block
+                    span
+                        display: block
+                        width: 44px
+                        line-height: 2
+                        border-radius: 3px
+                        background-color: #39bba3
+                        font-size: 11px
+                        color: rgb(255,255,255)
+                        font-family: "Open Sans"
+                        font-weight: bold
+                        text-align: center
             .basic-plan-description
+                padding: 1rem 0rem 1.5rem
                 span
                     font-size: 14px
                     line-height: 30px
@@ -119,6 +129,7 @@
                     border-radius: 3px
                     background-color: #2b2f39
         .billing-interval
+            padding: 0 0 15rem
             display: flex
             justify-content: space-around
             .billing-interval-wrapper
@@ -144,7 +155,7 @@
                     font-weight: bold
         .plan-cards
             background-color: #ffffff
-            margin: 10rem -15px 8rem -15px
+            margin: 0 -15px
             .plan-cards-wrapper
                 width: 90%
                 margin: 0 auto
@@ -152,11 +163,11 @@
                 display: flex
                 justify-content: space-between
                 position: relative
-                transform: translateY(-6rem)
+                transform: translateY(-10rem)
                 .plan-card
                     display: flex
                     flex-direction: column
-                    width: 31%
+                    width: 30%
                     border-radius: 3px
                     background-color: #ffffff
                     box-shadow: 0px 15px 50px rgba(0,0,0,0.1)
@@ -188,76 +199,71 @@
                         h3
                             margin: 0
                             font-size: 36px
+                            line-height: 1
                             color: rgb(43,47,58)
                             font-family: "Varela Round"
                             text-align: center
                     .card-cost
                         padding: 4rem 0
-                        &>span
-                            display: inline-block
-                            margin: 0 auto
+                        text-align: center
+                        .or
+                            padding: 2rem 0
                             font-size: 14px
-                            line-height: 14px
+                            line-height: 1
                             color: rgb(149, 151, 156)
                             font-family: "Open Sans"
                         .manthly-cost
-                            justify-content: center
                             display: flex
+                            justify-content: center
                             .cost-symbol
-                                span
-                                    color: rgb(149, 151, 156)
-                                    font-size: 18px
-                                    line-height: 18px
-                                    font-family: "Open Sans"
+                                color: rgb(149, 151, 156)
+                                font-size: 18px
+                                line-height: 0.8
+                                font-family: "Open Sans"
                             .cost-value
-                                span
-                                    font-size: 30px
-                                    line-height: 30px
-                                    color: rgb(43,47,58)
-                                    font-family: "Open Sans"
-                                    font-weight: 800
+                                font-size: 30px
+                                line-height: 0.8
+                                color: rgb(43,47,58)
+                                font-family: "Open Sans"
+                                font-weight: 800
                             .cost-name
-                                span
-                                    font-size: 14px
-                                    line-height: 14px
-                                    color: rgb(43,47,58)
-                                    font-family: "Open Sans"
+                                font-size: 14px
+                                line-height: 0.8
+                                color: rgb(43,47,58)
+                                font-family: "Open Sans"
                         .annually-cost
-                            justify-content: center
                             display: flex
+                            justify-content: center
                             .cost-symbol
-                                span
-                                    color: rgb(149, 151, 156)
-                                    font-size: 18px
-                                    line-height: 18px
-                                    font-family: "Open Sans"
+                                color: rgb(149, 151, 156)
+                                font-size: 18px
+                                line-height: 0.8
+                                font-family: "Open Sans"
                             .cost-value
-                                span
-                                    font-size: 48px
-                                    line-height: 48px
-                                    color: rgb(43,47,58)
-                                    font-family: "Open Sans"
-                                    font-weight: 800
+                                font-size: 48px
+                                line-height: 0.8
+                                color: rgb(43,47,58)
+                                font-family: "Open Sans"
+                                font-weight: 800
                             .mo
-                                span
-                                    font-size: 24px
-                                    line-height: 24pxs
-                                    color: rgb(43,47,58)
-                                    font-family: "Open Sans"
-                                    font-weight: 800
+                                font-size: 24px
+                                line-height: 0.8
+                                color: rgb(43,47,58)
+                                font-family: "Open Sans"
+                                font-weight: 800
                             .cost-name
-                                span
-                                    font-size: 14px
-                                    line-height: 14px
-                                    color: rgb(43,47,58)
+                                text-align: left
+                                font-size: 14px
+                                line-height: 1.3
+                                color: rgb(43,47,58)
+                                font-family: "Open Sans"
+                                &:after
+                                    content: "Includes 1 Month Free"
+                                    display: block
+                                    font-size: 13px
+                                    line-height: 1.2
+                                    color: rgb(58,187,163)
                                     font-family: "Open Sans"
-                                    &:after
-                                        content: "Includes 1 Month Free"
-                                        display: block
-                                        font-size: 13px
-                                        line-height: 13px
-                                        color: rgb(58,187,163)
-                                        font-family: "Open Sans"
 
                     .card-features
                         border-top: 1px dashed rgb(202, 203, 206)
@@ -295,11 +301,17 @@
                             border-radius: 3px
                             background-color: #2b2f39
                             border: 1px solid #2b2f39
+                            transition: background-color 0.2s, border 0.2s
+                            &:hover
+                                border: rgb(58,187,163)
+                                background-color: rgb(58,187,163)
 
 
         .plans-table
             width: 90%
             margin: 0 auto
+            padding:
+                top: 13rem
             .plans-table-wrapper
                 table
                     thead
@@ -380,3 +392,139 @@
                         width: 30px
                         height: 10px
                         margin-left: 8px
+
+@media screen and (max-width: 1600px)
+    .pricing
+        .pricing-wrapper
+            .contact-us-card
+                .card-description
+                    width: 39%
+
+@media screen and (max-width: 1360px)
+    .pricing
+        .pricing-wrapper
+            .contact-us-card
+                .card-description
+                        width: 47%
+            .billing-interval
+                padding: 0 0 10rem
+            .plan-cards
+                .plan-cards-wrapper
+                    transform: translateY(-6rem)
+                    .plan-card
+                        width: 31%
+
+@media screen and (max-width: 1024px)
+    .pricing
+        .pricing-wrapper
+            .pricing-title
+                width: 95%
+                margin: 10rem auto 5rem
+            .contact-us-card
+                width: 95%
+                .card-description
+                    width: 63%
+            .basic-plan
+                padding: 6rem 0
+            .plan-cards
+                .plan-cards-wrapper
+                    width: 95%
+            .plans-table
+                width: 95%
+                padding-top: 6rem
+            .check
+                padding: 5rem 0
+                .check-title
+                    width: 30%
+                    margin: 2rem auto
+
+@media screen and (max-width: 768px)
+    .pricing
+        .pricing-wrapper
+            .pricing-title
+                width: 100%
+            .contact-us-card
+                width: 100%
+            .basic-plan
+            .billing-interval
+                padding: 0 0 10rem
+            .plan-cards
+                .plan-cards-wrapper
+                    transform: translateY(-5rem)
+                    display: block
+                    .plan-card
+                        width: 100%
+                        margin-bottom: 3rem
+            .plans-table
+                padding-top: 3rem
+                .plans-table-wrapper
+                    table thead
+                        tr
+                            th
+                                line-height: 3
+                                font-size: 19px
+                                &:nth-child(1)
+                                    width: 30%
+            .check
+                padding: 3rem 0
+                .check-title
+                    width: 40%
+                    margin: 2rem auto
+
+@media screen and (max-width: 414px)
+    .pricing
+        .pricing-wrapper
+            .pricing-title
+                margin: 4rem auto 3rem
+            .contact-us-card
+                padding: 2rem
+                flex-direction: column
+                .card-description
+                    width: 100%
+                    .card-icon
+                        margin-right: 1rem
+                .card-button
+                    text-align: center
+                    margin-top: 2rem
+                    button
+                        width: 273px
+            .basic-plan
+                padding: 3rem 0
+            .billing-interval
+                .billing-interval-wrapper
+                    width: 100%
+                    select
+                        width: 100%
+            .plan-cards
+                .plan-cards-wrapper
+                    width: 100%
+            .plans-table
+                width: 100%
+                overflow: hidden
+                .plans-table-wrapper
+                    overflow-x: scroll
+                    table
+                        width: 700px
+                        margin: 0
+            .check
+                .check-title
+                    width: 100%
+
+@media screen and (max-width: 375px)
+    .pricing
+        .pricing-wrapper
+            .pricing-title
+                h2
+                    font-size: 55px
+                span
+                    font-size: 55px
+
+@media screen and (max-width: 375px)
+    .pricing
+        .pricing-wrapper
+            .pricing-title
+                margin: 1rem auto 4rem
+                h2
+                    font-size: 45px
+                span
+                    font-size: 45px

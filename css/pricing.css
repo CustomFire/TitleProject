@@ -56,7 +56,7 @@
 }
 
 .pricing .pricing-wrapper .contact-us-card .card-description {
-  width: 46%;
+  width: 32%;
   display: flex;
 }
 
@@ -91,18 +91,34 @@
 }
 
 .pricing .pricing-wrapper .basic-plan {
+  padding: 8rem 0;
   text-align: center;
 }
 
-.pricing .pricing-wrapper .basic-plan .basic-plan-title h3 {
+.pricing .pricing-wrapper .basic-plan .basic-plan-title {
+  text-align: center;
+}
+
+.pricing .pricing-wrapper .basic-plan .basic-plan-title .title-text {
+  display: inline-block;
+}
+
+.pricing .pricing-wrapper .basic-plan .basic-plan-title .title-text span {
+  margin: 0;
   font-size: 36px;
-  line-height: 30px;
+  line-height: 1;
   color: #2b2f3a;
   font-family: "Varela Round";
 }
 
-.pricing .pricing-wrapper .basic-plan .basic-plan-title span {
+.pricing .pricing-wrapper .basic-plan .basic-plan-title .title-lable {
+  display: inline-block;
+}
+
+.pricing .pricing-wrapper .basic-plan .basic-plan-title .title-lable span {
+  display: block;
   width: 44px;
+  line-height: 2;
   border-radius: 3px;
   background-color: #39bba3;
   font-size: 11px;
@@ -110,6 +126,10 @@
   font-family: "Open Sans";
   font-weight: bold;
   text-align: center;
+}
+
+.pricing .pricing-wrapper .basic-plan .basic-plan-description {
+  padding: 1rem 0rem 1.5rem;
 }
 
 .pricing .pricing-wrapper .basic-plan .basic-plan-description span {
@@ -147,6 +167,7 @@
 }
 
 .pricing .pricing-wrapper .billing-interval {
+  padding: 0 0 15rem;
   display: flex;
   justify-content: space-around;
 }
@@ -180,7 +201,7 @@
 
 .pricing .pricing-wrapper .plan-cards {
   background-color: #ffffff;
-  margin: 10rem -15px 8rem -15px;
+  margin: 0 -15px;
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper {
@@ -190,13 +211,13 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  transform: translateY(-6rem);
+  transform: translateY(-10rem);
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card {
   display: flex;
   flex-direction: column;
-  width: 31%;
+  width: 30%;
   border-radius: 3px;
   background-color: #ffffff;
   box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
@@ -242,6 +263,7 @@
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-title h3 {
   margin: 0;
   font-size: 36px;
+  line-height: 1;
   color: #2b2f3a;
   font-family: "Varela Round";
   text-align: center;
@@ -249,84 +271,85 @@
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost {
   padding: 4rem 0;
+  text-align: center;
 }
 
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost > span {
-  display: inline-block;
-  margin: 0 auto;
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .or {
+  padding: 2rem 0;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   color: #95979c;
   font-family: "Open Sans";
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .manthly-cost {
-  justify-content: center;
   display: flex;
+  justify-content: center;
 }
 
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .manthly-cost .cost-symbol span {
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .manthly-cost .cost-symbol {
   color: #95979c;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 0.8;
   font-family: "Open Sans";
 }
 
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .manthly-cost .cost-value span {
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .manthly-cost .cost-value {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 0.8;
   color: #2b2f3a;
   font-family: "Open Sans";
   font-weight: 800;
 }
 
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .manthly-cost .cost-name span {
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .manthly-cost .cost-name {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 0.8;
   color: #2b2f3a;
   font-family: "Open Sans";
 }
 
 .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost {
-  justify-content: center;
   display: flex;
+  justify-content: center;
 }
 
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-symbol span {
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-symbol {
   color: #95979c;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 0.8;
   font-family: "Open Sans";
 }
 
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-value span {
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-value {
   font-size: 48px;
-  line-height: 48px;
+  line-height: 0.8;
   color: #2b2f3a;
   font-family: "Open Sans";
   font-weight: 800;
 }
 
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .mo span {
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .mo {
   font-size: 24px;
-  line-height: 24pxs;
+  line-height: 0.8;
   color: #2b2f3a;
   font-family: "Open Sans";
   font-weight: 800;
 }
 
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-name span {
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-name {
+  text-align: left;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1.3;
   color: #2b2f3a;
   font-family: "Open Sans";
 }
 
-.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-name span:after {
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .card-cost .annually-cost .cost-name:after {
   content: "Includes 1 Month Free";
   display: block;
   font-size: 13px;
-  line-height: 13px;
+  line-height: 1.2;
   color: #3abba3;
   font-family: "Open Sans";
 }
@@ -379,11 +402,18 @@
   border-radius: 3px;
   background-color: #2b2f39;
   border: 1px solid #2b2f39;
+  transition: background-color 0.2s, border 0.2s;
+}
+
+.pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card .choose-card button:hover {
+  border: #3abba3;
+  background-color: #3abba3;
 }
 
 .pricing .pricing-wrapper .plans-table {
   width: 90%;
   margin: 0 auto;
+  padding-top: 13rem;
 }
 
 .pricing .pricing-wrapper .plans-table .plans-table-wrapper table thead tr th {
@@ -488,4 +518,162 @@
   width: 30px;
   height: 10px;
   margin-left: 8px;
+}
+
+@media screen and (max-width: 1600px) {
+  .pricing .pricing-wrapper .contact-us-card .card-description {
+    width: 39%;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .pricing .pricing-wrapper .contact-us-card .card-description {
+    width: 47%;
+  }
+  .pricing .pricing-wrapper .billing-interval {
+    padding: 0 0 10rem;
+  }
+  .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper {
+    transform: translateY(-6rem);
+  }
+  .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card {
+    width: 31%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .pricing .pricing-wrapper .pricing-title {
+    width: 95%;
+    margin: 10rem auto 5rem;
+  }
+  .pricing .pricing-wrapper .contact-us-card {
+    width: 95%;
+  }
+  .pricing .pricing-wrapper .contact-us-card .card-description {
+    width: 63%;
+  }
+  .pricing .pricing-wrapper .basic-plan {
+    padding: 6rem 0;
+  }
+  .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper {
+    width: 95%;
+  }
+  .pricing .pricing-wrapper .plans-table {
+    width: 95%;
+    padding-top: 6rem;
+  }
+  .pricing .pricing-wrapper .check {
+    padding: 5rem 0;
+  }
+  .pricing .pricing-wrapper .check .check-title {
+    width: 30%;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricing .pricing-wrapper .pricing-title {
+    width: 100%;
+  }
+  .pricing .pricing-wrapper .contact-us-card {
+    width: 100%;
+  }
+  .pricing .pricing-wrapper .billing-interval {
+    padding: 0 0 10rem;
+  }
+  .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper {
+    transform: translateY(-5rem);
+    display: block;
+  }
+  .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper .plan-card {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .pricing .pricing-wrapper .plans-table {
+    padding-top: 3rem;
+  }
+  .pricing .pricing-wrapper .plans-table .plans-table-wrapper table thead tr th {
+    line-height: 3;
+    font-size: 19px;
+  }
+  .pricing .pricing-wrapper .plans-table .plans-table-wrapper table thead tr th:nth-child(1) {
+    width: 30%;
+  }
+  .pricing .pricing-wrapper .check {
+    padding: 3rem 0;
+  }
+  .pricing .pricing-wrapper .check .check-title {
+    width: 40%;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .pricing .pricing-wrapper .pricing-title {
+    margin: 4rem auto 3rem;
+  }
+  .pricing .pricing-wrapper .contact-us-card {
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .pricing .pricing-wrapper .contact-us-card .card-description {
+    width: 100%;
+  }
+  .pricing .pricing-wrapper .contact-us-card .card-description .card-icon {
+    margin-right: 1rem;
+  }
+  .pricing .pricing-wrapper .contact-us-card .card-button {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .pricing .pricing-wrapper .contact-us-card .card-button button {
+    width: 273px;
+  }
+  .pricing .pricing-wrapper .basic-plan {
+    padding: 3rem 0;
+  }
+  .pricing .pricing-wrapper .billing-interval .billing-interval-wrapper {
+    width: 100%;
+  }
+  .pricing .pricing-wrapper .billing-interval .billing-interval-wrapper select {
+    width: 100%;
+  }
+  .pricing .pricing-wrapper .plan-cards .plan-cards-wrapper {
+    width: 100%;
+  }
+  .pricing .pricing-wrapper .plans-table {
+    width: 100%;
+    overflow: hidden;
+  }
+  .pricing .pricing-wrapper .plans-table .plans-table-wrapper {
+    overflow-x: scroll;
+  }
+  .pricing .pricing-wrapper .plans-table .plans-table-wrapper table {
+    width: 700px;
+    margin: 0;
+  }
+  .pricing .pricing-wrapper .check .check-title {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .pricing .pricing-wrapper .pricing-title h2 {
+    font-size: 55px;
+  }
+  .pricing .pricing-wrapper .pricing-title span {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .pricing .pricing-wrapper .pricing-title {
+    margin: 1rem auto 4rem;
+  }
+  .pricing .pricing-wrapper .pricing-title h2 {
+    font-size: 45px;
+  }
+  .pricing .pricing-wrapper .pricing-title span {
+    font-size: 45px;
+  }
 }
