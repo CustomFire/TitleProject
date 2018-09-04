@@ -55,11 +55,25 @@
                                 <div class="form-email">
                                     <div class="form-group">
                                         <label for="email">Email*</label>
-                                        <input type="email" id="email">
+                                        <input type="text" id="name">
                                     </div>
                                 </div>
                             </div>
                             <div class="second-flex-wrap">
+                                <div class="form-create-pass">
+                                    <div class="form-group">
+                                        <label for="create-pass">Email*</label>
+                                        <input type="email" id="email">
+                                    </div>
+                                </div>
+                                <div class="form-confirm-pass">
+                                    <div class="form-group">
+                                        <label for="confirm-pass">Phone Number*</label>
+                                        <input type="text" id="phone-number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="last-flex-wrap">
                                 <div class="form-create-pass">
                                     <div class="form-group">
                                         <label for="create-pass">Create Pssword*</label>
@@ -86,18 +100,6 @@
                             <button type="submit">Sign Up</button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="already-login">
-            <div class="container">
-                <div class="already-login-question">
-                    <span>
-                        Already have an account? Login
-                    </span>
-                </div>
-                <div class="already-login-button">
-                    <a href="">Login</a>
                 </div>
             </div>
         </div>
@@ -566,12 +568,16 @@
 
         btn.onclick = function(){
             modal.style.display = "block";
+            document.getElementsByClassName("header")[0].style.display = "none";
+            document.getElementsByClassName("main")[0].style.display = "none";
+            document.getElementsByClassName("footer")[0].style.display = "none";
         }
 
         btnMobile.onclick = function(){
             modal.style.display = "block";
-            document.getElementsByClassName("main")[0].style.display = "none";
             document.getElementsByClassName("header")[0].style.display = "none";
+            document.getElementsByClassName("main")[0].style.display = "none";
+            document.getElementsByClassName("footer")[0].style.display = "none";
         }
     
         closer.onclick = function (){

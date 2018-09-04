@@ -2,7 +2,6 @@
 .sign-up-modal-container {
   z-index: 1;
   display: none;
-  position: fixed;
   min-height: 100vh;
   width: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -61,12 +60,12 @@
   border: 2px solid #005bcf;
 }
 
-.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .last-flex-wrap {
   display: flex;
   justify-content: space-between;
 }
 
-.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap > div, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap > div {
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap > div, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap > div, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .last-flex-wrap > div {
   width: 48%;
 }
 
@@ -175,10 +174,10 @@
   .sign-up-modal-container .sign-up .sign-up-container {
     width: 100%;
   }
-  .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap {
+  .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .last-flex-wrap {
     flex-direction: column;
   }
-  .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap > div, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap > div {
+  .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap > div, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap > div, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .last-flex-wrap > div {
     width: 100%;
   }
   .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .form-checkbox .form-group input {
