@@ -7,12 +7,126 @@
     width: 100%
     box-shadow: 0 0 5px rgba(0,0,0,0.1)
     background-image: linear-gradient(45deg, #e5ebef 0%, #ffffff 100%)
+    padding-bottom: 20rem
     .wwy-logo
+        padding-top: 10rem
         .sign-up-close
-            padding-top: 2rem
             text-align: right
         .wwy-img
+            margin-top: 7rem
             text-align: center
+
+    .login
+        .login-container
+            margin: 0 auto
+            width: 420px
+            .login-title
+                h1
+                    font-size: 53px
+                    margin: 0
+                    line-height: 1
+                    color: rgb(43,47,58)
+                    font-family: "Varela Round"
+                    text-align: center
+            form
+                .form-group
+                    margin-bottom: 28px
+                    display: flex
+                    flex-direction: column
+                    label
+                        font-weight: 400
+                        font-size: 13px
+                        line-height: 1
+                        color: rgb(43,47,58)
+                        font-family: "Open Sans"
+                        margin-bottom: 0
+                        margin-bottom: 1rem
+                    input
+                        height: 6rem
+                        border-radius: 3px
+                        background-color: #f3f5f7
+                        border: 1px solid rgba(43,47,58,0.15)
+                        font-size: 16px
+                        line-height: 30px
+                        color: rgb(173, 176, 181)
+                        font-family: "Open Sans"
+                        font-weight: bold
+                        padding-left: 20px
+                        &:focus
+                            color: rgb(43,47,58)
+                            background-color: #ffffff
+                            border: 2px solid #005bcf
+                button
+                    width: 100%
+                    height: 6rem
+                    border-radius: 3px
+                    background-color: #39bba3
+                    border: 1px solid #39bba3
+                    font-size: 16px
+                    letter-spacing: 0px
+                    line-height: 1
+                    color: rgb(255,255,255)
+                    font-family: "Open Sans"
+                    font-weight: bold
+            .have-account
+                text-align: center
+                padding: 6rem 0
+                span
+                    font-size: 24px
+                    line-height: 1
+                    color: rgb(141, 145, 151)
+                    font-family: "Varela Round"
+                    text-align: center
+                button
+                    margin-top: 2rem
+                    width: 210px
+                    height: 60px
+                    border-radius: 3px
+                    border: 1px solid #2b2f39
+                    background-color: #2b2f39
+                    font-size: 16px
+                    letter-spacing: 0px
+                    line-height: 1
+                    color: rgb(255,255,255)
+                    font-family: "Open Sans"
+                    font-weight: bold
+            .forgot
+                text-align: center
+                a
+                    font-size: 14px
+                    line-height: 1
+                    color: rgb(141, 145, 151)
+                    font-family: "Open Sans"
+
+    .sign-up-steper
+        .steper-container
+            display: flex
+            justify-content: center
+            ul
+                display: flex
+                justify-content: space-between
+                width: 450px
+                padding: 0
+                margin: 10rem
+                li
+                    list-style: none
+                    font-size: 16px
+                    line-height: 1
+                    font-family: "Varela Round"
+                    color: rgb(43,47,58)
+                    text-align: center
+                .active-step
+                    color: rgb(0,91,207)
+                .done-step
+                    color: rgb(58,187,163)
+                    position: relative
+                    &:before
+                        display: block
+                        position: absolute
+                        content: url(../assets/icons/check-green.svg)
+                        top: -2rem
+                        left: 40%
+
     .sign-up
         .sign-up-container
             margin: 0 auto
@@ -20,28 +134,32 @@
             .sign-up-title
                 margin-bottom: 3rem
                 h1
-                    font-size: 5rem
+                    font-size: 53px
+                    margin: 0
                     line-height: 1
                     color: rgb(43,47,58)
                     font-family: "Varela Round"
                     text-align: center
             .sign-up-form
                 label
+                    font-weight: 400
                     font-size: 13px
-                    line-height: 3rem
+                    line-height: 1
                     color: rgb(43,47,58)
                     font-family: "Open Sans"
                     margin-bottom: 0
+                    margin-bottom: 1rem
                 input
-                    height: 5rem
+                    height: 6rem
                     border-radius: 3px
                     background-color: #f3f5f7
                     border: 1px solid rgba(43,47,58,0.15)
                     font-size: 16px
-                    line-height: 3rem
+                    line-height: 30px
                     color: rgb(173, 176, 181)
                     font-family: "Open Sans"
                     font-weight: bold
+                    padding-left: 20px
                     &:focus
                         color: rgb(43,47,58)
                         background-color: #ffffff
@@ -52,6 +170,7 @@
                     &>div
                         width: 48%
                 .form-group
+                    margin-bottom: 28px
                     display: flex
                     flex-direction: column
                 .form-checkbox
@@ -92,33 +211,330 @@
                         font-family: "Open Sans"
                         font-weight: bold
                         width: 100%
-    .already-login
-        text-align: center
-        .already-login-question
-            span
-                font-size: 24px
-                line-height: 60px
-                color: rgb(143, 146, 152)
-                font-family: "Varela Round"
-                text-align: center
-        .already-login-button
-            width: 40%
-            height: 5rem
-            border-radius: 3px
-            background-color: #2b2f39
-            display: flex
-            justify-content: space-around
-            align-items: center
+
+    .choose-plan
+        .choose-plan-container
+            .choose-plan-title
+                h1
+                    font-size: 53px
+                    margin: 0
+                    line-height: 1
+                    color: rgb(43,47,58)
+                    font-family: "Varela Round"
+                    text-align: center
+            .choose-interval
+                display: flex
+                justify-content: space-around
+                padding: 4rem 0 5rem
+                .choose-interval-wrapper
+                    display: block
+                    label
+                        display: block
+                        font-size: 13px
+                        line-height: 30px
+                        color: rgb(43,47,58)
+                        font-family: "Open Sans"
+                        font-weight: 400
+                        margin: 0
+                    select
+                        padding: 2rem
+                        width: 420px
+                        border-radius: 3px
+                        background-color: transparent
+                        border: 1px solid rgba(43,47,58,0.15)
+                        font-size: 16px
+                        line-height: 30px
+                        color: rgb(164, 165, 169)
+                        font-family: "Open Sans"
+                        font-weight: bold
+                        &:active
+                            color: rgb(43,47,58)
+                            background-color: #ffffff
+                            border: 1px solid rgba(43,47,58,0.15)
+
+            .choose-plan-cards
+                .plan-cards-wrapper
+                    width: 90%
+                    margin: 0 auto
+                    display: flex
+                    justify-content: space-between
+                    position: relative
+                    .plan-card
+                        display: flex
+                        flex-direction: column
+                        width: 30%
+                        border-radius: 3px
+                        background-color: #ffffff
+                        box-shadow: 0px 15px 50px rgba(0,0,0,0.1)
+                        padding: 4rem 0rem
+                        &:nth-child(1)
+                            border-left: 5px solid #2b2f39
+                        &:nth-child(2)
+                            border-left: 5px solid #39bba3
+                            .card-title
+                                h3
+                                    color: #39bba3
+                            .card-features
+                                ul
+                                    color: #39bba3
+                                    li
+                                        color: rgb(43,47,58)
+
+                        &:nth-child(3)
+                            border-left: 5px solid #005bcf
+                            .card-title
+                                h3
+                                    color: #005bcf
+                            .card-features
+                                ul
+                                    color: #005bcf
+                                    li
+                                        color: rgb(43,47,58)
+                        .card-title
+                            h3
+                                margin: 0
+                                font-size: 36px
+                                line-height: 1
+                                color: rgb(43,47,58)
+                                font-family: "Varela Round"
+                                text-align: center
+                        .card-cost
+                            padding: 4rem 0
+                            text-align: center
+                            .or
+                                padding: 2rem 0
+                                font-size: 14px
+                                line-height: 1
+                                color: rgb(149, 151, 156)
+                                font-family: "Open Sans"
+                            .manthly-cost
+                                display: flex
+                                justify-content: center
+                                .cost-symbol
+                                    color: rgb(149, 151, 156)
+                                    font-size: 18px
+                                    line-height: 0.8
+                                    font-family: "Open Sans"
+                                .cost-value
+                                    font-size: 30px
+                                    line-height: 0.8
+                                    color: rgb(43,47,58)
+                                    font-family: "Open Sans"
+                                    font-weight: 800
+                                .cost-name
+                                    font-size: 14px
+                                    line-height: 0.8
+                                    color: rgb(43,47,58)
+                                    font-family: "Open Sans"
+                            .annually-cost
+                                display: flex
+                                justify-content: center
+                                .cost-symbol
+                                    color: rgb(149, 151, 156)
+                                    font-size: 18px
+                                    line-height: 0.8
+                                    font-family: "Open Sans"
+                                .cost-value
+                                    font-size: 48px
+                                    line-height: 0.8
+                                    color: rgb(43,47,58)
+                                    font-family: "Open Sans"
+                                    font-weight: 800
+                                .mo
+                                    font-size: 24px
+                                    line-height: 0.8
+                                    color: rgb(43,47,58)
+                                    font-family: "Open Sans"
+                                    font-weight: 800
+                                .cost-name
+                                    text-align: left
+                                    font-size: 14px
+                                    line-height: 1.3
+                                    color: rgb(43,47,58)
+                                    font-family: "Open Sans"
+                                    &:after
+                                        content: "Includes 1 Month Free"
+                                        display: block
+                                        font-size: 13px
+                                        line-height: 1.2
+                                        color: rgb(58,187,163)
+                                        font-family: "Open Sans"
+                        .choose-card
+                            margin-top: auto
+                            padding: 4rem 3rem 0rem
+                            border-top: 1px dashed #cbcbcb
+                            button
+                                font-size: 16px
+                                letter-spacing: 0px
+                                line-height: 50px
+                                color: rgb(255,255,255)
+                                font-family: "Open Sans"
+                                font-weight: bold
+                                text-align: center
+                                width: 100%
+                                height: 52px
+                                border-radius: 3px
+                                background-color: #2b2f39
+                                border: 1px solid #2b2f39
+                                transition: background-color 0.2s, border 0.2s
+                                &:hover
+                                    border: rgb(58,187,163)
+                                    background-color: rgb(58,187,163)
+
+
+    .payment
+        .payment-container
+            .payment-title
+                h1
+                    font-size: 53px
+                    margin: 0
+                    line-height: 1
+                    color: rgb(43,47,58)
+                    font-family: "Varela Round"
+                    text-align: center
+            .payment-method
+                margin: 0 auto
+                width: 60%
+                .method-title
+                    padding: 6rem 0 2rem
+                    span
+                        font-size: 24px
+                        line-height: 1
+                        color: rgb(43,47,58)
+                        font-family: "Varela Round"
+                .methods
+                    display: flex
+                    justify-content: space-between
+                    .paypal-method, .stripe-method
+                        width: 45%
+                        span
+                            font-size: 13px
+                            line-height: 1
+                            color: rgb(43,47,58)
+                            font-family: "Open Sans"
+                            font-weight: 600
+                        .paypal, .stripe
+                            display: flex
+                            justify-content: space-around
+                            align-items: center
+                            width: 420px
+                            height: 60px
+                            border-radius: 3px
+                            box-shadow: 0 0 50px rgba(0,0,0,0.1)
+                            background-color: #f9f9f9
+                            cursor: pointer
+                            transition: background-color 0.3s
+                            &:hover
+                                background-color: #fff
+
+    .company-info
+        .company-info-container
             margin: 0 auto
-            a
-                font-size: 16px
-                letter-spacing: 0px
-                line-height: 50px
-                color: rgb(255,255,255)
-                font-family: "Open Sans"
-                font-weight: bold
-                &:hover
-                    text-decoration: none
+            width: 75%
+            .info-title
+                margin-bottom: 3rem
+                h1
+                    font-size: 53px
+                    margin: 0
+                    line-height: 1
+                    color: rgb(43,47,58)
+                    font-family: "Varela Round"
+                    text-align: center
+            .info-form
+                label
+                    font-weight: 400
+                    font-size: 13px
+                    line-height: 1
+                    color: rgb(43,47,58)
+                    font-family: "Open Sans"
+                    margin-bottom: 0
+                    margin-bottom: 1rem
+                input, select
+                    height: 6rem
+                    border-radius: 3px
+                    background-color: #f3f5f7
+                    border: 1px solid rgba(43,47,58,0.15)
+                    font-size: 16px
+                    line-height: 30px
+                    color: rgb(173, 176, 181)
+                    font-family: "Open Sans"
+                    font-weight: bold
+                    padding-left: 20px
+                    &:focus
+                        color: rgb(43,47,58)
+                        background-color: #ffffff
+                        border: 2px solid #005bcf
+                .first-flex-wrap, .second-flex-wrap, .last-flex-wrap
+                    display: flex
+                    justify-content: space-between
+                    &>div
+                        width: 48%
+                .form-group
+                    margin-bottom: 28px
+                    display: flex
+                    flex-direction: column
+
+                .checkbox-form-title
+                    span
+                        font-size: 24px
+                        color: rgb(43,47,58)
+                        font-family: "Varela Round"
+                
+                .form-checkbox
+                    padding: 2rem 0 5rem
+                    display: flex
+                    justify-content: space-between
+                    .hr-manager, .signature-manager
+                        width: 48%
+                        .hr-answer, .signature-answer
+                            display: flex
+                            justify-content: space-between
+                            width: 50%
+                            span
+                                font-size: 13px
+                                line-height: 1
+                                color: rgb(43,47,58)
+                                font-family: "Open Sans"
+                                font-weight: bold
+                            label
+                                font-size: 13px
+                                line-height: 1
+                                color: rgb(43,47,58)
+                                font-family: "Open Sans"
+                                margin: 0
+                                font-weight: 600
+                                &:before
+                                    content: ""
+                                    display: inline-block
+                                    height: 4rem
+                                    width: 4rem
+                                    border-radius: 3px
+                                    background-color: #ffffff
+                                    border: 1px solid rgba(43,47,58,0.15)
+                                    vertical-align: middle
+                                    margin-right: 1rem
+                                    transition: 0.2s
+                                    background-position: center
+                            input[type="radio"]
+                                display: none
+                            input[type="radio"]:checked + label::before
+                                background-image: url("../assets/icons/check.svg")
+                                background-repeat: no-repeat
+                .sign-up-button
+                    button
+                        height: 5rem
+                        border: 1px solid #39bba3
+                        border-radius: 3px
+                        background-color: #39bba3
+                        font-size: 16px
+                        letter-spacing: 0px
+                        line-height: 50px
+                        color: rgb(255,255,255)
+                        font-family: "Open Sans"
+                        font-weight: bold
+                        width: 100%
+
+                        
 @media screen and (max-width: 650px)
     .sign-up-modal-container
         .sign-up
@@ -147,15 +563,3 @@
                             input
                                 height: 2rem
                                 width: 2rem
-@media screen and (max-width: 414px)
-    .sign-up-modal-container
-        .already-login
-            .already-login-button
-                width: 75%
-@media screen and (max-width: 337px)
-    .sign-up-modal-container
-        .already-login
-            .already-login-question
-                span
-                    font-size: 2rem
-                    line-height: 4rem
