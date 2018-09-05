@@ -21,6 +21,7 @@
             margin: 0 auto
             width: 420px
             .login-title
+                padding: 10rem 0 6rem
                 h1
                     font-size: 53px
                     margin: 0
@@ -534,6 +535,45 @@
                         font-weight: bold
                         width: 100%
 
+@media screen and (max-width: 1024px)
+    #SignUpModal
+        .wwy-logo
+            padding-top: 5rem
+        .sign-up-steper
+            .steper-container
+                ul
+                    margin: 6rem
+        .payment
+            .payment-container
+                .payment-method
+                    width: 70%
+                    .methods
+                        .paypal-method, .stripe-method
+                            width: 48%
+                            .paypal, .stripe
+                                width: 100%
+
+
+@media screen and (max-width: 768px)
+    #SignUpModal
+        .choose-plan
+            .choose-plan-container
+                .choose-plan-cards
+                    .plan-cards-wrapper
+                        display: block
+                        .plan-card
+                            margin: 0 auto 2rem
+                            width: 50%
+
+        .company-info
+            .company-info-container
+                .info-form
+                    .form-checkbox
+                        .hr-manager, .signature-manager
+                            .hr-answer, .signature-answer
+                                width: 70%
+
+
                         
 @media screen and (max-width: 650px)
     .sign-up-modal-container
@@ -547,7 +587,7 @@
                                 height: 2rem
                                 margin-right: 0.5rem
     .sign-up-modal-container
-        padding-bottom: 5rem
+        padding-bottom: 0rem
         position: relative
         overflow-y: hidden
         .sign-up
@@ -563,3 +603,58 @@
                             input
                                 height: 2rem
                                 width: 2rem
+
+@media screen and (max-width: 415px)
+    #LoginModal
+        .wwy-logo
+            padding-top: 1rem
+            .wwy-img
+                margin-top: 4rem
+        .login
+            .login-container
+                width: 100%
+                padding: 0 15px
+                .login-title
+                    padding: 2rem 0 4rem
+                .have-account
+                    padding: 3rem 0
+                    span
+                        font-size: 20px
+
+@media screen and (max-width: 375px)
+    #LoginModal
+        .wwy-logo
+            padding-top: 1rem
+            .wwy-img
+                margin-top: 1rem
+        .login
+            .login-container
+                width: 100%
+                padding: 0 15px
+                .login-title
+                    padding: 1rem 0 3rem
+                form
+                    .form-group
+                        input
+                            height: 5rem
+                .have-account
+                    padding: 3rem 0
+                    span
+                        font-size: 20px
+
+@media screen and (max-width: 320px)
+    #LoginModal
+        padding-bottom: 5rem
+        .login
+            .login-container
+                form
+                    .form-group
+                        padding-bottom: 2rem
+                    button
+                        height: 5rem
+                .have-account
+                    padding: 2rem
+                    span
+                        display: block
+                    button
+                        height: 5rem

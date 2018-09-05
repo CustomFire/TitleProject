@@ -27,6 +27,10 @@
   width: 420px;
 }
 
+.sign-up-modal-container .login .login-container .login-title {
+  padding: 10rem 0 6rem;
+}
+
 .sign-up-modal-container .login .login-container .login-title h1 {
   font-size: 53px;
   margin: 0;
@@ -695,6 +699,37 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  #SignUpModal .wwy-logo {
+    padding-top: 5rem;
+  }
+  #SignUpModal .sign-up-steper .steper-container ul {
+    margin: 6rem;
+  }
+  #SignUpModal .payment .payment-container .payment-method {
+    width: 70%;
+  }
+  #SignUpModal .payment .payment-container .payment-method .methods .paypal-method, #SignUpModal .payment .payment-container .payment-method .methods .stripe-method {
+    width: 48%;
+  }
+  #SignUpModal .payment .payment-container .payment-method .methods .paypal-method .paypal, #SignUpModal .payment .payment-container .payment-method .methods .paypal-method .stripe, #SignUpModal .payment .payment-container .payment-method .methods .stripe-method .paypal, #SignUpModal .payment .payment-container .payment-method .methods .stripe-method .stripe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #SignUpModal .choose-plan .choose-plan-container .choose-plan-cards .plan-cards-wrapper {
+    display: block;
+  }
+  #SignUpModal .choose-plan .choose-plan-container .choose-plan-cards .plan-cards-wrapper .plan-card {
+    margin: 0 auto 2rem;
+    width: 50%;
+  }
+  #SignUpModal .company-info .company-info-container .info-form .form-checkbox .hr-manager .hr-answer, #SignUpModal .company-info .company-info-container .info-form .form-checkbox .hr-manager .signature-answer, #SignUpModal .company-info .company-info-container .info-form .form-checkbox .signature-manager .hr-answer, #SignUpModal .company-info .company-info-container .info-form .form-checkbox .signature-manager .signature-answer {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .form-checkbox .form-group label:before {
     width: 2rem;
@@ -702,7 +737,7 @@
     margin-right: 0.5rem;
   }
   .sign-up-modal-container {
-    padding-bottom: 5rem;
+    padding-bottom: 0rem;
     position: relative;
     overflow-y: hidden;
   }
@@ -718,5 +753,73 @@
   .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .form-checkbox .form-group input {
     height: 2rem;
     width: 2rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #LoginModal .wwy-logo {
+    padding-top: 1rem;
+  }
+  #LoginModal .wwy-logo .wwy-img {
+    margin-top: 4rem;
+  }
+  #LoginModal .login .login-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  #LoginModal .login .login-container .login-title {
+    padding: 2rem 0 4rem;
+  }
+  #LoginModal .login .login-container .have-account {
+    padding: 3rem 0;
+  }
+  #LoginModal .login .login-container .have-account span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #LoginModal .wwy-logo {
+    padding-top: 1rem;
+  }
+  #LoginModal .wwy-logo .wwy-img {
+    margin-top: 1rem;
+  }
+  #LoginModal .login .login-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  #LoginModal .login .login-container .login-title {
+    padding: 1rem 0 3rem;
+  }
+  #LoginModal .login .login-container form .form-group input {
+    height: 5rem;
+  }
+  #LoginModal .login .login-container .have-account {
+    padding: 3rem 0;
+  }
+  #LoginModal .login .login-container .have-account span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #LoginModal {
+    padding-bottom: 5rem;
+  }
+  #LoginModal .login .login-container form .form-group {
+    padding-bottom: 2rem;
+  }
+  #LoginModal .login .login-container form button {
+    height: 5rem;
+  }
+  #LoginModal .login .login-container .have-account {
+    padding: 2rem;
+  }
+  #LoginModal .login .login-container .have-account span {
+    display: block;
+  }
+  #LoginModal .login .login-container .have-account button {
+    height: 5rem;
   }
 }
