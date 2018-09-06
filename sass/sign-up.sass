@@ -16,6 +16,177 @@
             margin-top: 7rem
             text-align: center
 
+    .paypal-payment-modal
+        position: fixed
+        width: 100%
+        height: 100%
+        z-index: 1000
+        display: flex
+        justify-content: space-around
+        align-items: center
+        background-color: #0000009c
+        .paypal-modal-container
+            width: 521px
+            padding: 3rem 0rem 0rem
+            border-radius: 3px
+            border: 1px solid transparent
+            box-shadow: 0px 15px 50px rgba(0,0,0,0.1)
+            background-color: #ffffff
+            .payment-close
+                padding: 0 3rem
+                text-align: right
+            .payment-logo
+                text-align: center
+                margin-top: 4.5rem
+                margin-bottom: 4rem
+            .payment-plan
+                background-color: rgb(232, 237, 240)
+                height: 157px
+                display: flex
+                justify-content: space-around
+                align-items: center
+                .plan-wrapper
+                    .plan-type
+                        text-align: center
+                        padding-bottom: 2rem
+                        span
+                            font-size: 36px
+                            line-height: 1
+                            color: rgb(0,91,207)
+                            font-family: "Varela Round"
+                    .annually-cost
+                        display: flex
+                        justify-content: center
+                        .cost-symbol
+                            color: rgb(149, 151, 156)
+                            font-size: 18px
+                            line-height: 0.8
+                            font-family: "Open Sans"
+                        .cost-value
+                            font-size: 48px
+                            line-height: 0.8
+                            color: rgb(43,47,58)
+                            font-family: "Open Sans"
+                            font-weight: 800
+                        .mo
+                            font-size: 24px
+                            line-height: 0.8
+                            color: rgb(43,47,58)
+                            font-family: "Open Sans"
+                            font-weight: 800
+                        .cost-name
+                            text-align: left
+                            font-size: 14px
+                            line-height: 1.3
+                            color: rgb(43,47,58)
+                            font-family: "Open Sans"
+                            &:after
+                                content: "Includes 1 Month Free"
+                                display: block
+                                font-size: 13px
+                                line-height: 1.2
+                                color: rgb(58,187,163)
+                                font-family: "Open Sans"
+            .payment-form
+                text-align: center
+                padding: 5rem
+                form
+                    padding-bottom: 3rem
+                    input
+                        width: 100%
+                        height: 60px
+                        border-radius: 3px
+                        background-color: #f9ffbd
+                        border: 1px solid rgba(43,47,58,0.5)
+                        margin-bottom: 1rem
+                        font-size: 16px
+                        color: rgb(43,47,58)
+                        font-family: "Open Sans"
+                        padding-left: 2rem
+                    button
+                        width: 100%
+                        height: 60px
+                        border-radius: 3px
+                        background-color: #006fb9
+                        font-size: 16px
+                        letter-spacing: 0px
+                        line-height: 1
+                        color: rgb(255,255,255)
+                        font-family: "Open Sans"
+                        font-weight: bold
+                a
+                    display: block
+                    font-size: 16px
+                    line-height: 1
+                    color: rgb(0,112,186)
+                    font-family: "Open Sans"
+                    
+                .or
+                    margin: 25px 0px
+                    display: inline-block
+                    font-size: 16px
+                    line-height: 1
+                    color: rgb(141,141,141)
+                    font-family: "Open Sans"
+                button
+                    width: 100%
+                    height: 60px
+                    border-radius: 3px
+                    border: 1px solid #e1e7eb
+                    background-color: #e1e7eb
+                    font-size: 16px
+                    letter-spacing: 0px
+                    line-height: 1
+                    color: rgb(20,20,20)
+                    font-family: "Open Sans"
+                    font-weight: bold
+
+    .stripe-payment-modal
+        .stripe-modal-vontainer
+            .payment-close
+            .payment-logo
+            .payment-plan
+                .plan-wrapper
+                    .plan-type
+                        span
+                    .annually-cost
+                        display: flex
+                        justify-content: center
+                        .cost-symbol
+                            color: rgb(149, 151, 156)
+                            font-size: 18px
+                            line-height: 0.8
+                            font-family: "Open Sans"
+                        .cost-value
+                            font-size: 48px
+                            line-height: 0.8
+                            color: rgb(43,47,58)
+                            font-family: "Open Sans"
+                            font-weight: 800
+                        .mo
+                            font-size: 24px
+                            line-height: 0.8
+                            color: rgb(43,47,58)
+                            font-family: "Open Sans"
+                            font-weight: 800
+                        .cost-name
+                            text-align: left
+                            font-size: 14px
+                            line-height: 1.3
+                            color: rgb(43,47,58)
+                            font-family: "Open Sans"
+                            &:after
+                                content: "Includes 1 Month Free"
+                                display: block
+                                font-size: 13px
+                                line-height: 1.2
+                                color: rgb(58,187,163)
+                                font-family: "Open Sans"
+            .payment-form
+                .form-group
+                    label
+                    input
+                button
     .login
         .login-container
             margin: 0 auto
@@ -42,6 +213,7 @@
                         font-family: "Open Sans"
                         margin-bottom: 0
                         margin-bottom: 1rem
+                        
                     input
                         height: 6rem
                         border-radius: 3px
@@ -165,6 +337,8 @@
                         color: rgb(43,47,58)
                         background-color: #ffffff
                         border: 2px solid #005bcf
+                    &:focus + label
+                        color: #005bcf
                 .first-flex-wrap, .second-flex-wrap, .last-flex-wrap
                     display: flex
                     justify-content: space-between
@@ -395,7 +569,7 @@
                     text-align: center
             .payment-method
                 margin: 0 auto
-                width: 60%
+                width: 63%
                 .method-title
                     padding: 6rem 0 2rem
                     span
@@ -407,7 +581,7 @@
                     display: flex
                     justify-content: space-between
                     .paypal-method, .stripe-method
-                        width: 45%
+                        width: 48%
                         span
                             font-size: 13px
                             line-height: 1
@@ -418,7 +592,7 @@
                             display: flex
                             justify-content: space-around
                             align-items: center
-                            width: 420px
+                            width: 100%
                             height: 60px
                             border-radius: 3px
                             box-shadow: 0 0 50px rgba(0,0,0,0.1)
@@ -465,6 +639,8 @@
                         color: rgb(43,47,58)
                         background-color: #ffffff
                         border: 2px solid #005bcf
+                    &:focus + label
+                        color: #005bcf
                 .first-flex-wrap, .second-flex-wrap, .last-flex-wrap
                     display: flex
                     justify-content: space-between
@@ -567,11 +743,12 @@
 
         .company-info
             .company-info-container
+                width: 100%
                 .info-form
                     .form-checkbox
                         .hr-manager, .signature-manager
                             .hr-answer, .signature-answer
-                                width: 70%
+                                width: 60%
 
 
                         
@@ -604,7 +781,24 @@
                                 height: 2rem
                                 width: 2rem
 
-@media screen and (max-width: 415px)
+@media screen and (max-width: 414px)
+    .sign-up-modal-container
+        .paypal-payment-modal
+            .paypal-modal-container
+                width: 100%
+                padding: 1rem 0rem 0rem
+                .payment-close
+                    padding: 0rem 1.5rem
+                .payment-logo
+                    margin-top: 2rem
+                    margin-bottom: 2rem
+                .payment-form
+                    padding: 4rem 1.5rem
+                    form
+                        input
+                            margin-bottom: 2rem
+                            
+
     #LoginModal
         .wwy-logo
             padding-top: 1rem
@@ -625,6 +819,9 @@
             .steper-container
                 ul
                     margin: 5rem 1.5rem
+                    li
+                        font-size: 15px
+
         .choose-plan
             .choose-plan-container
                 .choose-interval
@@ -640,7 +837,46 @@
                         .plan-card
                             width: 100%
 
+        .payment
+            .payment-container
+                padding: 0px 15px
+                .payment-method
+                    width: 100%
+        .company-info
+            .company-info-container
+                .info-form
+                    .first-flex-wrap, .second-flex-wrap, .last-flex-wrap
+                        flex-direction: column
+                        &>div
+                            width: 100%
+                    .form-checkbox
+                        flex-direction: column
+                        height: 21rem
+                        .hr-manager, .signature-manager
+                            width: 100%
+
 @media screen and (max-width: 375px)
+    .sign-up-modal-container
+        .paypal-payment-modal
+            .paypal-modal-container
+                padding: 3rem 0rem 3rem
+                .payment-logo
+                    margin-top: 1rem
+                    margin-bottom: 1rem
+                .payment-form
+                    padding: 2rem 1.5rem
+                    form
+                        padding-bottom: 2rem
+                        input
+                            height: 5rem
+                            margin-bottom: 2rem
+                        button
+                            height: 5rem
+                    .or
+                        margin: 2rem 0rem
+                    button
+                        height: 5rem
+
     #LoginModal
         .wwy-logo
             padding-top: 1rem
@@ -662,6 +898,24 @@
                         font-size: 20px
 
 @media screen and (max-width: 320px)
+    .sign-up-modal-container
+        .paypal-payment-modal
+            .paypal-modal-container
+                padding: 1.5rem 0rem 1.5rem
+                .payment-form
+                    padding: 1rem 1.5rem
+                    form
+                        padding-bottom: 1rem
+                        input
+                            height: 5rem
+                            margin-bottom: 1rem
+                        button
+                            height: 5rem
+                    .or
+                        margin: 1rem 0rem
+                    button
+                        height: 5rem
+
     #LoginModal
         padding-bottom: 5rem
         .login
@@ -677,3 +931,28 @@
                         display: block
                     button
                         height: 5rem
+
+    #SignUpModal
+        .sign-up
+            .sign-up-container
+                .sign-up-form
+                    input
+                        height: 5rem
+        .choose-plan
+            .choose-plan-container
+                .choose-plan-title
+                    padding: 0px 15px
+                    h1
+                        font-size: 49px
+                .choose-interval
+                    .choose-interval-wrapper
+                        select
+                            height: 5rem
+                            padding: 0 0 0 1rem
+        .payment
+            .payment-container
+                .payment-method
+                    .methods
+                        .paypal-method, .stripe-method
+                            .paypal, .stripe
+                                height: 5rem

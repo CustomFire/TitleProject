@@ -67,6 +67,18 @@ a {
   position: relative;
 }
 
+.header .header-navigation .header-pages .pages > a:after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  border: 0px solid;
+  width: 0%;
+  height: 0px;
+  background-color: #005bcf;
+  transition: width 0.3s;
+}
+
 .header .header-navigation .header-pages .pages > a:hover {
   color: #005bcf;
   text-decoration: none;

@@ -24,6 +24,108 @@
 <body>
     <div class="sign-up-modal-container" id="SignUpModal">
 
+        <div class="paypal-payment-modal" id="paypalModal" style="display: none;">
+            <div class="paypal-modal-container">
+                <div class="payment-close">
+                    <a href="#" id="paypalClose">
+                        <img src="../assets/icons/small-window-close.svg" alt="">
+                    </a>
+                </div>
+                <div class="payment-logo">
+                    <img src="../assets/icons/small.svg" alt="PayPal">
+                </div>
+                <div class="payment-plan">
+                    <div class="plan-wrapper">
+                        <div class="plan-type">
+                            <span>Organization</span>
+                        </div>
+                        <div class="annually-cost">
+                            <div class="cost-symbol">
+                                $
+                            </div>
+                            <div class="cost-value">
+                                1,749
+                            </div>
+                            <div class="cost-name">
+                                billed annually
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-form">
+                    <form action="">
+                        <input type="text">
+                        <input type="text">
+                        <button type="submit">Log In</button>
+                    </form>
+                    <a href="#">Forgot your email or password?</a>
+                    <div class="or">
+                        or
+                    </div>
+                    <button type="button">Create an account</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="stripe-payment-modal" id="stripeModal">
+            <div class="stripe-modal-container">
+                <div class="payment-close">
+                    <a href="#" id="stripeClose">
+                        <img src="../assets/icons/small-window-close.svg" alt="">
+                    </a>
+                </div>
+                <div class="payment-logo">
+                    <img src="../assets/icons/stripe.svg" alt="PayPal">
+                </div>
+                <div class="payment-plan">
+                    <div class="plan-wrapper">
+                        <div class="plan-type">
+                            <span>Organization</span>
+                        </div>
+                        <div class="annually-cost">
+                            <div class="cost-symbol">
+                                $
+                            </div>
+                            <div class="cost-value">
+                                150
+                            </div>
+                            <div class="mo">
+                                /mo
+                            </div>
+                            <div class="cost-name">
+                                billed annually
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-form">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="StripeEmail">Email*</label>
+                            <input type="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="StripeCard">Card Number*</label>
+                            <input type="StripeCard">
+                        </div>
+                        <div class="form-group">
+                            <label for="Month/Year">Month/Year*</label>
+                            <input type="Month/Year">
+                        </div>
+                        <div class="form-group">
+                            <label for="CVC">CVC*</label>
+                            <input type="CVC">
+                        </div>
+                        <div class="form-group">
+                            <label for="Promo">Do you have a promo code?</label>
+                            <input type="Promo">
+                        </div>
+                        <button type="submit">Pay $1,749</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <div class="wwy-logo">
             <div class="container">
                 <div class="sign-up-close">
@@ -48,7 +150,7 @@
             </div>
         </div>
         
-        <div class="sign-up">
+        <div class="sign-up" style="display: none;">
             <div class="container">
                 <div class="sign-up-container">
                     <div class="sign-up-title">
@@ -67,7 +169,7 @@
                                 </div>
                                 <div class="form-email">
                                     <div class="form-group">
-                                        <label for="email">Your Name*</label>
+                                        <label for="name">Your Name*</label>
                                         <input type="text" id="name">
                                     </div>
                                 </div>
@@ -75,13 +177,13 @@
                             <div class="second-flex-wrap">
                                 <div class="form-create-pass">
                                     <div class="form-group">
-                                        <label for="create-pass">Email*</label>
+                                        <label for="email">Email*</label>
                                         <input type="email" id="email">
                                     </div>
                                 </div>
                                 <div class="form-confirm-pass">
                                     <div class="form-group">
-                                        <label for="confirm-pass">Phone Number*</label>
+                                        <label for="phone-number">Phone Number*</label>
                                         <input type="text" id="phone-number">
                                     </div>
                                 </div>
@@ -116,7 +218,7 @@
                 </div>
             </div>
         </div>
-        <div class="choose-plan">
+        <div class="choose-plan" style="display: none;">
             <div class="choose-plan-container">
                 <div class="choose-plan-title">
                     <h1>Choose Plan</h1>
@@ -262,13 +364,13 @@
                     <div class="methods">
                         <div class="paypal-method">
                             <span>Connect PayPal</span>
-                            <div class="paypal">
+                            <div class="paypal" id="OpenPaypal">
                                 <img src="../assets/icons/PayPal.svg" alt="PayPal">
                             </div>
                         </div>
                         <div class="stripe-method">
                             <span>Connect Stripe</span>
-                            <div class="stripe">
+                            <div class="stripe" id="OpenStripe">
                                 <img src="../assets/icons/stripe.svg" alt="Stripe">
                             </div>
                         </div>
@@ -276,7 +378,7 @@
                 </div>
             </div>
         </div>
-        <div class="company-info">
+        <div class="company-info" style="display: none;">
             <div class="container">
                 <div class="company-info-container">
                     <div class="info-title">
@@ -295,7 +397,7 @@
                                 </div>
                                 <div class="form-email">
                                     <div class="form-group">
-                                        <label for="email">Address*</label>
+                                        <label for="address1">Address*</label>
                                         <input type="text" id="address1">
                                     </div>
                                 </div>
@@ -303,13 +405,13 @@
                             <div class="second-flex-wrap">
                                 <div class="form-create-pass">
                                     <div class="form-group">
-                                        <label for="create-pass">Address 2*</label>
+                                        <label for="address2">Address 2*</label>
                                         <input type="text" id="address2">
                                     </div>
                                 </div>
                                 <div class="form-confirm-pass">
                                     <div class="form-group">
-                                        <label for="confirm-pass">Company Size*</label>
+                                        <label for="">Company Size*</label>
                                         <select>
                                             <option value="1">1-10</option>
                                             <option value="1">11-100</option>
@@ -322,7 +424,7 @@
                             <div class="last-flex-wrap">
                                 <div class="form-create-pass">
                                     <div class="form-group">
-                                        <label for="create-pass">Company Type*</label>
+                                        <label for="">Company Type*</label>
                                         <select>
                                             <option value="Accommodation">Accommodation</option>
                                             <option value="Hospitality">Hospitality</option>
@@ -381,7 +483,7 @@
                                 </div>
                                 <div class="form-confirm-pass">
                                     <div class="form-group">
-                                        <label for="confirm-pass">Timezone*</label>
+                                        <label for="">Timezone*</label>
                                         <select>
                                             <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
                                             <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>
@@ -1020,6 +1122,29 @@
         var loginClose = document.getElementById("loginClose");
         var signupClose = document.getElementById("signupClose");
 
+        var PayPal = document.getElementById("paypalModal");
+        var OpenPaypal = document.getElementById("OpenPaypal");
+        var paypalClose = document.getElementById("paypalClose");
+
+        var Stripe = document.getElementById("stripeModal");
+        var OpenStripe = document.getElementById("OpenStripe");
+        var stripeClose = document.getElementById("stripeClose");
+
+        OpenStripe.onclick = function(){
+            Stripe.style.display = "flex";
+        }
+
+        stripeClose.onclick = function(){
+            Stripe.style.display = "none"
+        }
+
+        OpenPaypal.onclick = function(){
+            PayPal.style.display = "flex";
+        }
+
+        paypalClose.onclick = function(){
+            PayPal.style.display = "none"
+        }
 
         desctopLogin.onclick = function(){
             LoginModal.style.display = "block";

@@ -22,6 +22,213 @@
   text-align: center;
 }
 
+.sign-up-modal-container .paypal-payment-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0000009c;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container {
+  width: 521px;
+  padding: 3rem 0rem 0rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-close {
+  padding: 0 3rem;
+  text-align: right;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-logo {
+  text-align: center;
+  margin-top: 4.5rem;
+  margin-bottom: 4rem;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-plan {
+  background-color: #e8edf0;
+  height: 157px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-plan .plan-wrapper .plan-type {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-plan .plan-wrapper .plan-type span {
+  font-size: 36px;
+  line-height: 1;
+  color: #005bcf;
+  font-family: "Varela Round";
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-plan .plan-wrapper .annually-cost {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-plan .plan-wrapper .annually-cost .cost-symbol {
+  color: #95979c;
+  font-size: 18px;
+  line-height: 0.8;
+  font-family: "Open Sans";
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-plan .plan-wrapper .annually-cost .cost-value {
+  font-size: 48px;
+  line-height: 0.8;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: 800;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-plan .plan-wrapper .annually-cost .mo {
+  font-size: 24px;
+  line-height: 0.8;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: 800;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-plan .plan-wrapper .annually-cost .cost-name {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-plan .plan-wrapper .annually-cost .cost-name:after {
+  content: "Includes 1 Month Free";
+  display: block;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #3abba3;
+  font-family: "Open Sans";
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form {
+  text-align: center;
+  padding: 5rem;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form form {
+  padding-bottom: 3rem;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form form input {
+  width: 100%;
+  height: 60px;
+  border-radius: 3px;
+  background-color: #f9ffbd;
+  border: 1px solid rgba(43, 47, 58, 0.5);
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  padding-left: 2rem;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form form button {
+  width: 100%;
+  height: 60px;
+  border-radius: 3px;
+  background-color: #006fb9;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form a {
+  display: block;
+  font-size: 16px;
+  line-height: 1;
+  color: #0070ba;
+  font-family: "Open Sans";
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form .or {
+  margin: 25px 0px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  color: #8d8d8d;
+  font-family: "Open Sans";
+}
+
+.sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form button {
+  width: 100%;
+  height: 60px;
+  border-radius: 3px;
+  border: 1px solid #e1e7eb;
+  background-color: #e1e7eb;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: #141414;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.sign-up-modal-container .stripe-payment-modal .stripe-modal-vontainer .payment-plan .plan-wrapper .annually-cost {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-modal-container .stripe-payment-modal .stripe-modal-vontainer .payment-plan .plan-wrapper .annually-cost .cost-symbol {
+  color: #95979c;
+  font-size: 18px;
+  line-height: 0.8;
+  font-family: "Open Sans";
+}
+
+.sign-up-modal-container .stripe-payment-modal .stripe-modal-vontainer .payment-plan .plan-wrapper .annually-cost .cost-value {
+  font-size: 48px;
+  line-height: 0.8;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: 800;
+}
+
+.sign-up-modal-container .stripe-payment-modal .stripe-modal-vontainer .payment-plan .plan-wrapper .annually-cost .mo {
+  font-size: 24px;
+  line-height: 0.8;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: 800;
+}
+
+.sign-up-modal-container .stripe-payment-modal .stripe-modal-vontainer .payment-plan .plan-wrapper .annually-cost .cost-name {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+}
+
+.sign-up-modal-container .stripe-payment-modal .stripe-modal-vontainer .payment-plan .plan-wrapper .annually-cost .cost-name:after {
+  content: "Includes 1 Month Free";
+  display: block;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #3abba3;
+  font-family: "Open Sans";
+}
+
 .sign-up-modal-container .login .login-container {
   margin: 0 auto;
   width: 420px;
@@ -212,6 +419,10 @@
   color: #2b2f3a;
   background-color: #ffffff;
   border: 2px solid #005bcf;
+}
+
+.sign-up-modal-container .sign-up .sign-up-container .sign-up-form input:focus + label {
+  color: #005bcf;
 }
 
 .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .first-flex-wrap, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .second-flex-wrap, .sign-up-modal-container .sign-up .sign-up-container .sign-up-form .last-flex-wrap {
@@ -513,7 +724,7 @@
 
 .sign-up-modal-container .payment .payment-container .payment-method {
   margin: 0 auto;
-  width: 60%;
+  width: 63%;
 }
 
 .sign-up-modal-container .payment .payment-container .payment-method .method-title {
@@ -533,7 +744,7 @@
 }
 
 .sign-up-modal-container .payment .payment-container .payment-method .methods .paypal-method, .sign-up-modal-container .payment .payment-container .payment-method .methods .stripe-method {
-  width: 45%;
+  width: 48%;
 }
 
 .sign-up-modal-container .payment .payment-container .payment-method .methods .paypal-method span, .sign-up-modal-container .payment .payment-container .payment-method .methods .stripe-method span {
@@ -548,7 +759,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 420px;
+  width: 100%;
   height: 60px;
   border-radius: 3px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
@@ -606,6 +817,10 @@
   color: #2b2f3a;
   background-color: #ffffff;
   border: 2px solid #005bcf;
+}
+
+.sign-up-modal-container .company-info .company-info-container .info-form input:focus + label, .sign-up-modal-container .company-info .company-info-container .info-form select:focus + label {
+  color: #005bcf;
 }
 
 .sign-up-modal-container .company-info .company-info-container .info-form .first-flex-wrap, .sign-up-modal-container .company-info .company-info-container .info-form .second-flex-wrap, .sign-up-modal-container .company-info .company-info-container .info-form .last-flex-wrap {
@@ -725,8 +940,11 @@
     margin: 0 auto 2rem;
     width: 50%;
   }
+  #SignUpModal .company-info .company-info-container {
+    width: 100%;
+  }
   #SignUpModal .company-info .company-info-container .info-form .form-checkbox .hr-manager .hr-answer, #SignUpModal .company-info .company-info-container .info-form .form-checkbox .hr-manager .signature-answer, #SignUpModal .company-info .company-info-container .info-form .form-checkbox .signature-manager .hr-answer, #SignUpModal .company-info .company-info-container .info-form .form-checkbox .signature-manager .signature-answer {
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -756,7 +974,24 @@
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 414px) {
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container {
+    width: 100%;
+    padding: 1rem 0rem 0rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-close {
+    padding: 0rem 1.5rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-logo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form {
+    padding: 4rem 1.5rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form form input {
+    margin-bottom: 2rem;
+  }
   #LoginModal .wwy-logo {
     padding-top: 1rem;
   }
@@ -779,6 +1014,9 @@
   #SignUpModal .sign-up-steper .steper-container ul {
     margin: 5rem 1.5rem;
   }
+  #SignUpModal .sign-up-steper .steper-container ul li {
+    font-size: 15px;
+  }
   #SignUpModal .choose-plan .choose-plan-container .choose-interval .choose-interval-wrapper {
     width: 100%;
     padding: 0px 15px;
@@ -793,9 +1031,54 @@
   #SignUpModal .choose-plan .choose-plan-container .choose-plan-cards .plan-cards-wrapper .plan-card {
     width: 100%;
   }
+  #SignUpModal .payment .payment-container {
+    padding: 0px 15px;
+  }
+  #SignUpModal .payment .payment-container .payment-method {
+    width: 100%;
+  }
+  #SignUpModal .company-info .company-info-container .info-form .first-flex-wrap, #SignUpModal .company-info .company-info-container .info-form .second-flex-wrap, #SignUpModal .company-info .company-info-container .info-form .last-flex-wrap {
+    flex-direction: column;
+  }
+  #SignUpModal .company-info .company-info-container .info-form .first-flex-wrap > div, #SignUpModal .company-info .company-info-container .info-form .second-flex-wrap > div, #SignUpModal .company-info .company-info-container .info-form .last-flex-wrap > div {
+    width: 100%;
+  }
+  #SignUpModal .company-info .company-info-container .info-form .form-checkbox {
+    flex-direction: column;
+    height: 21rem;
+  }
+  #SignUpModal .company-info .company-info-container .info-form .form-checkbox .hr-manager, #SignUpModal .company-info .company-info-container .info-form .form-checkbox .signature-manager {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 375px) {
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container {
+    padding: 3rem 0rem 3rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-logo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form {
+    padding: 2rem 1.5rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form form {
+    padding-bottom: 2rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form form input {
+    height: 5rem;
+    margin-bottom: 2rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form form button {
+    height: 5rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form .or {
+    margin: 2rem 0rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form button {
+    height: 5rem;
+  }
   #LoginModal .wwy-logo {
     padding-top: 1rem;
   }
@@ -821,6 +1104,28 @@
 }
 
 @media screen and (max-width: 320px) {
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container {
+    padding: 1.5rem 0rem 1.5rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form {
+    padding: 1rem 1.5rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form form {
+    padding-bottom: 1rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form form input {
+    height: 5rem;
+    margin-bottom: 1rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form form button {
+    height: 5rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form .or {
+    margin: 1rem 0rem;
+  }
+  .sign-up-modal-container .paypal-payment-modal .paypal-modal-container .payment-form button {
+    height: 5rem;
+  }
   #LoginModal {
     padding-bottom: 5rem;
   }
@@ -837,6 +1142,22 @@
     display: block;
   }
   #LoginModal .login .login-container .have-account button {
+    height: 5rem;
+  }
+  #SignUpModal .sign-up .sign-up-container .sign-up-form input {
+    height: 5rem;
+  }
+  #SignUpModal .choose-plan .choose-plan-container .choose-plan-title {
+    padding: 0px 15px;
+  }
+  #SignUpModal .choose-plan .choose-plan-container .choose-plan-title h1 {
+    font-size: 49px;
+  }
+  #SignUpModal .choose-plan .choose-plan-container .choose-interval .choose-interval-wrapper select {
+    height: 5rem;
+    padding: 0 0 0 1rem;
+  }
+  #SignUpModal .payment .payment-container .payment-method .methods .paypal-method .paypal, #SignUpModal .payment .payment-container .payment-method .methods .paypal-method .stripe, #SignUpModal .payment .payment-container .payment-method .methods .stripe-method .paypal, #SignUpModal .payment .payment-container .payment-method .methods .stripe-method .stripe {
     height: 5rem;
   }
 }
