@@ -776,6 +776,23 @@
   #LoginModal .login .login-container .have-account span {
     font-size: 20px;
   }
+  #SignUpModal .sign-up-steper .steper-container ul {
+    margin: 5rem 1.5rem;
+  }
+  #SignUpModal .choose-plan .choose-plan-container .choose-interval .choose-interval-wrapper {
+    width: 100%;
+    padding: 0px 15px;
+  }
+  #SignUpModal .choose-plan .choose-plan-container .choose-interval .choose-interval-wrapper select {
+    width: 100%;
+  }
+  #SignUpModal .choose-plan .choose-plan-container .choose-plan-cards .plan-cards-wrapper {
+    width: 100%;
+    padding: 0px 15px;
+  }
+  #SignUpModal .choose-plan .choose-plan-container .choose-plan-cards .plan-cards-wrapper .plan-card {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 375px) {
