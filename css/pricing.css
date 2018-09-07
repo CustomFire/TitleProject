@@ -4,11 +4,6 @@
   font-size: 14px;
 }
 
-@font-face {
-  font-family: "Loh";
-  src: url("");
-}
-
 .circle_no {
   width: 10px;
   height: 10px;
@@ -23,6 +18,157 @@
   border-radius: 5px;
   background-color: #39bba3;
   border: 1px solid #39bba3;
+}
+
+.contact-us-modal {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  z-index: 1000;
+  background-color: #0000009c;
+  overflow: auto;
+}
+
+.contact-us-modal .modal-container {
+  height: max-content;
+  margin: 10rem auto;
+  width: 971px;
+  padding: 3rem 5rem 10rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.contact-us-modal .modal-container .thanks-icon {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.contact-us-modal .modal-container .thanks-title {
+  text-align: center;
+  padding: 5rem 0rem 4rem;
+}
+
+.contact-us-modal .modal-container .thanks-title span {
+  font-size: 36px;
+  line-height: 1;
+  color: #2b2f3a;
+  font-family: "Varela Round";
+}
+
+.contact-us-modal .modal-container .thanks-description {
+  text-align: center;
+}
+
+.contact-us-modal .modal-container .thanks-description span {
+  font-size: 24px;
+  line-height: 60px;
+  color: #9c9ea3;
+  font-family: "Varela Round";
+}
+
+.contact-us-modal .modal-container .modal-close {
+  margin: 0rem -2rem;
+  text-align: right;
+  cursor: pointer;
+}
+
+.contact-us-modal .modal-container .contact-title {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+}
+
+.contact-us-modal .modal-container .contact-title span {
+  font-size: 60px;
+  line-height: 1;
+  color: #2b2f3a;
+  font-family: "Varela Round";
+}
+
+.contact-us-modal .modal-container .contact-form .first-flex-wrapper, .contact-us-modal .modal-container .contact-form .second-flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us-modal .modal-container .contact-form .first-flex-wrapper .form-group, .contact-us-modal .modal-container .contact-form .second-flex-wrapper .form-group {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  margin: 0;
+}
+
+.contact-us-modal .modal-container .contact-form .first-flex-wrapper .form-group label, .contact-us-modal .modal-container .contact-form .second-flex-wrapper .form-group label {
+  font-size: 13px;
+  line-height: 1;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.contact-us-modal .modal-container .contact-form .first-flex-wrapper .form-group input, .contact-us-modal .modal-container .contact-form .first-flex-wrapper .form-group select, .contact-us-modal .modal-container .contact-form .first-flex-wrapper .form-group textarea, .contact-us-modal .modal-container .contact-form .second-flex-wrapper .form-group input, .contact-us-modal .modal-container .contact-form .second-flex-wrapper .form-group select, .contact-us-modal .modal-container .contact-form .second-flex-wrapper .form-group textarea {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 6rem;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid rgba(43, 47, 58, 0.15);
+  font-size: 16px;
+  line-height: 1;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.contact-us-modal .modal-container .contact-form .first-flex-wrapper .form-group input:focus, .contact-us-modal .modal-container .contact-form .first-flex-wrapper .form-group select:focus, .contact-us-modal .modal-container .contact-form .first-flex-wrapper .form-group textarea:focus, .contact-us-modal .modal-container .contact-form .second-flex-wrapper .form-group input:focus, .contact-us-modal .modal-container .contact-form .second-flex-wrapper .form-group select:focus, .contact-us-modal .modal-container .contact-form .second-flex-wrapper .form-group textarea:focus {
+  background-color: #f3f5f7;
+  border: 2px solid #005bcf;
+}
+
+.contact-us-modal .modal-container .contact-form .form-group label {
+  font-size: 13px;
+  line-height: 1;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.contact-us-modal .modal-container .contact-form .form-group textarea {
+  resize: none;
+  height: 182px;
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid rgba(43, 47, 58, 0.15);
+  font-size: 16px;
+  line-height: 1;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.contact-us-modal .modal-container .contact-form .form-group textarea:focus {
+  background-color: #f3f5f7;
+  border: 2px solid #005bcf;
+}
+
+.contact-us-modal .modal-container .contact-form button {
+  width: 100%;
+  border: 1px solid #39bba3;
+  height: 6rem;
+  border-radius: 3px;
+  background-color: #39bba3;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: bold;
 }
 
 .pricing .pricing-wrapper .pricing-title {
@@ -572,6 +718,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .contact-us-modal .modal-container {
+    width: 100%;
+    margin: 9rem 0;
+  }
   .pricing .pricing-wrapper .pricing-title {
     width: 100%;
   }
@@ -609,6 +759,26 @@
 }
 
 @media screen and (max-width: 414px) {
+  .contact-us-modal .modal-container {
+    margin: 0;
+    padding: 1.5rem;
+  }
+  .contact-us-modal .modal-container .modal-close {
+    margin: 0;
+  }
+  .contact-us-modal .modal-container .contact-title {
+    padding: 1rem 0 3rem;
+  }
+  .contact-us-modal .modal-container .contact-form .first-flex-wrapper, .contact-us-modal .modal-container .contact-form .second-flex-wrapper {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .contact-us-modal .modal-container .contact-form .first-flex-wrapper .form-group, .contact-us-modal .modal-container .contact-form .second-flex-wrapper .form-group {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
   .pricing .pricing-wrapper .pricing-title {
     margin: 4rem auto 3rem;
   }
@@ -666,7 +836,13 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
+  .contact-us-modal .modal-container .contact-title span {
+    font-size: 50px;
+  }
+  .contact-us-modal .modal-container .contact-form .first-flex-wrapper .form-group input, .contact-us-modal .modal-container .contact-form .first-flex-wrapper .form-group select, .contact-us-modal .modal-container .contact-form .second-flex-wrapper .form-group input, .contact-us-modal .modal-container .contact-form .second-flex-wrapper .form-group select {
+    height: 5rem;
+  }
   .pricing .pricing-wrapper .pricing-title {
     margin: 1rem auto 4rem;
   }

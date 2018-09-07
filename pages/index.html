@@ -55,7 +55,7 @@
                 <div class="payment-form">
                     <form action="">
                         <input type="text">
-                        <input type="text">
+                        <input type="password">
                         <button type="submit">Log In</button>
                     </form>
                     <a href="#">Forgot your email or password?</a>
@@ -67,7 +67,7 @@
             </div>
         </div>
 
-        <div class="stripe-payment-modal" id="stripeModal">
+        <div class="stripe-payment-modal" id="stripeModal" style="display: none;">
             <div class="stripe-modal-container">
                 <div class="payment-close">
                     <a href="#" id="stripeClose">
@@ -75,7 +75,7 @@
                     </a>
                 </div>
                 <div class="payment-logo">
-                    <img src="../assets/icons/stripe.svg" alt="PayPal">
+                    <img src="../assets/icons/stripe-modal.svg" alt="PayPal">
                 </div>
                 <div class="payment-plan">
                     <div class="plan-wrapper">
@@ -108,13 +108,15 @@
                             <label for="StripeCard">Card Number*</label>
                             <input type="StripeCard">
                         </div>
-                        <div class="form-group">
-                            <label for="Month/Year">Month/Year*</label>
-                            <input type="Month/Year">
-                        </div>
-                        <div class="form-group">
-                            <label for="CVC">CVC*</label>
-                            <input type="CVC">
+                        <div class="card-info">
+                            <div class="form-group">
+                                <label for="Month/Year">Month/Year*</label>
+                                <input type="Month/Year">
+                            </div>
+                            <div class="form-group">
+                                <label for="CVC">CVC*</label>
+                                <input type="CVC">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="Promo">Do you have a promo code?</label>
@@ -1132,18 +1134,22 @@
 
         OpenStripe.onclick = function(){
             Stripe.style.display = "flex";
+            document.getElementsByTagName("body")[0].style.overflowY = "hidden";
         }
 
         stripeClose.onclick = function(){
             Stripe.style.display = "none"
+            document.getElementsByTagName("body")[0].style.overflowY = "scroll";
         }
 
         OpenPaypal.onclick = function(){
             PayPal.style.display = "flex";
+            document.getElementsByTagName("body")[0].style.overflowY = "hidden";
         }
 
         paypalClose.onclick = function(){
             PayPal.style.display = "none"
+            document.getElementsByTagName("body")[0].style.overflowY = "scroll";
         }
 
         desctopLogin.onclick = function(){

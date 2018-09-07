@@ -3,12 +3,6 @@
     font-family: 'Varela Round', sans-serif
     font-size: 14px
 
-
-
-@font-face
-    font-family: "Loh"
-    src: url('')
-
 .circle_no
     width: 10px
     height: 10px
@@ -23,6 +17,122 @@
     background-color: #39bba3
     border: 1px solid #39bba3
 
+.contact-us-modal
+    position: fixed
+    width: 100%
+    min-height: 100vh
+    height: 100%
+    z-index: 1000
+    background-color: #0000009c
+    overflow: auto
+    .modal-container
+        height: max-content
+        margin: 10rem auto
+        width: 971px
+        padding: 3rem 5rem 10rem
+        border-radius: 3px
+        border: 1px solid transparent
+        box-shadow: 0px 15px 50px rgba(0,0,0,0.1)
+        background-color: #ffffff
+        .thanks-icon
+            text-align: center
+            padding-top: 4rem
+        .thanks-title
+            text-align: center
+            padding: 5rem 0rem 4rem
+            span
+                font-size: 36px
+                line-height: 1
+                color: rgb(43,47,58)
+                font-family: "Varela Round"
+        .thanks-description
+            text-align: center
+            span
+                font-size: 24px
+                line-height: 60px
+                color: rgb(156, 158, 163)
+                font-family: "Varela Round"
+        .modal-close
+            margin: 0rem -2rem
+            text-align: right
+            cursor: pointer
+        .contact-title
+            text-align: center
+            padding-top: 4rem
+            padding-bottom: 7rem
+            span
+                font-size: 60px
+                line-height: 1
+                color: rgb(43,47,58)
+                font-family: "Varela Round"
+        .contact-form
+            .first-flex-wrapper, .second-flex-wrapper
+                display: flex
+                justify-content: space-between
+                .form-group
+                    width: 48%
+                    display: flex
+                    flex-direction: column
+                    padding-bottom: 3rem
+                    margin: 0
+                    label
+                        font-size: 13px
+                        line-height: 1
+                        color: rgb(43,47,58)
+                        font-family: "Open Sans"
+                        font-weight: 400
+                        padding-bottom: 5px
+                    input, select, textarea
+                        padding-left: 2rem
+                        padding-right: 2rem
+                        height: 6rem
+                        border-radius: 3px
+                        background-color: #ffffff
+                        border: 1px solid rgba(43,47,58,0.15)
+                        font-size: 16px
+                        line-height: 1
+                        color: rgb(43,47,58)
+                        font-family: "Open Sans"
+                        font-weight: bold
+
+                        &:focus
+                            background-color: #f3f5f7
+                            border: 2px solid #005bcf
+            .form-group
+                label
+                    font-size: 13px
+                    line-height: 1
+                    color: rgb(43,47,58)
+                    font-family: "Open Sans"
+                    font-weight: 400
+                    padding-bottom: 5px
+                textarea
+                    resize: none
+                    height: 182px
+                    padding: 1rem
+                    border-radius: 3px
+                    background-color: #ffffff
+                    border: 1px solid rgba(43,47,58,0.15)
+                    font-size: 16px
+                    line-height: 1
+                    color: rgb(43,47,58)
+                    font-family: "Open Sans"
+                    font-weight: bold
+                    &:focus
+                        background-color: #f3f5f7
+                        border: 2px solid #005bcf
+            button
+                width: 100%
+                border: 1px solid #39bba3
+                height: 6rem
+                border-radius: 3px
+                background-color: #39bba3
+                font-size: 16px
+                letter-spacing: 0px
+                line-height: 1
+                color: rgb(255,255,255)
+                font-family: "Open Sans"
+                font-weight: bold
 
 .pricing
     .pricing-wrapper
@@ -439,6 +549,10 @@
                     margin: 2rem auto
 
 @media screen and (max-width: 768px)
+    .contact-us-modal
+        .modal-container
+            width: 100%
+            margin: 9rem 0
     .pricing
         .pricing-wrapper
             .pricing-title
@@ -472,6 +586,23 @@
                     margin: 2rem auto
 
 @media screen and (max-width: 414px)
+    .contact-us-modal
+        .modal-container
+            margin: 0
+            padding: 1.5rem
+            .modal-close
+                margin: 0
+            .contact-title
+                padding: 1rem 0 3rem
+            .contact-form
+                .first-flex-wrapper, .second-flex-wrapper
+                    flex-direction: column
+                    margin: 0
+                    padding: 0
+                    .form-group
+                        width: 100%
+                        padding: 0
+                        margin-bottom: 1rem
     .pricing
         .pricing-wrapper
             .pricing-title
@@ -519,7 +650,18 @@
                 span
                     font-size: 55px
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 320px)
+    .contact-us-modal
+        .modal-container
+            .contact-title
+                span
+                    font-size: 50px
+            .contact-form
+                .first-flex-wrapper, .second-flex-wrapper
+                    .form-group
+                        input, select
+                            height: 5rem
+
     .pricing
         .pricing-wrapper
             .pricing-title

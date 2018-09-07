@@ -22,86 +22,61 @@
     <title>WeWantYou</title>
 </head>
 <body>
-    <div class="sign-up-modal-container" id="myModal">
-        <div class="wwy-logo">
-            <div class="container">
-                <div class="sign-up-close">
-                    <a href="">
-                        <img src="../assets/icons/close.svg" alt="">
-                    </a>
-                </div>
-                <div class="wwy-img">
-                    <img src="../assets/icons/sign-up-logo.svg" alt="">
-                </div>
+    <div class="contact-us-modal" id="contact-modal-wrapper" style="display: none;">
+        <div class="modal-container" id="thanks-modal" style="display: none;">
+            <div class="modal-close" id="CloseThanks">
+                <img src="../assets/icons/small-window-close.svg" alt="">
+            </div>
+            <div class="thanks-icon">
+                <img src="../assets/icons/thanks-icon.svg" alt="Thanks">
+            </div>
+            <div class="thanks-title">
+                <span>Thanks for writing in!</span>
+            </div>
+            <div class="thanks-description">
+                <span>We will try to get back to you within 24 hours, if not sooner.</span>
             </div>
         </div>
-        <div class="sign-up">
-            <div class="container">
-                <div class="sign-up-container">
-                    <div class="sign-up-title">
-                        <h1>
-                            Sign Up
-                        </h1>
-                    </div>
-                    <div class="sign-up-form">
-                        <form action="">
-                            <div class="first-flex-wrap">
-                                <div class="form-company">
-                                    <div class="form-group">
-                                        <label for="comp-name">Company-name*</label>
-                                        <input type="text" id="comp-name">
-                                    </div>
-                                </div>
-                                <div class="form-email">
-                                    <div class="form-group">
-                                        <label for="email">Email*</label>
-                                        <input type="email" id="email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="second-flex-wrap">
-                                <div class="form-create-pass">
-                                    <div class="form-group">
-                                        <label for="create-pass">Create Pssword*</label>
-                                        <input type="password" id="create-pass">
-                                    </div>
-                                </div>
-                                <div class="form-confirm-pass">
-                                    <div class="form-group">
-                                        <label for="confirm-pass">Confirm Password*</label>
-                                        <input type="password" id="confirm-pass">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-checkbox">
-                                <div class="form-group">
-                                    <input type="checkbox" id="custom-checkbox" unchecked>
-                                    <label for="custom-checkbox">
-                                        I have read and agree to WeWantYou <a href="#">Terms of Use</a>.
-                                    </label>
-                                </div>
-                            </div>
-                        </form>
-                        <div class="sign-up-button">
-                            <button type="submit">Sign Up</button>
+        <div class="modal-container" id="contact-modal" style="display: none;">
+            <div class="modal-close">
+                <img src="../assets/icons/small-window-close.svg" alt="" id="CloseContact">
+            </div>
+            <div class="contact-title">
+                <span>Contact Us</span>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <div class="first-flex-wrapper">
+                        <div class="form-group">
+                            <label for="contact-f-name">First Name*</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-l-name">Last Name*</label>
+                            <input type="text">
                         </div>
                     </div>
-                </div>
+                    <div class="second-flex-wrapper">
+                        <div class="form-group">
+                            <label for="contact-c-name">Company Name*</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-reason">Reason*</label>
+                            <select name="reason" id="contact-reason" placeholder="Please Select">
+                                <option value="1">show</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message*</label>
+                        <textarea name="message" id="contact-message" cols="30" rows="10" style="width: 100%;"></textarea>
+                    </div>
+                    <button type="button" id="OpenThanks">Send Message</button>
+                </form>
             </div>
         </div>
-        <div class="already-login">
-            <div class="container">
-                <div class="already-login-question">
-                    <span>
-                        Already have an account? Login
-                    </span>
-                </div>
-                <div class="already-login-button">
-                    <a href="">Login</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </div> 
     <div class="header" id="swap-anchor">
         <div class="container-fluid">
             <div class="header-navigation">
@@ -192,7 +167,7 @@
                             </div>
                         </div>
                         <div class="card-button">
-                            <button type="button">Contact Us</button>
+                            <button type="button" id="OpenContact">Contact Us</button>
                         </div>
                     </div>
                     <div class="basic-plan">
@@ -677,26 +652,38 @@
         </div>
     </div>
 
-    <script>
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("sign-up");
-        var btnMobile = document.getElementById("sign-up-mobile");
-        var closer = document.getElementsByClassName("sing-up-close")[0];  
+    <script>  
+        var OpenContact = document.getElementById("OpenContact");
+        var CloseContact = document.getElementById("CloseContact");
+        var OpenThanks = document.getElementById("OpenThanks");
+        var CloseThanks = document.getElementById("CloseThanks");
 
-
-        btn.onclick = function(){
-            modal.style.display = "block";
+        OpenContact.onclick = function (){
+            document.getElementById("contact-modal-wrapper").style.display = "flex";
+            document.getElementById("contact-modal").style.display = "block";
+            document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+            document.getElementById("contact-modal-wrapper").style.overflowY = "scroll";
         }
 
-        btnMobile.onclick = function(){
-            modal.style.display = "block";
-            document.getElementsByClassName("main")[0].style.display = "none";
-            document.getElementsByClassName("header")[0].style.display = "none";
+        OpenThanks.onclick = function (){
+            document.getElementById("contact-modal").style.display = "none";
+            document.getElementById("thanks-modal").style.display = "block";
         }
-    
-        closer.onclick = function (){
-            modal.style.display = "none";
+        
+        CloseContact.onclick = function (){
+            document.getElementById("contact-modal-wrapper").style.display = "none";
+            document.getElementById("contact-modal").style.display = "none";
+            document.getElementById("thanks-modal").style.display = "none";
+            document.getElementsByTagName("body")[0].style.overflowY = "scroll"
         }
+
+        CloseThanks.onclick = function (){
+            document.getElementById("contact-modal-wrapper").style.display = "none";
+            document.getElementById("contact-modal").style.display = "none";
+            document.getElementById("thanks-modal").style.display = "none";
+            document.getElementsByTagName("body")[0].style.overflowY = "scroll"
+        }
+
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
