@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round')
+*
+    font-family: 'Varela Round', sans-serif
+    font-size: 14px
+
+body
+    min-height: 100vh
+    background-image: linear-gradient(45deg, #e5ebef 0%, #ffffff 100%)
+    background-repeat: no-repeat
+
+
+.about
+    .about-container
+        width: 90%
+        margin: 19rem auto
+        .about-title
+            h2
+                margin: 0
+                font-size: 60px
+                line-height: 1
+                color: rgb(43,47,58)
+                span
+                    font-size: inherit
+                    line-height: inherit
+                    color: rgb(0,91,207)
+        .about-text
+            width: 45%
+            margin-top: 6rem
+            span
+                font-size: 18px
+                line-height: 1
+                color: rgb(43,47,58)
+                font-family: "Open Sans"
+
+@media screen and (max-width: 1024px)
+    .about
+        .about-container
+            .about-text
+                width: 55%
+
+@media screen and (max-width: 768px)
+    .about
+        .about-container
+            .about-text
+                width: 75%
+
+@media screen and (max-width: 414px)
+    .about
+        text-align: center
+        .about-container
+            width: 100%
+            padding: 0 15px
+            .about-text
+                margin-top: 2rem
+                width: 100%
+                span
+                    font-size: 23px
+
+@media screen and (max-width: 320px)
+    .about
+        .about-container
+            margin: 10rem auto
+            .about-title
+                h2
+                    font-size: 48px
+            .about-title
+                span
+                    font-size: 18px

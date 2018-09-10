@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round");
+* {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(45deg, #e5ebef 0%, #ffffff 100%);
+  background-repeat: no-repeat;
+}
+
+a {
+  cursor: pointer;
+}
+
+.wrong .wrong-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: -webkit-fill-available;
+}
+
+.wrong .wrong-container .wrong-title {
+  margin: 0;
+  font-size: 120px;
+  line-height: 1;
+  color: #005bcf;
+  font-family: "Varela Round";
+}
+
+.wrong .wrong-container .wrong-text span {
+  font-size: 60px;
+  line-height: 1;
+  color: #2b2f3a;
+  font-family: "Varela Round";
+}
+
+.wrong .wrong-container .wrong-description {
+  margin-top: 34px;
+  margin-bottom: 46px;
+  width: 45%;
+}
+
+.wrong .wrong-container .wrong-description span {
+  font-size: 18px;
+  line-height: 1;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+.wrong .wrong-container button {
+  width: 180px;
+  height: 52px;
+  border: 1px solid #005bcf;
+  border-radius: 3px;
+  background-color: #005bcf;
+}
+
+.wrong .wrong-container button a {
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .wrong .wrong-container .wrong-description {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .wrong {
+    padding: 0 15px;
+  }
+  .wrong .wrong-container {
+    text-align: center;
+    width: 100%;
+  }
+  .wrong .wrong-container .wrong-description {
+    width: 100%;
+  }
+  .wrong .wrong-container button {
+    margin: 0 auto;
+  }
+}

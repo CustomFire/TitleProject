@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round");
+* {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(45deg, #e5ebef 0%, #ffffff 100%);
+  background-repeat: no-repeat;
+}
+
+.about .about-container {
+  width: 90%;
+  margin: 19rem auto;
+}
+
+.about .about-container .about-title h2 {
+  margin: 0;
+  font-size: 60px;
+  line-height: 1;
+  color: #2b2f3a;
+}
+
+.about .about-container .about-title h2 span {
+  font-size: inherit;
+  line-height: inherit;
+  color: #005bcf;
+}
+
+.about .about-container .about-text {
+  width: 45%;
+  margin-top: 6rem;
+}
+
+.about .about-container .about-text span {
+  font-size: 18px;
+  line-height: 1;
+  color: #2b2f3a;
+  font-family: "Open Sans";
+}
+
+@media screen and (max-width: 1024px) {
+  .about .about-container .about-text {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .about-container .about-text {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .about {
+    text-align: center;
+  }
+  .about .about-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .about .about-container .about-text {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .about .about-container .about-text span {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about .about-container {
+    margin: 10rem auto;
+  }
+  .about .about-container .about-title h2 {
+    font-size: 48px;
+  }
+  .about .about-container .about-title span {
+    font-size: 18px;
+  }
+}
